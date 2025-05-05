@@ -6,6 +6,7 @@
  */
 import { watch as gulpWatch, series, src } from 'gulp';
 import pump from 'pump';
+import trough from 'through2';
 
 /**
  * Internal dependencies
@@ -31,6 +32,7 @@ export default function watch() {
 		PHPwatcher.on( 'change', function( path ) {
 			return pump( [
 				src( path ),
+				trough.obj(), // Stream 2: No-op stream
 				// Run code sniffing
 				//gulpPlugins.phpcs( PHPCSOptions ),
 				// Log all problems that were found.
