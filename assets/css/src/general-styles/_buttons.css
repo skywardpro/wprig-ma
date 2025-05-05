@@ -2,57 +2,67 @@
 # Buttons
 ----------------------------*/
 
-/*----------------------------
-## Buttons: Sizes
-----------------------------*/
-
-/* Reserve a space using paddings to adjust the size.
- *
- * You can find and example below.
- */
-
-
-.btn--size-normal {
-	padding: var(--spacing-2xs) var(--spacing-xs);
-}
-
-.btn--size-big {
-	padding: var(--spacing-s) var(--spacing-l);
-}
-
-/*----------------------------
-## Buttons: Colors
-----------------------------*/
-
-/* For example, use a background attribute with your primary color variable,
- * as well as a color variable for text, to ensure accessibility.
- *
- * You can find and example below.
- */
-
 /* Primary */
-/* .btn--color-primary {
-	 background: var(--color-theme-primary);
-	 color: var(--color-theme-secondary);
- }*/
+.btn--primary {
+	background: var(--color-theme-deep-purple);
+	color: var(--color-theme-white) !important;
+	font-size: 2.016rem;
+	line-height: 2rem;
+	letter-spacing: 1%;
+	font-weight: 500;
+	transition: var(--animation-speed);
+	padding: var(--spacing-xs) var(--spacing-l);
+	border-radius: 0.4rem;
+}
 
-/*----------------------------
-## Buttons: Effects
-----------------------------*/
+/* Primary Small */
+.btn--primary-small {
+	background: var(--color-theme-deep-purple);
+	color: var(--color-theme-white) !important;
+	font-size: 1.68rem;
+	line-height: 2rem;
+	letter-spacing: 1%;
+	font-weight: 500;
+	transition: var(--animation-speed);
+	padding: var(--spacing-2xs) var(--spacing-m);
+	border-radius: 0.4rem;
+}
 
-/* Here, we can add classes for adding shadows or outlines to buttons. */
+/* Secondary */
+.btn--secondary {
+	background: var(--color-theme-white-10);
+	backdrop-filter: blur(2rem);
+	color: var(--color-theme-white) !important;
+	text-transform: uppercase;
+	font-size: 1.68rem;
+	line-height: 1.6rem;
+	letter-spacing: 1%;
+	font-weight: 500;
+	transition: var(--animation-speed);
+	padding: var(--spacing-2xs) 2.8rem;
+	border-radius: 0.4rem;
+}
 
-/*----------------------------
-## Buttons: Icon buttons
-----------------------------*/
-
-/* We could add classes that include icons for buttons. One option is to encode small icons to base64. */
+/* Secondary Small */
+.btn--secondary-small {
+	background: var(--color-theme-white-10);
+	backdrop-filter: blur(2rem);
+	color: var(--color-theme-white) !important;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	line-height: 1.3;
+	letter-spacing: 0;
+	font-weight: 500;
+	transition: var(--animation-speed);
+	padding: var(--spacing-3xs) var(--spacing-xs);
+	border-radius: 0.4rem;
+}
 
 /* Full screen view for buttons on mobile */
 @media (--mobile-query) {
 
 	.btn--primary.is-full-mobile,
-	.btn--secondary.is-full-mobile {
+	.btn--primary-small.is-full-mobile {
 		width: 100%;
 		text-align: center;
 	}
