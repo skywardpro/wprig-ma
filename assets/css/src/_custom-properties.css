@@ -68,16 +68,50 @@
 	--color-scrollbar: #cbd3e5;
 	--color-scrollbar-bg: #f9fbfc;
 
-	/* Custom editor colors */
-	--color-theme-primary: #e36d60;
-	--color-theme-secondary: #41848f;
-	--color-theme-red: #c0392b;
-	--color-theme-green: #27ae60;
-	--color-theme-blue: #2980b9;
-	--color-theme-yellow: #f1c40f;
+	/* Core colors */
+	--color-theme-primary: #5E2BFF;
+	--color-theme-secondary: #5E2BFF;
+	
+	/* Color - Brand */
+	--color-theme-brand: #5E2BFF;
+	--color-theme-brand-30: rgba(94, 43, 255, 0.3);
+
+	/* Color - Black */
 	--color-theme-black: #1c2833;
+
+	/* Color - White */
+	--color-theme-white: #FFFFFF;
+	--color-theme-white-10: rgba(255, 255, 255, 0.1);
+	--color-theme-white-60: rgba(255, 255, 255, 0.6);
+
+	/* Color - Purple */
+	--color-theme-purple: #5E2BFF;
+	--color-theme-purple-30: rgba(94, 43, 255, 0.3);
+	
+	/* Color - Deep Purple */
+	--color-theme-deep-purple: #120833;
+	--color-theme-deep-purple-10: rgba(1, 24, 41, 0.3);
+
+	/* Color - Red */
+	--color-theme-red: #c0392b;
+
+	/* Color - Green */
+	--color-theme-green: #27ae60;
+
+	/* Color - Blue */
+	--color-theme-blue: #2980b9;
+
+	/* Color - Yellow */
+	--color-theme-yellow: #f1c40f;
+
+	/* Color - Grey */
 	--color-theme-grey: #95a5a6;
-	--color-theme-white: #ecf0f1;
+
+	/* Custom editor colors */
+	--color-theme-gray: #7A7F82;
+	--color-theme-gray-dark: #3F4E5F;
+
+	/* Custom editor colors */
 	--color-custom-daylight: #97c0b7;
 	--color-custom-sun: #eee9d1;
 
