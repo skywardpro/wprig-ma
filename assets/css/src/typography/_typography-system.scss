@@ -6,6 +6,9 @@
 
 // Define typography styles combining font styles, weights, and custom typography
 $typography-styles: (
+    // Font Family
+    "typo--unbounded": (font-family: "Unbounded"),
+
     // Font Style Classes
     "typo--normal": (font-style: normal),
     "typo--italic": (font-style: italic),
@@ -32,8 +35,8 @@ $typography-styles: (
 	"typo--h3": (font-size: 2.419rem, line-height: 1.3, letter-spacing: 0),
 	"typo--subtitle-big": (font-size: 2.016, line-height: 1.15, letter-spacing: 0),
 	"typo--subtitle-small": (font-size: 1.68rem, line-height: 1.2, letter-spacing: 0),
-	"typo--tag-big": (font-size: 1.68rem, line-height: 1, letter-spacing: 0),
-	"typo--tag-small": (font-size: 1.4rem, line-height: 1, letter-spacing: 0),
+	"typo--tag-big": (font-size: 1.68rem, line-height: 1, letter-spacing: 0, text-transform: uppercase),
+	"typo--tag-small": (font-size: 1.4rem, line-height: 1, letter-spacing: 0, text-transform: uppercase),
 
 	// Styles for regular text
     "typo--body-big": (font-size: 1.68rem, line-height: 1.3, letter-spacing: 0),

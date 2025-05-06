@@ -34,4 +34,16 @@
 	border: 3px solid var(--color-scrollbar-bg) !important;
 }
 
+/**
+ * Atomic CSS Classes
+ */
+
+.is-rounded--full {
+	border-radius: calc(infinity * 1px);
+}
+
+.is-list--none {
+	list-style-type: none;
+}
+
 

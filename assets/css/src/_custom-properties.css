@@ -11,11 +11,7 @@
 
 	/* Typography */
 	--global-font-family: "Poppins", sans-serif;
-	--highlight-font-family:
-		"Roboto Condensed",
-		"Helvetica Neue",
-		"Arial Narrow",
-		sans-serif;
+	--highlight-font-family: "Poppins", sans-serif;
 	--global-font-size: 1.4rem;
 	--global-line-height: 1.62;
 

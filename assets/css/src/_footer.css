@@ -2,10 +2,60 @@
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	margin: 1em 0 0;
-	padding: 2em 0;
+	background: var(--color-theme-deep-purple);
+	padding-top: 5.2rem;
+
+	@media (--tablet-query) {
+		padding-top: 6.4rem;
+	}
+
+	@media (--widescreen-query) {
+		padding-top: 10.4rem;
+	}
+
+	@media (--fullhd-query) {
+		padding-top: 14.4rem;
+	}
 }
 
-.site-info {
-	text-align: center;
+.site-footer__top {
+	padding-bottom: 3.2rem;
+	border-bottom: 1px solid var(--color-theme-white-10);
+	margin-bottom: 5.2rem;
+
+	@media (--tablet-query) {
+		padding-bottom: 2.4rem;
+		margin-bottom: 6rem;
+	}
+
+	@media (--desktop-query) {
+		padding-bottom: 4rem;
+	}
+
+	@media (--widescreen-query) {
+		padding-bottom: 8rem;
+		margin-bottom: 8rem;
+	}
+}
+
+.site-footer__bottom-image {
+	margin-top: 5.2rem;
+	width: 100%;
+
+	@media (--tablet-query) {
+		margin-top: 6rem;
+		width: 59.7rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media (--desktop-query) {
+		margin-top: 4rem;
+		width: 78.6rem;
+	}
+
+	@media (--widescreen-query) {
+		margin-top: 6rem;
+		width: 104.8rem;
+	}
 }

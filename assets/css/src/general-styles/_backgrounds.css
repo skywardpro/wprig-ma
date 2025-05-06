@@ -2,12 +2,18 @@
 # Backgrounds
 ----------------------------*/
 
-/* Primary, secondary colors */
-
 .bg-color--primary {
 	background-color: var(--color-theme-primary);
 }
 
 .bg-color--secondary {
 	background-color: var(--color-theme-secondary);
+}
+
+.bg-color--white-10 {
+	background: var(--color-theme-white-10);
+}
+
+.bg-color--gradient {
+	background: linear-gradient(204deg, #471899 0%, #120833 63.94%) !important;
 }

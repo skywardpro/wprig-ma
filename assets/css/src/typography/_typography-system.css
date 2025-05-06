@@ -3,6 +3,10 @@
  *
  * This SCSS file establishes consistent and adaptable typographic styles for various screen sizes using structured maps and mixins.
  */
+.typo--unbounded {
+  font-family: "Unbounded" !important;
+}
+
 .typo--normal {
   font-style: normal !important;
 }
@@ -73,12 +77,14 @@
   font-size: 1.68rem !important;
   line-height: 1 !important;
   letter-spacing: 0 !important;
+  text-transform: uppercase !important;
 }
 
 .typo--tag-small {
   font-size: 1.4rem !important;
   line-height: 1 !important;
   letter-spacing: 0 !important;
+  text-transform: uppercase !important;
 }
 
 .typo--body-big {
@@ -100,6 +106,9 @@
 }
 
 @media (min-width: 769px) {
+  .typo--unbounded__tablet {
+    font-family: "Unbounded" !important;
+  }
   .typo--normal__tablet {
     font-style: normal !important;
   }
@@ -156,11 +165,13 @@
     font-size: 1.68rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
+    text-transform: uppercase !important;
   }
   .typo--tag-small__tablet {
     font-size: 1.4rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
+    text-transform: uppercase !important;
   }
   .typo--body-big__tablet {
     font-size: 1.68rem !important;
@@ -179,6 +190,9 @@
   }
 }
 @media (min-width: 1024px) {
+  .typo--unbounded__desktop {
+    font-family: "Unbounded" !important;
+  }
   .typo--normal__desktop {
     font-style: normal !important;
   }
@@ -235,11 +249,13 @@
     font-size: 1.68rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
+    text-transform: uppercase !important;
   }
   .typo--tag-small__desktop {
     font-size: 1.4rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
+    text-transform: uppercase !important;
   }
   .typo--body-big__desktop {
     font-size: 1.68rem !important;
@@ -258,6 +274,9 @@
   }
 }
 @media (min-width: 1216px) {
+  .typo--unbounded__widescreen {
+    font-family: "Unbounded" !important;
+  }
   .typo--normal__widescreen {
     font-style: normal !important;
   }
@@ -314,11 +333,13 @@
     font-size: 1.68rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
+    text-transform: uppercase !important;
   }
   .typo--tag-small__widescreen {
     font-size: 1.4rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
+    text-transform: uppercase !important;
   }
   .typo--body-big__widescreen {
     font-size: 1.68rem !important;
@@ -337,6 +358,9 @@
   }
 }
 @media (min-width: 1408px) {
+  .typo--unbounded__fullhd {
+    font-family: "Unbounded" !important;
+  }
   .typo--normal__fullhd {
     font-style: normal !important;
   }
@@ -393,11 +417,13 @@
     font-size: 1.68rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
+    text-transform: uppercase !important;
   }
   .typo--tag-small__fullhd {
     font-size: 1.4rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
+    text-transform: uppercase !important;
   }
   .typo--body-big__fullhd {
     font-size: 1.68rem !important;

@@ -4,6 +4,9 @@
 
 /* Primary */
 .btn--primary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	background: var(--color-theme-deep-purple);
 	color: var(--color-theme-white) !important;
 	font-size: 2.016rem;
@@ -17,6 +20,9 @@
 
 /* Primary Small */
 .btn--primary-small {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	background: var(--color-theme-deep-purple);
 	color: var(--color-theme-white) !important;
 	font-size: 1.68rem;
@@ -30,6 +36,9 @@
 
 /* Secondary */
 .btn--secondary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	background: var(--color-theme-white-10);
 	backdrop-filter: blur(2rem);
 	color: var(--color-theme-white) !important;
@@ -45,6 +54,9 @@
 
 /* Secondary Small */
 .btn--secondary-small {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	background: var(--color-theme-white-10);
 	backdrop-filter: blur(2rem);
 	color: var(--color-theme-white) !important;
@@ -58,12 +70,48 @@
 	border-radius: 0.4rem;
 }
 
+/* White */
+.btn--white {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--color-theme-white);
+	color: var(--color-theme-deep-purple) !important;
+	font-size: 2.016rem;
+	line-height: 2rem;
+	letter-spacing: 1%;
+	font-weight: 500;
+	transition: var(--animation-speed);
+	padding: var(--spacing-xs) var(--spacing-l);
+	border-radius: 0.4rem;
+}
+
+/* White Small */
+.btn--white-small {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--color-theme-white);
+	color: var(--color-theme-deep-purple) !important;
+	font-size: 1.68rem;
+	line-height: 2rem;
+	letter-spacing: 1%;
+	font-weight: 500;
+	transition: var(--animation-speed);
+	padding: var(--spacing-2xs) var(--spacing-m);
+	border-radius: 0.4rem;
+}
+
+
 /* Full screen view for buttons on mobile */
 @media (--mobile-query) {
 
 	.btn--primary.is-full-mobile,
-	.btn--primary-small.is-full-mobile {
+	.btn--primary-small.is-full-mobile ,
+	.btn--secondary.is-full-mobile,
+	.btn--secondary-small.is-full-mobile ,
+	.btn--white.is-full-mobile,
+	.btn--white-small.is-full-mobile {
 		width: 100%;
-		text-align: center;
 	}
 }

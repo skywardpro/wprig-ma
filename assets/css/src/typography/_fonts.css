@@ -16,3 +16,81 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+/* Unbounded */
+@font-face {
+	font-family: "Unbounded";
+	src:
+		local("Unbounded Light"),
+		local("Unbounded-Light"),
+		url(../fonts/Unbounded-Light.ttf) format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Unbounded";
+	src:
+		local("Unbounded Regular"),
+		local("Unbounded-Regular"),
+		url(../fonts/Unbounded-Regular.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Unbounded";
+	src:
+		local("Unbounded Medium"),
+		local("Unbounded-Medium"),
+		url(../fonts/Unbounded-Medium.ttf) format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Unbounded";
+	src:
+		local("Unbounded SemiBold"),
+		local("Unbounded-SemiBold"),
+		url(../fonts/Unbounded-SemiBold.ttf) format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Unbounded";
+	src:
+		local("Unbounded Bold"),
+		local("Unbounded-Bold"),
+		url(../fonts/Unbounded-Bold.ttf) format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Unbounded";
+	src:
+		local("Unbounded ExtraBold"),
+		local("Unbounded-ExtraBold"),
+		url(../fonts/Unbounded-ExtraBold.ttf) format("truetype");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Unbounded";
+	src:
+		local("Unbounded Black"),
+		local("Unbounded-Black"),
+		url(../fonts/Unbounded-Black.ttf) format("truetype");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
