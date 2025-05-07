@@ -10,6 +10,10 @@
 	background-color: var(--color-theme-secondary);
 }
 
+.bg-color--white {
+	background: #ffffff;
+}
+
 .bg-color--white-10 {
 	background: var(--color-theme-white-10);
 }

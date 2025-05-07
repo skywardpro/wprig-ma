@@ -209,7 +209,7 @@ class Theme {
 			 *
 			 * The most popular slider library.
 			 */
-			// new WP_Rig_Toolkit\Swiper\Component(),
+			new WP_Rig_Toolkit\Swiper\Component(),
 
 
 			/*----------------------------

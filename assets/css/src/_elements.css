@@ -7,6 +7,7 @@
 html {
 	box-sizing: border-box;
 }
+
 /* stylelint-enable */
 
 /**
@@ -25,6 +26,7 @@ body {
 	background: var(--color-theme-light-purple);
 	/* Fallback for when there is no custom background color defined. */
 }
+
 /* stylelint-enable */
 
 /* stylelint-disable */
@@ -34,6 +36,7 @@ hr {
 	height: 1px;
 	margin-bottom: 1.5em;
 }
+
 /* stylelint-enable */
 
 ul,
@@ -50,8 +53,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 }
 
@@ -69,6 +72,7 @@ img {
 	height: auto;
 	max-width: 100%;
 }
+
 /* stylelint-enable */
 
 /* Extra wide images within figure tags don't overflow the content area. */
@@ -94,7 +98,7 @@ table {
 
 /* FAQ Item */
 .faq-item {
-	border-bottom: 0.1rem solid var(--color-theme-deep-purple-10) ;
+	border-bottom: 0.1rem solid var(--color-theme-deep-purple-10);
 	cursor: default;
 }
 
@@ -126,4 +130,40 @@ table {
 	opacity: 1;
 }
 
+/* Blog Post Swiper */
 
+.post-swiper .swiper-pagination-bullet {
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: var(--color-theme-white);
+	opacity: 1;
+}
+
+.post-swiper .swiper-pagination-bullet-active {
+	width: 1rem;
+	height: 1rem;
+	background-color: var(--color-theme-deep-purple);
+}
+
+.post-swiper .post-swiper__slide {
+	width: 30.4rem !important;
+	height: auto;
+    flex-shrink: 0;
+	box-shadow:
+		-6px 7px 21px 0px rgba(0, 0, 0, 0.1),
+		-24px 30px 38px 0px rgba(0, 0, 0, 0.09),
+		-53px 67px 51px 0px rgba(0, 0, 0, 0.05),
+		-95px 119px 61px 0px rgba(0, 0, 0, 0.01),
+		-148px 186px 67px 0px rgba(0, 0, 0, 0);
+
+		@media (--tablet-query) {
+			width: 34rem !important;
+		}
+}
+
+.post-swiper .post-swiper__thumbnail {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 19.3rem;
+}

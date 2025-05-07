@@ -48,7 +48,7 @@
 	* Read more about effective tecniques at the link below
 	* @link: https://docs.wprig.org/assets-optimization/custom-properties
 	**/
-	--global-font-color: #333;
+	--global-font-color: var(--color-theme-deep-purple);
 	--border-color-dark: #333;
 	--border-color-light: #ccc;
 	--color-link: #0073aa;

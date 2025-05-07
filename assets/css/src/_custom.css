@@ -42,8 +42,16 @@
 	border-radius: calc(infinity * 1px);
 }
 
+.is-rounded--4xs {
+	border-radius: var(--spacing-4xs);
+}
+
 .is-list--none {
 	list-style-type: none;
+}
+
+.is-overflow--vissible {
+	overflow: visible !important;
 }
 
 

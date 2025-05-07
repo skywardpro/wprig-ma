@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Template part for displaying FAQ
+ * Template part for displaying FAQ Section
  *
  * @package wp_rig
  */
 
 namespace WP_Rig\WP_Rig;
 ?>
-<section id="faq" class="faq py-3xl pt-6xl__widescreen pb-5xl__widescreen">
+<section id="faq" class="faq pb-l mb-7xl mb-0__desktop pb-xl__desktop mb-2xl__widescreen">
 	<div class="container">
 
 		<!-- Heading -->

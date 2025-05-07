@@ -1,24 +1,22 @@
 /**
- * File global.ts.
+ * File elements-configuration.ts
  *
- * Handles global TypeScript for your theme.
+ * Contains calls, inits, and configurations for your third-party plugins.
  */
-
-interface Window {
-	mobileBreakpoint: number;
-	isWidthMobile: () => boolean;
-	wpRig?: Element | null;
+async function initElementsConfiguration() {
+    /*
+     * Init Working With PostSwiper 
+     *
+     * Where: PostSwiper
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.post-swiper')) {
+        const postSwiper = await import('./elements-configuration/postSwiper');
+    }
 }
 
-declare let window: Window;
-
-window.mobileBreakpoint = 55;
-
-window.isWidthMobile = (): boolean => {
-	const fontSizeStr = getComputedStyle(document.documentElement).fontSize.slice(0, -2);
-	const fontSize = parseFloat(fontSizeStr);
-	const emValue = window.innerWidth / fontSize;
-	const test = document.querySelector('.wp-rig');
-	window.wpRig = test;
-	return emValue <= window.mobileBreakpoint;
-};
+// Run once after DOMContentLoaded event triggered.
+document.addEventListener('DOMContentLoaded', function () {
+    initElementsConfiguration();
+});

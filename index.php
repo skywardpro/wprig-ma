@@ -21,6 +21,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 ?>
 	<main id="primary" class="site-main">
 
+		<!-- Blog - Section -->
+		<?php echo get_template_part('template-parts/sections/blog') ?>
+
 		<!-- FAQ - Section -->
 		<?php echo get_template_part('template-parts/sections/faq') ?>
 		
