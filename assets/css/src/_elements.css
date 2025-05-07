@@ -22,7 +22,7 @@ html {
 
 /* stylelint-disable */
 body {
-	background: #fff;
+	background: var(--color-theme-light-purple);
 	/* Fallback for when there is no custom background color defined. */
 }
 /* stylelint-enable */
@@ -81,6 +81,7 @@ table {
 	width: 100%;
 }
 
+/* Clutch Award */
 .clutch-award {
 	@media (--desktop-query) {
 		width: 5.2rem;
@@ -90,3 +91,39 @@ table {
 		width: 9.25rem;
 	}
 }
+
+/* FAQ Item */
+.faq-item {
+	border-bottom: 0.1rem solid var(--color-theme-deep-purple-10) ;
+	cursor: default;
+}
+
+.faq-item.active {
+	padding-bottom: var(--spacing-l);
+}
+
+.faq-item.active .faq-item__banner {
+	padding-bottom: 0 !important;
+}
+
+.faq-item__arrow-icon {
+	transition: all linear var(--animation-speed);
+}
+
+.faq-item.active .faq-item__arrow-icon {
+	rotate: 180deg;
+}
+
+.faq-item__content {
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity var(--animation-speed) linear;
+}
+
+.faq-item.active .faq-item__content {
+	height: auto;
+	opacity: 1;
+}
+
+

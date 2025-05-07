@@ -62,7 +62,7 @@
 }
 
 .typo--subtitle-big {
-  font-size: 2.016 !important;
+  font-size: 2.016rem !important;
   line-height: 1.15 !important;
   letter-spacing: 0 !important;
 }
@@ -74,6 +74,7 @@
 }
 
 .typo--tag-big {
+  font-family: "Unbounded" !important;
   font-size: 1.68rem !important;
   line-height: 1 !important;
   letter-spacing: 0 !important;
@@ -81,6 +82,7 @@
 }
 
 .typo--tag-small {
+  font-family: "Unbounded" !important;
   font-size: 1.4rem !important;
   line-height: 1 !important;
   letter-spacing: 0 !important;
@@ -152,7 +154,7 @@
     letter-spacing: 0 !important;
   }
   .typo--subtitle-big__tablet {
-    font-size: 2.016 !important;
+    font-size: 2.016rem !important;
     line-height: 1.15 !important;
     letter-spacing: 0 !important;
   }
@@ -162,12 +164,14 @@
     letter-spacing: 0 !important;
   }
   .typo--tag-big__tablet {
+    font-family: "Unbounded" !important;
     font-size: 1.68rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
     text-transform: uppercase !important;
   }
   .typo--tag-small__tablet {
+    font-family: "Unbounded" !important;
     font-size: 1.4rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
@@ -236,7 +240,7 @@
     letter-spacing: 0 !important;
   }
   .typo--subtitle-big__desktop {
-    font-size: 2.016 !important;
+    font-size: 2.016rem !important;
     line-height: 1.15 !important;
     letter-spacing: 0 !important;
   }
@@ -246,12 +250,14 @@
     letter-spacing: 0 !important;
   }
   .typo--tag-big__desktop {
+    font-family: "Unbounded" !important;
     font-size: 1.68rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
     text-transform: uppercase !important;
   }
   .typo--tag-small__desktop {
+    font-family: "Unbounded" !important;
     font-size: 1.4rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
@@ -320,7 +326,7 @@
     letter-spacing: 0 !important;
   }
   .typo--subtitle-big__widescreen {
-    font-size: 2.016 !important;
+    font-size: 2.016rem !important;
     line-height: 1.15 !important;
     letter-spacing: 0 !important;
   }
@@ -330,12 +336,14 @@
     letter-spacing: 0 !important;
   }
   .typo--tag-big__widescreen {
+    font-family: "Unbounded" !important;
     font-size: 1.68rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
     text-transform: uppercase !important;
   }
   .typo--tag-small__widescreen {
+    font-family: "Unbounded" !important;
     font-size: 1.4rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
@@ -404,7 +412,7 @@
     letter-spacing: 0 !important;
   }
   .typo--subtitle-big__fullhd {
-    font-size: 2.016 !important;
+    font-size: 2.016rem !important;
     line-height: 1.15 !important;
     letter-spacing: 0 !important;
   }
@@ -414,12 +422,14 @@
     letter-spacing: 0 !important;
   }
   .typo--tag-big__fullhd {
+    font-family: "Unbounded" !important;
     font-size: 1.68rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;
     text-transform: uppercase !important;
   }
   .typo--tag-small__fullhd {
+    font-family: "Unbounded" !important;
     font-size: 1.4rem !important;
     line-height: 1 !important;
     letter-spacing: 0 !important;

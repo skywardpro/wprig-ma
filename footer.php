@@ -13,7 +13,7 @@ namespace WP_Rig\WP_Rig;
 
 ?>
 
-<footer class="site-footer bg-color--gradient">
+<footer class="site-footer bg-color--gradient mt-6xl mt-0__desktop">
 	<div class="container">
 
 		<!-- Footer Top -->
