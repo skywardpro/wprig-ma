@@ -33,7 +33,7 @@ $post_ids = get_posts( array(
 					<a href="<?php echo get_permalink($post_id) ?>" class="swiper-slide is-flex flex-direction--column post-swiper__slide is-rounded--4xs is-clipped bg-color--white">
 
 						<!-- Thumbnail -->
-						<img width="304" height="193" src="<?php echo get_the_post_thumbnail_url( $post_id, 'medium' ) ?>" alt="Basic Text" class="is-block post-swiper__thumbnail" />
+						<img width="304" height="193" src="<?php echo get_the_post_thumbnail_url( $post_id, 'medium' ) ?>" alt="<?php echo get_the_title( $post_id ) ?>" class="is-block post-swiper__thumbnail" />
 
 
 

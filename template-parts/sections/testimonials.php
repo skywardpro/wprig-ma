@@ -40,7 +40,7 @@ $post_ids = get_posts( array(
 
 						<!-- Ava -->
 						<div class="testimonials-swiper__ava-wrapper mr-auto mb-m">
-							<img width="64" height="64" src="<?php echo get_field('author_image', $post_id)['sizes']['thumbnail'] ?>" alt="" class="testimonials-swiper__ava is-rounded--full is-clipped">
+							<img width="64" height="64" src="<?php echo get_field('author_image', $post_id)['sizes']['thumbnail'] ?>" alt="<?php echo get_field('author_name', $post_id) ?>" class="testimonials-swiper__ava is-rounded--full is-clipped">
 						</div>
 
 						<!-- Quote -->
