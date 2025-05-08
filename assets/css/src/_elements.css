@@ -155,6 +155,7 @@ table {
 		-53px 67px 51px 0px rgba(0, 0, 0, 0.05),
 		-95px 119px 61px 0px rgba(0, 0, 0, 0.01),
 		-148px 186px 67px 0px rgba(0, 0, 0, 0);
+	cursor: pointer !important;
 
 	@media (--tablet-query) {
 		width: 34rem !important;
