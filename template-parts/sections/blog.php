@@ -20,7 +20,7 @@ $post_ids = get_posts( array(
 
 		<!-- Heading -->
 		<h2 class="typo--tag-small typo--tag-big__desktop typo--regular color--purple mt-0 mb-xl mb-m__tablet mb-xl__desktop mb-3xl__widescreen">
-			[ BLOG ]
+			[&nbsp;&nbsp;BLOG&nbsp;&nbsp;]
 		</h2>
 
 		<!-- Post Swiper -->

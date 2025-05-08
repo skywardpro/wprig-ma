@@ -13,7 +13,7 @@ namespace WP_Rig\WP_Rig;
 
 		<!-- Heading -->
 		<h2 class="typo--tag-small typo--tag-big__desktop typo--regular color--purple mt-0 mb-xs mb-l__desktop">
-			[ FAQ ]
+			[&nbsp;&nbsp;FAQ&nbsp;&nbsp;]
 		</h2>
 
 		<!-- Item 1 -->

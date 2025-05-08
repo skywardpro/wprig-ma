@@ -27,7 +27,7 @@ namespace WP_Rig\WP_Rig;
 				<div class="column order--2__tablet">
 					<!-- Find Us Socials -->
 					<h3 class="typo--tag-small typo--regular typo--unbounded color--purple mt-0 typo--tag-big__tablet">
-						[ find us ]
+						[&nbsp;&nbsp;find us&nbsp;&nbsp;]
 					</h3>
 					<ul class="is-flex align-items--center pl-0 mb-0 mt-m is-list--none">
 						<li class="mr-2xs mr-xs__tablet">
@@ -80,7 +80,7 @@ namespace WP_Rig\WP_Rig;
 				<div class="column mt-xl mt-0__tablet order--1__tablet">
 					<!-- Menu Links -->
 					<h3 class="typo--tag-small typo--regular typo--unbounded color--purple mt-0 mb-m typo--tag-big__tablet">
-						[ menu ]
+						[&nbsp;&nbsp;menu&nbsp;&nbsp;]
 					</h3>
 					<nav class="columns is-gapless is-mobile">
 						<div class="column is-half">

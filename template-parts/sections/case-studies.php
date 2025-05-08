@@ -20,7 +20,7 @@ $post_ids = get_posts( array(
 
 		<!-- Heading -->
 		<h2 class="typo--tag-small typo--tag-big__desktop typo--regular color--purple mt-0 mb-xs mb-m__desktop">
-			[ CASE STUDIES ]
+			[&nbsp;&nbsp;CASE STUDIES&nbsp;&nbsp;]
 		</h2>
 
 		<!-- Subheading -->
