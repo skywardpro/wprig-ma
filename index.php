@@ -19,17 +19,20 @@ get_header();
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<!-- Testimonials - Section -->
-		<?php echo get_template_part('template-parts/sections/testimonials') ?>
+	<!-- Case Studies - Section -->
+	<?php echo get_template_part( 'template-parts/sections/case-studies' ) ?>
 
-		<!-- Blog - Section -->
-		<?php echo get_template_part('template-parts/sections/blog') ?>
+	<!-- Testimonials - Section -->
+	<?php echo get_template_part( 'template-parts/sections/testimonials' ) ?>
 
-		<!-- FAQ - Section -->
-		<?php echo get_template_part('template-parts/sections/faq') ?>
-		
-	</main>
+	<!-- Blog - Section -->
+	<?php echo get_template_part( 'template-parts/sections/blog' ) ?>
+
+	<!-- FAQ - Section -->
+	<?php echo get_template_part( 'template-parts/sections/faq' ) ?>
+
+</main>
 <?php
 get_footer();

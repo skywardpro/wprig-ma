@@ -271,3 +271,67 @@ table {
 		}
 	}
 }
+
+/* Case Studies Swiper */
+
+.case-studies-swiper .swiper-wrapper {
+	@media (--desktop-query) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2.4rem;
+	}
+}
+
+.case-studies-swiper .swiper-pagination-bullet {
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: var(--color-theme-white);
+	opacity: 1;
+}
+
+.case-studies-swiper .swiper-pagination-bullet-active {
+	width: 1rem;
+	height: 1rem;
+	background-color: var(--color-theme-deep-purple);
+}
+
+.case-studies-swiper .case-studies-swiper__slide {
+	position: relative;
+	box-sizing: border-box;
+	width: 30.4rem !important;
+	max-width: 30.4rem !important;
+	height: auto;
+	flex-shrink: 0;
+	backdrop-filter: blur(48.5px);
+	box-shadow: 0px 8px 20px 0px rgba(29, 25, 30, 0.15);
+
+	cursor: pointer !important;
+
+	@media (--tablet-query) {
+		width: 34rem !important;
+		max-width: 34rem !important;
+	}
+	
+	@media (--desktop-query) {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+.has-corner-decor {
+	position: relative;
+}
+
+.has-corner-decor:after {
+	content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuMzMzMjUyIDBIMTMuMzMzM0MxMy44ODU1IDAgMTQuMzMzMyAwLjQ0NzcxNSAxNC4zMzMzIDFWMTRMMC4zMzMyNTIgMFoiIGZpbGw9IiNFOUU5RTkiLz4KPC9zdmc+Cg==");
+	position: absolute;
+	top: 0.8rem;
+	right: 0.8rem;
+}
+
+.case-studies-swiper .case-studies-swiper__thumbnail {
+	object-fit: cover;
+	object-position: center;
+	width: 13.5rem;
+	height: 3rem;
+}

@@ -54,4 +54,32 @@
 	overflow: visible !important;
 }
 
+.is-w-100 {
+	width: 100%;
+}
+
+.is-w-auto {
+	width: auto;
+}
+
+@media (--tablet-query) {
+	.is-w-100__tablet {
+		width: 100%;
+	}
+	
+	.is-w-auto__tablet {
+		width: auto;
+	}
+}
+
+@media (--desktop-query) {
+	.is-w-100__desktop {
+		width: 100%;
+	}
+	
+	.is-w-auto__desktop {
+		width: auto;
+	}
+}
+
 
