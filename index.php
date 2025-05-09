@@ -27,6 +27,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	<!-- Testimonials - Section -->
 	<?php echo get_template_part( 'template-parts/sections/testimonials' ) ?>
 
+	<!-- Our Partners - Section -->
+	<?php echo get_template_part( 'template-parts/sections/our-partners' ) ?>
+
 	<!-- Blog - Section -->
 	<?php echo get_template_part( 'template-parts/sections/blog' ) ?>
 

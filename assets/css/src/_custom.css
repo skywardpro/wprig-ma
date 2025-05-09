@@ -46,6 +46,10 @@
 	border-radius: var(--spacing-4xs);
 }
 
+.is-rounded--5xs {
+	border-radius: 0.28rem;
+}
+
 .is-list--none {
 	list-style-type: none;
 }

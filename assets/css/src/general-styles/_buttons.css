@@ -1,6 +1,11 @@
 /*----------------------------
 # Buttons
 ----------------------------*/
+/* Rest styles for html button elemetn */
+.reset-button-styles {
+	border: none;
+	background: none;
+}
 
 /* Primary */
 .btn--primary {

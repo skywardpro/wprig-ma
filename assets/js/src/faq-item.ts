@@ -1,3 +1,8 @@
+/**
+ * Handles FAQ item toggle behavior:
+ * - Expands/collapses FAQ items on click.
+ * - Ensures only one FAQ item is open at a time.
+ */
 document.addEventListener("DOMContentLoaded", function () {
 
     const items = document.querySelectorAll('.faq-item');

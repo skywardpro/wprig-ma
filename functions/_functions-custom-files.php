@@ -64,3 +64,23 @@ function enqueue_faq_item_js() {
 	wp_script_add_data( 'faq-item', 'precache', true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_faq_item_js', 999 );
+
+
+/**
+ * Enqueue Elements Configuration script
+ *
+ * Add the script file with all configurations for you .js plugins and other scripts.
+ * https://docs.wprig.org/assets-optimization/elements-configuration
+ */
+function enqueue_our_partners_cards_js() {
+	wp_enqueue_script(
+		'our-partners-cards',
+		get_theme_file_uri( '/assets/js/our-partners-cards.min.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+	wp_script_add_data( 'our-partners-cards', 'defer', true );
+	wp_script_add_data( 'our-partners-cards', 'precache', true );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_our_partners_cards_js', 999 );

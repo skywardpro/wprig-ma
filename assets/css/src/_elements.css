@@ -335,3 +335,44 @@ table {
 	width: 13.5rem;
 	height: 3rem;
 }
+
+/* Our Partners - Section */
+.our-partners-cards__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--spacing-xs);
+
+	@media (--tablet-query) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--spacing-2xs);
+	}
+	
+	@media (--desktop-query) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	@media (--widescreen-query) {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+.our-partners-cards__item {
+	box-sizing: border-box;
+	height: 8.6rem;
+
+	@media (--desktop-query) {
+		height: 12rem;
+	}
+}
+
+.our-partners-cards__item-image {
+	width: auto;
+	height: auto;
+	max-width: 10.5rem;
+	max-height: 3rem;
+
+	@media (--tablet-query) {
+		max-width: 13.5rem;
+		max-height: 4.5rem;
+	}
+}
