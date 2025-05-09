@@ -13,7 +13,7 @@
 	align-items: center;
 	justify-content: center;
 	background: var(--color-theme-deep-purple);
-	color: var(--color-theme-white) !important;
+	color: var(--color-theme-white);
 	font-size: 2.016rem;
 	line-height: 2rem;
 	letter-spacing: 1%;
@@ -21,6 +21,7 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-xs) var(--spacing-l);
 	border-radius: 0.4rem;
+
 }
 
 /* Primary Small */
@@ -29,7 +30,7 @@
 	align-items: center;
 	justify-content: center;
 	background: var(--color-theme-deep-purple);
-	color: var(--color-theme-white) !important;
+	color: var(--color-theme-white);
 	font-size: 1.68rem;
 	line-height: 2rem;
 	letter-spacing: 1%;
@@ -37,6 +38,22 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-2xs) var(--spacing-m);
 	border-radius: 0.4rem;
+}
+
+/* States - Primary */
+.btn--primary:hover,
+.btn--primary-small:hover {
+	background: var(--color-theme-white);
+	color: var(--color-theme-deep-purple);
+}
+
+.btn--primary:disabled,
+.btn--primary-small:disabled,
+.btn--primary[disabled],
+.btn--primary-small[disabled] {
+	background: var(--color-theme-gray);
+	color: var(--color-theme-gray-dark);
+	pointer-events: none;
 }
 
 /* Secondary */
@@ -75,13 +92,36 @@
 	border-radius: 0.4rem;
 }
 
+/* States - Secondary */
+.btn--secondary:hover,
+.btn--secondary-small:hover {	
+	background: var(--color-theme-white-60);
+}
+
+
+.btn--secondary:active,
+.btn--secondary-small:active,
+.btn--secondary:focus,
+.btn--secondary-small:focus {
+	background-color: var(--color-theme-white-70);
+}
+
+.btn--secondary:disabled,
+.btn--secondary-small:disabled,
+.btn--secondary[disabled],
+.btn--secondary-small[disabled] {
+	background: var(--color-theme-white-10);
+	color: var(--color-theme-dgray-dark);
+	pointer-events: none;
+}
+
 /* White */
 .btn--white {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	background: var(--color-theme-white);
-	color: var(--color-theme-deep-purple) !important;
+	color: var(--color-theme-deep-purple);
 	font-size: 2.016rem;
 	line-height: 2rem;
 	letter-spacing: 1%;
@@ -97,7 +137,7 @@
 	align-items: center;
 	justify-content: center;
 	background: var(--color-theme-white);
-	color: var(--color-theme-deep-purple) !important;
+	color: var(--color-theme-deep-purple);
 	font-size: 1.68rem;
 	line-height: 2rem;
 	letter-spacing: 1%;
@@ -105,6 +145,22 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-2xs) var(--spacing-m);
 	border-radius: 0.4rem;
+}
+
+/* States - White */
+.btn--white:hover,
+.btn--white-small:hover {
+	background-color: var(--color-theme-deep-purple);
+	color: var(--color-theme-white);
+}
+
+.btn--white:disabled,
+.btn--white-small:disabled,
+.btn--white[disabled],
+.btn--white-small[disabled] {
+	background: var(--color-theme-gray);
+	color: var(--color-theme-disabledgray-dark);
+	pointer-events: none;
 }
 
 
