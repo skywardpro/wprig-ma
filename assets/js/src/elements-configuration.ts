@@ -36,6 +36,17 @@ async function initElementsConfiguration() {
     if (document.querySelector('.case-studies-swiper')) {
         const caseStudiesSwiper = await import('./elements-configuration/caseStudiesSwiper');
     }
+    
+    /*
+     * Init Working With NewsroomSwiper 
+     *
+     * Where: NewsroomSwiper
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.newsroom-swiper')) {
+        const newsroomSwiper = await import('./elements-configuration/newsroomSwiper');
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.

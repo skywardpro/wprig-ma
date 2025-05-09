@@ -21,6 +21,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 ?>
 <main id="primary" class="site-main">
 
+	<!-- Newsroom - Section -->
+	<?php echo get_template_part( 'template-parts/sections/newsroom' ) ?>
+	
 	<!-- Case Studies - Section -->
 	<?php echo get_template_part( 'template-parts/sections/case-studies' ) ?>
 

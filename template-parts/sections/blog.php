@@ -58,7 +58,7 @@ $post_ids = get_posts( array(
 				?>
 			</div>
 			<!-- Pagination -->
-			<div class="post-swiper__pagination mt-m is-flex justify-content--center__mobile align-items--center"></div>
+			<div class="post-swiper__pagination mt-m is-flex justify-content--center justify-content--left__tablet align-items--center"></div>
 		</div>
 	</div>
 </section>
