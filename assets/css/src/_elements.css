@@ -304,18 +304,22 @@ table {
 	flex-shrink: 0;
 	backdrop-filter: blur(48.5px);
 	box-shadow: 0px 8px 20px 0px rgba(29, 25, 30, 0.15);
-
+	transition: all var(--animation-speed) linear;
 	cursor: pointer !important;
 
 	@media (--tablet-query) {
 		width: 34rem !important;
 		max-width: 34rem !important;
 	}
-	
+
 	@media (--desktop-query) {
 		width: 100% !important;
 		max-width: 100% !important;
 	}
+}
+
+.case-studies-swiper .case-studies-swiper__slide:hover {
+	background: var(--color-theme-white);
 }
 
 .has-corner-decor {
@@ -346,11 +350,11 @@ table {
 		grid-template-columns: repeat(3, 1fr);
 		gap: var(--spacing-2xs);
 	}
-	
+
 	@media (--desktop-query) {
 		grid-template-columns: repeat(4, 1fr);
 	}
-	
+
 	@media (--widescreen-query) {
 		grid-template-columns: repeat(5, 1fr);
 	}

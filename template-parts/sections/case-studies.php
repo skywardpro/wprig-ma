@@ -40,7 +40,7 @@ $post_ids = get_posts( array(
 				foreach ( $post_ids as $index => $post_id ) {
 					?>
 					<!-- Post Swiper Card -->
-					<a href="<?php echo get_permalink( $post_id ) ?>" class="swiper-slide is-flex flex-direction--column case-studies-swiper__slide is-rounded--4xs bg-color--white p-m p-xl__desktop has-corner-decor">
+					<a href="<?php echo get_permalink( $post_id ) ?>" class="swiper-slide is-flex flex-direction--column case-studies-swiper__slide is-rounded--4xs bg-color--white-60 p-m p-xl__desktop has-corner-decor">
 
                         <!-- Number -->
                         <span class="color--gray typo--body-smal mb-xs">
