@@ -29,7 +29,7 @@ $post_ids = get_posts( array(
 		</p>
 
 		<!-- Caption -->
-		<p class="typo--body-big typo--medium mt-0 mb-l typo--subtitle-big__desktop typo--semibold mb-3xl__widescreen">
+		<p class="typo--body-big typo--medium mt-0 mb-l typo--subtitle-big__desktop typo--semibold__desktop mb-3xl__widescreen">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit
 		</p>
 

@@ -1,4 +1,4 @@
-<butt?php
+<?php
 
 /**
  * Template part for displaying Three Things Section
