@@ -453,3 +453,25 @@ table {
 	width: auto;
 	height: auto;
 }
+
+/* Tree Things */
+.three-thigs__body {
+	@media (--desktop-query) {
+		position: relative;
+	}
+}
+.three-things__main-image {
+	width: 100%;
+
+	@media (--desktop-query) {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 91%;
+		transform: translateX(-50%);
+	}
+
+	@media (--fullhd-query) {
+		width: 71%;
+	}
+}

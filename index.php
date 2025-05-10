@@ -23,6 +23,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 	<!-- Newsroom - Section -->
 	<?php echo get_template_part( 'template-parts/sections/newsroom' ) ?>
+
+	<!-- Three Things - Section -->
+	<?php echo get_template_part( 'template-parts/sections/three-thigs' ) ?>
 	
 	<!-- Case Studies - Section -->
 	<?php echo get_template_part( 'template-parts/sections/case-studies' ) ?>

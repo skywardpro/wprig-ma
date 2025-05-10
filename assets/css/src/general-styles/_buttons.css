@@ -21,6 +21,7 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-xs) var(--spacing-l);
 	border-radius: 0.4rem;
+	border: 0;
 
 }
 
@@ -38,6 +39,7 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-2xs) var(--spacing-m);
 	border-radius: 0.4rem;
+	border: 0;
 }
 
 /* States - Primary */
@@ -72,6 +74,7 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-2xs) 2.8rem;
 	border-radius: 0.4rem;
+	border: 0;
 }
 
 /* Secondary Small */
@@ -90,6 +93,7 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-3xs) var(--spacing-xs);
 	border-radius: 0.4rem;
+	border: 0;
 }
 
 /* States - Secondary */
@@ -129,6 +133,7 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-xs) var(--spacing-l);
 	border-radius: 0.4rem;
+	border: 0;
 }
 
 /* White Small */
@@ -145,6 +150,7 @@
 	transition: var(--animation-speed);
 	padding: var(--spacing-2xs) var(--spacing-m);
 	border-radius: 0.4rem;
+	border: 0;
 }
 
 /* States - White */

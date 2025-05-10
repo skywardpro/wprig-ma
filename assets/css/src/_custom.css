@@ -37,6 +37,13 @@
 /**
  * Atomic CSS Classes
  */
+ .has-box-shaddow {
+	box-shadow: 0 8px 20px #1d191e26;
+ }
+
+.has-backdrop-blur {
+	backdrop-filter: blur(2rem);
+}
 
 .is-rounded--full {
 	border-radius: calc(infinity * 1px);

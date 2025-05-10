@@ -15,7 +15,7 @@ $post_ids = get_posts( array(
 ) );
 
 ?>
-<section id="blog" class="blog mb-6xl mb-8xl__desktop pb-xl__widescreen">
+<section id="case-studies" class="case-studies mb-6xl mb-8xl__desktop pb-xl__widescreen">
 	<div class="container">
 
 		<!-- Heading -->
