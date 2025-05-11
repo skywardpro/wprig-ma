@@ -225,7 +225,6 @@ table {
 	min-width: 30.4rem !important;
 	height: auto;
 	flex-shrink: 0;
-	cursor: default !important;
 
 	@media (--tablet-query) {
 		/* width: 31rem !important; */

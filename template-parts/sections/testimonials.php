@@ -36,27 +36,33 @@ $post_ids = get_posts( array(
 				foreach ( $post_ids as $post_id ) {
 					?>
 					<!-- Slide -->
-					<div class="swiper-slide testimonials-swiper__slide is-flex flex-direction--column">
-
+					<a href="<?php echo get_permalink( $post_id ) ?>" class="swiper-slide testimonials-swiper__slide color--deep-purple is-flex flex-direction--column">
 						<!-- Ava -->
 						<div class="testimonials-swiper__ava-wrapper mr-auto mb-m">
-							<img width="64" height="64" src="<?php echo get_field('author_image', $post_id)['sizes']['thumbnail'] ?>" alt="<?php echo get_field('author_name', $post_id) ?>" class="testimonials-swiper__ava is-rounded--full is-clipped">
+							<img width="64" height="64" src="<?php echo get_field( 'author_image', $post_id )['sizes']['thumbnail'] ?>" alt="<?php echo get_field( 'author_name', $post_id ) ?>" class="testimonials-swiper__ava is-rounded--full is-clipped">
 						</div>
 
 						<!-- Quote -->
-						<p class="typo--body-big typo--medium mt-0 mb-m typo--body__tablet mb-l__tablet typo--body-big__widescreen mb-m__widescreeen">
-							<?php echo get_field('testimonial_text', $post_id) ?>                        
+						<p class="testimonials-swiper__quote-text typo--body-big typo--medium mt-0 mb-m typo--body__tablet mb-l__tablet typo--body-big__widescreen mb-m__widescreeen">
+							<?php
+							// Limit text lengt
+							$max_length = 124;
+							$text = get_field( 'testimonial_text', $post_id );
+							$cuted_text = substr( $text, 0, $max_length );
+							// Echo text
+							echo $cuted_text . ( strlen( $text ) > $max_length ? '...' : '' );
+							?>
 						</p>
 
 						<!-- Name -->
 						<span class="typo--subtitle-small typo--semibold mt-auto mb-3xs typo--subtitle-big__widescreen">
-							<?php echo get_field('author_name', $post_id) ?>
+							<?php echo get_field( 'author_name', $post_id ) ?>
 						</span>
 						<!-- Company -->
 						<span class="typo--body-big color--gray typo--medium">
-                            <?php echo get_field('author_position', $post_id) ?>
+							<?php echo get_field( 'author_position', $post_id ) ?>
 						</span>
-					</div>
+					</a>
 					<?php
 				}
 				?>
