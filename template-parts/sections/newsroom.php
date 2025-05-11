@@ -33,13 +33,20 @@ $post_ids = get_posts( array(
 			<div class="swiper-wrapper align-items--stretch">
 				<?php
 				foreach ( $post_ids as $post_id ) {
+
+					$url = get_post_meta( $post_id, '_manp_source_url', true );
+					$host = parse_url( $url, PHP_URL_HOST ); // "en.example.com"				
+					$news_source_name = 'undefined';
+					if ( preg_match( '/^(?:.*\.)?([a-zA-Z0-9-]+)\.[a-zA-Z]{2,}$/', $host, $matches ) ) {
+						$news_source_name = $matches[1]; // "example"
+					}
 					?>
 					<!-- newsroom Swiper Card -->
-            
-					<a href="<?php echo get_post_meta($post_id, '_manp_source_url', true) ?>" target="_blank" class="swiper-slide is-flex flex-direction--column newsroom-swiper__slide is-rounded--4xs is-clipped bg-color--white p-m">
+
+					<a href="<?php echo $url ?>" target="_blank" class="swiper-slide is-flex flex-direction--column newsroom-swiper__slide is-rounded--4xs is-clipped bg-color--white p-m">
 
 						<!-- Logo -->
-						<img width="80" height="20" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/forbes-logo.png" alt="" class="newsroom-swiper__logo mb-2xl" />
+						<img width="80" height="20" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/newsroom-<?php echo $news_source_name ?>-logo.webp" alt="<?php echo strtoupper($news_source_name) ?> Logo" class="newsroom-swiper__logo mb-2xl" />
 
 						<!-- Ttile -->
 						<h3 class="typo--subtitle-big typo--semibold color--deep-purple mt-0 mb-l ">

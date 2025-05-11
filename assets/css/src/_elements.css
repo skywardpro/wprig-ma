@@ -408,6 +408,11 @@ table {
 	}
 }
 
+.newsroom-swiper .newsroom-swiper__logo {
+	height: 2rem;
+	object-fit: contain;
+}
+
 .newsroom-swiper .newsroom-swiper__thumbnail {
 	object-fit: cover;
 	object-position: center;
