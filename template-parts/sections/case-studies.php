@@ -34,7 +34,7 @@ $post_ids = get_posts( array(
 		</p>
 
 		<!-- Post Swiper (mobile) & Grid (desktop) -->
-		<div class="swiper case-studies-swiper is-overflow--vissible mb-l mb-xl__desktop">
+		<div class="swiper case-studies-swiper overflow--visible mb-l mb-xl__desktop">
 			<div class="swiper-wrapper align-items--stretch">
 				<?php
 				foreach ( $post_ids as $index => $post_id ) {
@@ -66,7 +66,7 @@ $post_ids = get_posts( array(
 
 		<!-- CTA Button -->
 		<div class="is-flex justify-content--center">
-			<a href="#" class="btn--primary-small is-w-100 is-w-auto__tablet">More case studies</a>
+			<a href="#" class="btn--primary-small is-full-mobile">More case studies</a>
 		</div>
 	</div>
 </section>

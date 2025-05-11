@@ -39,7 +39,7 @@ namespace WP_Rig\WP_Rig;
 				<div class="column is-4-desktop mb-l mb-m__tablet mb-5xl__desktop">
 					<div class="px-3xs__desktop">
 						<!-- Card 1 -->
-						<div class="has-box-shaddow has-backdrop-blur bg-color--white-60 is-rounded--4xs p-xs p-m__tablet p-l__desktop">
+						<div class="has-box-shadow bg-backdrop--blur bg-color--white-60 is-rounded--4xs p-xs p-m__tablet p-l__desktop">
 							<!-- Title -->
 							<h3 class="typo--subtitle-big typo--semibold mt-0 mb-m mb-l__desktop">
 								Crypto-nativesince 2012
@@ -59,7 +59,7 @@ namespace WP_Rig\WP_Rig;
 				<div class="column is-full is-4-desktop mb-l mb-m__tablet mb-5xl__desktop">
 					<div class="pr-xs__desktop">
 						<!-- Card 2 -->
-						<div class="has-box-shaddow has-backdrop-blur bg-color--white-60 is-rounded--4xs p-xs p-m__tablet p-l__desktop">
+						<div class="has-box-shadow bg-backdrop--blur bg-color--white-60 is-rounded--4xs p-xs p-m__tablet p-l__desktop">
 							<!-- Title -->
 							<h3 class="typo--subtitle-big typo--semibold mt-0 mb-m mb-l__desktop">
 								Marketing-Driven PR
@@ -75,7 +75,7 @@ namespace WP_Rig\WP_Rig;
 				<div class="column is-full is-4-desktop mb-l mb-m__tablet mb-5xl__desktop">
 					<div class="pl-xs__desktop">
 						<!-- Card 3 -->
-						<div class="has-box-shaddow has-backdrop-blur bg-color--white-60 is-rounded--4xs p-xs p-m__tablet p-l__desktop">
+						<div class="has-box-shadow bg-backdrop--blur bg-color--white-60 is-rounded--4xs p-xs p-m__tablet p-l__desktop">
 							<!-- Title -->
 							<h3 class="typo--subtitle-big typo--semibold mt-0 mb-m mb-l__desktop">
 								Results-based Retainer

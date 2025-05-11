@@ -25,3 +25,7 @@
 .bg-color--gradient {
 	background: linear-gradient(204deg, #471899 0%, #120833 63.94%) !important;
 }
+
+.bg-backdrop--blur {
+	backdrop-filter: blur(2rem);
+}

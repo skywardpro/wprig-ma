@@ -30,7 +30,7 @@ $post_ids = get_posts( array(
 		</p>
 
 		<!-- Swiper -->
-		<div class="swiper testimonials-swiper is-overflow--vissible mb-xl mb-m__tablet mb-xl__desktop mb-3xl__widescreen">
+		<div class="swiper testimonials-swiper overflow--visible mb-xl mb-m__tablet mb-xl__desktop mb-3xl__widescreen">
 			<div class="swiper-wrapper align-items--stretch">
 				<?php
 				foreach ( $post_ids as $post_id ) {

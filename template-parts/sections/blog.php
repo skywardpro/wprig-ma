@@ -24,7 +24,7 @@ $post_ids = get_posts( array(
 		</h2>
 
 		<!-- Post Swiper -->
-		<div class="swiper post-swiper is-overflow--vissible">
+		<div class="swiper post-swiper overflow--visible">
 			<div class="swiper-wrapper align-items--stretch">
 				<?php
 				foreach ( $post_ids as $post_id ) {

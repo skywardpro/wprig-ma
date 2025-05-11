@@ -37,13 +37,10 @@
 /**
  * Atomic CSS Classes
  */
- .has-box-shaddow {
+ 
+ .has-box-shadow {
 	box-shadow: 0 8px 20px #1d191e26;
  }
-
-.has-backdrop-blur {
-	backdrop-filter: blur(2rem);
-}
 
 .is-rounded--full {
 	border-radius: calc(infinity * 1px);
@@ -60,37 +57,3 @@
 .is-list--none {
 	list-style-type: none;
 }
-
-.is-overflow--vissible {
-	overflow: visible !important;
-}
-
-.is-w-100 {
-	width: 100%;
-}
-
-.is-w-auto {
-	width: auto;
-}
-
-@media (--tablet-query) {
-	.is-w-100__tablet {
-		width: 100%;
-	}
-	
-	.is-w-auto__tablet {
-		width: auto;
-	}
-}
-
-@media (--desktop-query) {
-	.is-w-100__desktop {
-		width: 100%;
-	}
-	
-	.is-w-auto__desktop {
-		width: auto;
-	}
-}
-
-
