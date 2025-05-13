@@ -58,10 +58,21 @@ $post_ids = get_posts( array(
 						<span class="typo--subtitle-small typo--semibold mt-auto mb-3xs typo--subtitle-big__widescreen">
 							<?php echo get_field( 'author_name', $post_id ) ?>
 						</span>
-						<!-- Company -->
-						<span class="typo--body-big color--gray typo--medium">
-							<?php echo get_field( 'author_position', $post_id ) ?>
-						</span>
+						<?php
+						if ( get_field( 'company_logo', $post_id ) ) {
+							?>
+							<!-- Logo -->
+							<img width="90" height="24" src="<?php echo get_field( 'company_logo', $post_id )['sizes']['thumbnail'] ?>" alt="<?php echo get_field( 'author_name', $post_id ) ?>" class="testimonials-swiper__company-logo" />
+							<?php
+						} else {
+							?>
+							<!-- Authore Position -->
+							<span class="typo--body-big color--gray typo--medium">
+								<?php echo get_field( 'author_position', $post_id ) ?>
+							</span>
+							<?php
+						}
+						?>
 					</a>
 					<?php
 				}

@@ -271,6 +271,11 @@ table {
 	}
 }
 
+.testimonials-swiper__company-logo {
+	height: 2.4rem;
+	object-fit: contain;
+}
+
 /* Case Studies Swiper */
 
 .case-studies-swiper .swiper-wrapper {
