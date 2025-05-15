@@ -37,10 +37,14 @@
 /**
  * Atomic CSS Classes
  */
- 
- .has-box-shadow {
+
+.has-box-shadow {
 	box-shadow: 0 8px 20px #1d191e26;
- }
+}
+
+.has-border--none {
+	border: none !important;
+}
 
 .is-rounded--full {
 	border-radius: calc(infinity * 1px);
