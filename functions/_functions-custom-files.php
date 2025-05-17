@@ -84,3 +84,22 @@ function enqueue_our_partners_cards_js() {
 	wp_script_add_data( 'our-partners-cards', 'precache', true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_our_partners_cards_js', 999 );
+
+/**
+ * Enqueue Forms Configuration script
+ *
+ * Add the script file with all configurations for you .js plugins and other scripts.
+ * https://docs.wprig.org/assets-optimization/elements-configuration
+ */
+function enqueue_forms_configuration_js() {
+	wp_enqueue_script(
+		'forms',
+		get_theme_file_uri( '/assets/js/forms.min.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+	wp_script_add_data( 'forms', 'defer', true );
+	wp_script_add_data( 'forms', 'precache', true );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_forms_configuration_js', 999 );
