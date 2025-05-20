@@ -91,6 +91,10 @@
 	fill: var(--color-theme-primary) !important;
 }
 
+.fill--deep-purple {
+	fill: var(--color-theme-deep-purple) !important;
+}
+
 .fill--secondary {
 	fill: var(--color-theme-secondary) !important;
 }

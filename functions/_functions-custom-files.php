@@ -103,3 +103,23 @@ function enqueue_forms_configuration_js() {
 	wp_script_add_data( 'forms', 'precache', true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_forms_configuration_js', 999 );
+
+
+/**
+ * Enqueue Dropdown Block Configuration script
+ *
+ * Add the script file with all configurations for you .js plugins and other scripts.
+ * https://docs.wprig.org/assets-optimization/elements-configuration
+ */
+function enqueue_dropdown_block_js() {
+	wp_enqueue_script(
+		'dropdown-block',
+		get_theme_file_uri( '/assets/js/dropdown-block.min.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+	wp_script_add_data( 'dropdown-block', 'defer', true );
+	wp_script_add_data( 'dropdown-block', 'precache', true );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_dropdown_block_js', 999 );

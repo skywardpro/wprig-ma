@@ -8,6 +8,7 @@ const GOOGLE_RECAPTCHA_SITE_KEY = '6Le5|z8rAAAAANskUpW¡96V-jGt3hLXhqNqo4BK6';
 const GOOGLE_RECAPTCHA_SECRET_KEY = '6Le51z8rAAAAAB488EE9WqaB7vPV9udodM58xw1';
 const RECAPTCHA_VERIFICATION_ENDPOINT = ''; // Must be set if reCaptchaVerified = false
 const FORMCARRY_ENDPOINT_CONTACT_US_FORM = 'https://formcarry.com/s/A8Ci7mCBKH1';
+const FORMCARRY_ENDPOINT_DROPDOWN_BLOCK_FORM = FORMCARRY_ENDPOINT_CONTACT_US_FORM;
 
 let reCaptchaVerified = true; // Track the verification status // Change to debug
 
@@ -402,7 +403,11 @@ function attachFormValidation(): void {
 		console.log('Start attachFormValidation for', form)
 		let constraints: Constraints | undefined;
 
-		if (form.getAttribute('id') === 'contact-us-form') {
+		if (
+			form.getAttribute('id') === 'contact-us-form'
+			|| form.getAttribute('id') === 'dropdown-block-form'
+
+		) {
 			constraints = {
 				name: {
 					presence: {
@@ -578,7 +583,8 @@ function showNotification(form: HTMLFormElement, message: string, type: 'fail' |
 // Function to set the form action based on the form's ID
 function getFormActionHref(form: HTMLFormElement): string {
 	const formActions: Record<string, string> = {
-		'contact-us-form': FORMCARRY_ENDPOINT_CONTACT_US_FORM
+		'contact-us-form': FORMCARRY_ENDPOINT_CONTACT_US_FORM,
+		'dropdown-block-form': FORMCARRY_ENDPOINT_DROPDOWN_BLOCK_FORM
 	};
 
 	const formId = form.getAttribute('id') ?? '';

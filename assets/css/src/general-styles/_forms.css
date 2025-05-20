@@ -105,3 +105,50 @@ select {
 .form-notification--success {
 	border-color: var(--color-theme-green);
 }
+
+/* Dropdown Block Form */
+.dropdown-block-form {
+
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],
+	textarea {
+		@media (--desktop-query) {
+
+			&::placeholder {
+				color: var(--color-theme-gray);
+			}
+
+			&:hover::placeholder {
+				color: var(--color-theme-gray-dark);
+			}
+
+		}
+	}
+}
+
+.dropdown-block-form__submit-btn {
+	display: flex;
+	justify-content: space-between;
+
+	svg {
+		transition: var(--animation-speed);
+	}
+
+	&:hover svg {
+		color: var(--color-theme-deep-purple);
+	}
+}

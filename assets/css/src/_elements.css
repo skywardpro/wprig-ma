@@ -469,6 +469,7 @@ table {
 		position: relative;
 	}
 }
+
 .three-things__main-image {
 	width: 100%;
 
@@ -485,4 +486,55 @@ table {
 	}
 }
 
-/* Contact Us */
+/* Dropdown Block */
+.dropdown-block {
+	max-width: 50.7rem;
+	margin: 0 auto;
+
+	.dropdown-block__toggle-wrapper {
+		margin-bottom: var(--spacing-xs);
+	}
+
+	.dropdown-block__toggle-btn {
+
+		width: 100%;
+		max-width: 200px;
+		transition: var(--animation-speed);
+
+		svg {
+			width: 0;
+			opacity: 0;			
+			transition: var(--animation-speed);
+		}
+	}
+
+		.dropdown-block__form-container {
+			opacity: 0;
+			transform: translateY(-3rem);
+			transition: var(--animation-speed);
+			max-height: 0;
+			overflow: hidden;
+		}
+	
+	&.dropdown-block--expanded {
+
+		.dropdown-block__toggle-btn {
+			max-width: 600px;
+			color: var(--color-theme-deep-purple);
+			background-color: var(--color-theme-white);
+
+			svg {
+				margin-left: var(--spacing-2xs);
+				width: auto;
+				opacity: 1;				
+			}
+		}
+
+		.dropdown-block__form-container {
+			transform: translateY(0);
+			opacity: 1;
+			max-height: 1000px;
+			overflow: visible;
+		}
+	}
+}

@@ -91,9 +91,55 @@ namespace WP_Rig\WP_Rig;
 
 		</div>
 
-		<!-- CTA Button -->
-		<div class="is-flex justify-content--center">
-			<button class="btn--primary is-full-mobile">Let’s connect</button>
+		<!-- DropdownBlock -->
+		<div id="dropdown-block" class="dropdown-block dropdown-block--expanded">
+			<!-- ToggleBtnWrapper -->
+			<div class="dropdown-block__toggle-wrapper is-flex justify-content--center">
+				<!-- ToggleBtn -->
+				<button class="dropdown-block__toggle-btn btn--primary">
+					<span>Let’s&nbsp;connect</span>
+					<svg aria-hidden="true" width="24" height="24">
+						<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#chevron-up"></use>
+					</svg>
+				</button>
+			</div>
+			<!-- FormContainer -->
+			<div class="dropdown-block__form-container">
+				<!-- Form -->
+				<form id="dropdown-block-form" class="dropdown-block__form dropdown-block-form">
+
+					<!-- Name -->
+					<div class="mb-xs">
+						<input type="text" id="name" name="name" placeholder="Full Name" class="w-100">
+					</div>
+
+					<div class="is-flex-tablet">
+
+						<!-- Mail -->
+						<div class="mb-xs w-50__tablet mr-3xs__tablet">
+							<input type="email" id="email" name="email" placeholder="Business email" class="w-100">
+						</div>
+
+						<!-- Phone -->
+						<div class="mb-xs w-50__tablet ml-3xs__tablet">
+							<input type="tel" id="phone" name="phone" placeholder="Phone" class="w-100">
+						</div>
+					</div>
+
+					<!-- Message -->
+					<div class="mb-xs mb-m__desktop">
+						<textarea id="message" name="message" placeholder="Enter your message" rows="4" class="w-100"></textarea>
+					</div>
+
+					<!-- Submit -->
+					<button type="submit" class="dropdown-block-form__submit-btn reset-button-styles btn--primary w-100">
+						<span>Contact Sales</span>
+						<svg aria-hidden="true" width="32" height="32">
+							<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-arrow-narrow-right"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </section>
