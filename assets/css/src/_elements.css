@@ -464,7 +464,7 @@ table {
 }
 
 /* Tree Things */
-.three-thigs__body {
+.three-things__body {
 	@media (--desktop-query) {
 		position: relative;
 	}

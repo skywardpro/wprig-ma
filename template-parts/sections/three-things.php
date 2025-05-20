@@ -9,7 +9,7 @@
 namespace WP_Rig\WP_Rig;
 
 ?>
-<section id="three-thigs" class="three-thigs mb-6xl pb-s__desktop mb-8xl__desktop pb-xl__widescreen">
+<section id="three-things" class="three-things mb-6xl pb-s__desktop mb-8xl__desktop pb-xl__widescreen">
 	<div class="container">
 
 		<!-- Heading -->
@@ -23,7 +23,7 @@ namespace WP_Rig\WP_Rig;
 		</p>
 
 		<!-- Body -->
-		<div class="three-thigs__body">
+		<div class="three-things__body">
 			<!-- Image -->
 			<picture>
 				<source media="(min-width: 1456px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/three-things-fullhd.webp">
