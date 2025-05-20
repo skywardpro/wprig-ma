@@ -197,7 +197,7 @@ class Theme {
 			 *
 			 * A pure JavaScript library for forms validation.
 			 */
-			// new WP_Rig_Toolkit\Validatejs\Component(),
+			new WP_Rig_Toolkit\Validatejs\Component(),
 
 
 			/*----------------------------

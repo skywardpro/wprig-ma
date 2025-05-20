@@ -37,7 +37,7 @@ namespace WP_Rig\WP_Rig;
 
 				<!-- Mail -->
 				<div class="mb-xs w-50__tablet mr-3xs__tablet">
-					<label class="is-hidden-touch is-block typo--body-big typo--medium mb-3xs" for="name">
+					<label class="is-hidden-touch is-block typo--body-big typo--medium mb-3xs" for="email">
 						Business email
 					</label>
 					<input type="email" id="email" name="email" placeholder="Business email" class="w-100">
@@ -45,16 +45,16 @@ namespace WP_Rig\WP_Rig;
 
 				<!-- Phone -->
 				<div class="mb-xs w-50__tablet ml-3xs__tablet">
-					<label class="is-hidden-touch is-block typo--body-big typo--medium mb-3xs" for="name">
+					<label class="is-hidden-touch is-block typo--body-big typo--medium mb-3xs" for="phone">
 						Phone
 					</label>
-					<input type="tel" id="tel" name="tel" placeholder="Phone" class="w-100">
+					<input type="tel" id="phone" name="phone" placeholder="Phone" class="w-100">
 				</div>
 			</div>
 
 			<!-- Message -->
 			<div class="mb-xs mb-m__desktop">
-				<label class="is-hidden-touch is-block typo--body-big typo--medium mb-3xs" for="name">
+				<label class="is-hidden-touch is-block typo--body-big typo--medium mb-3xs" for="message">
 					Enter your message
 				</label>
 				<textarea id="message" name="message" placeholder="Enter your message" rows="4" class="w-100"></textarea>
