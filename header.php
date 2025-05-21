@@ -25,11 +25,11 @@ namespace WP_Rig\WP_Rig;
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<div id="page" class="site bg-color--gradient">
+	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>
 
 		<!-- Header -->
-		<header id="masthead" class="site-header is-sticky">
+		<header id="masthead" class="site-header is-sticky bg-color--gradient">
 			<div class="container is-flex align-items--center is-relative">
 				<!-- Logo -->
 				<?php get_template_part( 'template-parts/header/branding' ); ?>

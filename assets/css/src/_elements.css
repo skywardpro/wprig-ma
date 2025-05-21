@@ -503,19 +503,19 @@ table {
 
 		svg {
 			width: 0;
-			opacity: 0;			
+			opacity: 0;
 			transition: var(--animation-speed);
 		}
 	}
 
-		.dropdown-block__form-container {
-			opacity: 0;
-			transform: translateY(-3rem);
-			transition: var(--animation-speed);
-			max-height: 0;
-			overflow: hidden;
-		}
-	
+	.dropdown-block__form-container {
+		opacity: 0;
+		transform: translateY(-3rem);
+		transition: var(--animation-speed);
+		max-height: 0;
+		overflow: hidden;
+	}
+
 	&.dropdown-block--expanded {
 
 		.dropdown-block__toggle-btn {
@@ -526,7 +526,7 @@ table {
 			svg {
 				margin-left: var(--spacing-2xs);
 				width: auto;
-				opacity: 1;				
+				opacity: 1;
 			}
 		}
 
@@ -536,5 +536,26 @@ table {
 			max-height: 1000px;
 			overflow: visible;
 		}
+	}
+}
+
+/* Contact Us Section */
+
+.contact-us {
+	@media (--desktop-query) {
+		background: url(../images/contact-us-bg-cube.webp);
+		background-position: right -190px top 40px;
+		background-size: 564px;
+		background-repeat: no-repeat;
+	}
+	
+	@media (--widescreen-query) {
+		background-position: right -190px top 80px;
+	}
+}
+
+.contact-us__content-wrapper {
+	@media (--desktop-query) {
+		width: calc(100% - 40rem);
 	}
 }
