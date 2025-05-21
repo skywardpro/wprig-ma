@@ -4,7 +4,7 @@
 
 .site-header {
 	display: flex;
-	padding-bottom: 1em;
+	z-index: 100;
 }
 
 /* fix for sticky position for admins */
@@ -24,17 +24,22 @@
 .custom-logo-link {
 	display: inline-block;
 	height: 100%;
+	padding: var(--spacing-xs) 0;
 }
 
 .custom-logo {
-	height: 100%;
+	width: 5.6rem;
+	height: auto;
+
+	@media (--desktop-query) {
+		width: 8.8rem;
+	}
 }
 
 .site-branding {
 	text-align: center;
 
-	@media (--narrow-menu-query) {
-		padding: 1.75em 0;
+	@media (--narrow-menu-query) {		
 		margin: 0;
 	}
 }
@@ -80,8 +85,9 @@
 
 		& .main-navigation.nav--toggle-sub {
 			padding: initial;
-			margin-left: auto;
+			margin-left: var(--spacing-m);
 			margin-right: 0;
+			order: 2;
 
 			& .menu-toggle.icon {
 				top: 0;
@@ -94,5 +100,19 @@ nav div.wp-block-navigation__responsive-dialog {
 
 	@media (--narrow-menu-query) {
 		margin: 1em;
+	}
+}
+
+.header-cta-button {
+	cursor: default;
+}
+
+.header-cta-wrapper {
+	order: 1;
+	margin-left: auto;
+
+	@media (--desktop-query) {
+		order: unset;
+		margin-left: 0;
 	}
 }

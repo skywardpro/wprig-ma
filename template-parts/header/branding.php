@@ -10,28 +10,8 @@ namespace WP_Rig\WP_Rig;
 ?>
 
 <div class="site-branding">
-	<?php the_custom_logo(); ?>
-
-	<?php
-	if ( is_front_page() && is_home() ) {
-		?>
-		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		<?php
-	} else {
-		?>
-		<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-		<?php
-	}
-	?>
-
-	<?php
-	$wp_rig_description = get_bloginfo( 'description', 'display' );
-	if ( $wp_rig_description || is_customize_preview() ) {
-		?>
-		<p class="site-description">
-			<?php echo $wp_rig_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>
-		</p>
-		<?php
-	}
-	?>
+	<a href="<?php echo get_site_url()?>" class="custom-logo-link" rel="home" aria-current="page">
+		<img width="56" height="32" src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/logo-white-with-text.svg" class="custom-logo no-lazy" alt="Market Across">
+	</a>
 </div><!-- .site-branding -->
+

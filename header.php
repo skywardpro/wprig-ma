@@ -14,6 +14,7 @@ namespace WP_Rig\WP_Rig;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -23,17 +24,24 @@ namespace WP_Rig\WP_Rig;
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>
+	<?php wp_body_open(); ?>
+	<div id="page" class="site bg-color--gradient">
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>
 
-	<!-- Header -->
-	<header id="masthead" class="site-header is-sticky">
-		<div class="container is-flex">
-			<!-- Logo -->
-			<?php get_template_part( 'template-parts/header/branding' ); ?>
+		<!-- Header -->
+		<header id="masthead" class="site-header is-sticky">
+			<div class="container is-flex align-items--center is-relative">
+				<!-- Logo -->
+				<?php get_template_part( 'template-parts/header/branding' ); ?>
 
-			<!-- Primary menu -->
-			<?php get_template_part( 'template-parts/header/navigation' ); ?>
-		</div>
-	</header><!-- #masthead -->
+				<!-- Primary menu -->
+				<?php get_template_part( 'template-parts/header/navigation' ); ?>
+
+				<!-- Desktop CTA button -->
+				<div class="header-cta-wrapper">
+					<a class="header-cta-button btn--secondary">
+						CONTACT US
+					</a>
+				</div>
+			</div>
+		</header><!-- #masthead -->

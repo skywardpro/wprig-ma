@@ -10,7 +10,6 @@ if (document.readyState === 'loading') {
 function initNavigation(): void {
 	initNavToggleSubmenus();
 	initNavToggleSmall();
-	setMenuHeight();
 	watchForWindowSizeChanges();
 }
 

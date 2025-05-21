@@ -107,16 +107,24 @@
 				}
 
 				& .primary-menu-container {
-					top: 180px;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					height: calc(100vh - 7rem);
 					z-index: 5;
 					opacity: 1;
 					transition: opacity 0.3s ease, top 0.3s ease-out;
 					visibility: visible;
 				}
 
-				/* & .menu {
-					visibility: visible;
-				} */
+				& .menu {
+					
+					a {
+						color: var(--color-theme-deep-purple);
+						font-size: 1.6rem;
+						font-weight: 400;
+					}
+				}
 			}
 		}
 	}

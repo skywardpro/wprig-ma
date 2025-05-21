@@ -8,16 +8,18 @@
  */
 
 .hamburger {
+	scale: 0.7;
 	transition-duration: 500ms;
 }
 
 .hamburger .meat {
 	display: block;
-	height: 4px;
+	height: 0.4rem;
 	width: 30px;
 	margin: 6px 0;
-	background-color: #222;
+	background-color: var(--color-theme-white);
 	transition-duration: 300ms;
+	border-radius: 2px;
 }
 
 .icon-nav.nav--toggled-on .hamburger {
