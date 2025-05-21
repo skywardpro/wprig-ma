@@ -21,12 +21,18 @@ wp_rig()->print_styles( 'wp-rig-content' );
 ?>
 <main id="primary" class="site-main">
 
-	<!-- Newsroom - Section -->
-	<?php echo get_template_part( 'template-parts/sections/newsroom' ) ?>
+	<!-- BG Wrapper -->
+	<div class="page-hero-wrapper home-page-top-bg  bg-color--gradient">
+		<!-- Home Hero - Section -->
+		<?php echo get_template_part( 'template-parts/sections/home-hero' ) ?>
+
+		<!-- Newsroom - Section -->
+		<?php echo get_template_part( 'template-parts/sections/newsroom' ) ?>
+	</div>
 
 	<!-- Three Things - Section -->
 	<?php echo get_template_part( 'template-parts/sections/three-things' ) ?>
-	
+
 	<!-- Case Studies - Section -->
 	<?php echo get_template_part( 'template-parts/sections/case-studies' ) ?>
 
@@ -38,7 +44,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 	<!-- Our Partners - Section -->
 	<?php echo get_template_part( 'template-parts/sections/our-partners' ) ?>
-	
+
 	<!-- Contact Us - Section -->
 	<?php echo get_template_part( 'template-parts/sections/contact-us' ) ?>
 

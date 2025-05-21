@@ -85,6 +85,17 @@ table {
 	width: 100%;
 }
 
+/* Compinsation of fixed header */
+.page-hero-wrapper {
+
+	padding-top: 7rem;
+
+	@media (--desktop-query) {
+		padding-top: 8.8rem;
+	}
+}
+/* END OF Compensation of fixed header */
+
 /* Clutch Award */
 .clutch-award {
 	@media (--desktop-query) {
@@ -557,5 +568,46 @@ table {
 .contact-us__content-wrapper {
 	@media (--desktop-query) {
 		width: calc(100% - 40rem);
+	}
+}
+
+/* Home Hero - Section */
+
+.home-hero {
+	padding-top: 9.4rem;
+
+	@media (--tablet-query) {
+		padding-top: 18rem;
+	}
+}
+
+/* Logos Slider */
+
+.logos-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.logos-slider-slide {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 12rem !important;
+	height: 3.2rem !important;
+
+	img {
+		width: 100% !important;
+		height: 100% !important;
+		object-fit: contain;
+		object-position: center;
+	}
+
+	@media (--desktop-query) {
+		width: 15rem !important;
+		height: 4rem !important;
+	}
+
+	@media (--widescreen-query) {
+		width: 18rem !important;
+		height: 4.8rem !important;
 	}
 }

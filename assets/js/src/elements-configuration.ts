@@ -47,6 +47,17 @@ async function initElementsConfiguration() {
     if (document.querySelector('.newsroom-swiper')) {
         const newsroomSwiper = await import('./elements-configuration/newsroomSwiper');
     }
+
+    /*
+     * Init Working With logosSlider 
+     *
+     * Where: logosSlider
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.logos-slider')) {
+        const logosSlider = await import('./elements-configuration/logosSlider');
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.
