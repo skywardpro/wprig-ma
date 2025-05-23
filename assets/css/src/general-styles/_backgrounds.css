@@ -22,6 +22,18 @@
 	background: var(--color-theme-white-60);
 }
 
+.bg-color--gray {
+	background: var(--color-theme-gray);
+}
+
+.bg-color--gray-light {
+	background: var(--color-theme-gray-light);
+}
+
+.bg-color--gray-dark {
+	background: var(--color-theme-gray-dark);
+}
+
 .bg-color--gradient {
 	background: linear-gradient(204deg, #471899 0%, #120833 63.94%) !important;
 }

@@ -66,7 +66,7 @@ $post_ids = get_posts( array(
 
 		<!-- CTA Button -->
 		<div class="is-flex justify-content--center">
-			<a href="#" class="btn--primary-small is-full-mobile">More case studies</a>
+			<a href="<?php home_url() ?>/case-studies" class="btn--primary-small is-full-mobile">More case studies</a>
 		</div>
 	</div>
 </section>
