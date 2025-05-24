@@ -841,3 +841,20 @@ table {
 	height: 2.3rem;
 	width: auto;
 }
+
+/* Servises Page Hero */
+
+.services-page-hero__heading {
+	max-width: 73rem;
+}
+
+.services-page-hero__body-text {
+	max-width: 50rem;
+}
+
+.services-page-hero__swiper-column {
+	@media (--tablet-query) {
+		width: max-content;
+		max-width: 24rem;
+	}
+}
