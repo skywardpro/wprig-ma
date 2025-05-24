@@ -684,6 +684,7 @@ table {
 
 .case-studies-page-item-v1__media-logo {
 	height: 2.3rem;
+	width: auto;
 }
 
 /* Case Studies Page Item (v2) */
@@ -749,6 +750,7 @@ table {
 
 .case-studies-page-item-v2__media-logo {
 	height: 2.3rem;
+	width: auto;
 }
 
 
@@ -837,4 +839,5 @@ table {
 
 .case-studies-page-item-v4__media-logo {
 	height: 2.3rem;
+	width: auto;
 }

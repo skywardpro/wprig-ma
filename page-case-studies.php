@@ -13,12 +13,36 @@ get_header();
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
+function marketaccross_page_case_studies_get_case_card_version( $index ) {
+
+	$card_version = 1; // First Item only is v1
+	$card_version_sequence = [ 2, 3, 3, 4, 3, 3, 2 ]; // The repeating part (7 elements)
+	if ( $index != 0 ) {
+		$sequence_position = ( $index - 1 ) % 7; // Cycle through 0-6
+		$card_version = $card_version_sequence[ $sequence_position ];
+	}
+
+	return $card_version;
+}
+
+function marketacross_page_case_studies_get_column_class($card_version, $current_index, $post_count, $prev_column_class) {
+	
+	$column_class = $card_version != 3 ? 'is-full' : 'is-half-desktop';
+
+	// If last post and prev post was not is-half-desktop then set to is-full
+	if ( $current_index + 1 == $post_count && $prev_column_class !== 'is-half-desktop' ) {
+		$column_class = 'is-full';
+	}
+
+	return $column_class;
+}
+
 ?>
 <main id="primary" class="site-main">
 
 	<div id="case-studies-page" class="bg-color--gradient">
 
-		<!-- Hero -->
+		<!-- Hero - Section -->
 		<div class="page-hero-wrapper">
 			<section class="case-studies-page-hero py-4xl color--white py-5xl__widescreen">
 				<div class="container">
@@ -38,53 +62,49 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			</section>
 		</div>
 
-		<!-- PostCardsGrid -->
+		<!-- PostCards - Section -->
+		<?php
+		$args = array(
+			'post_type' => 'case_study',
+			'posts_per_page' => -1,
+			'post_status' => 'publish',
+			'order' => 'DESC',
+			'meta_type' => 'DATE'
+		);
+		$query = new \WP_Query( $args );
+		?>
 		<section class="pb-6xl">
 			<div class="container">
 				<!-- Cards -->
 				<div class="columns is-multiline">
 					<?php
-					$case_logo_url = get_stylesheet_directory_uri() . '/assets/images/newsroom-forbes-logo.png';
-					$case_title = 'Fobes';
-					$case_description = 'Avalance is one of the fastest growing ecosystems in web3, and they had a challenge of streamlining comms and marketing around the different growth initiatives and new JVs. How do we turn single partnerships announcements to long term needle moving support.';
-					$case_stat_1_name = 'Published Articles';
-					$case_stat_1_value = '167';
-					$case_stat_2_name = 'Online readership';
-					$case_stat_2_value = '3.12B';
-					$case_media_1_logo = get_stylesheet_directory_uri() . '/assets/images/newsroom-forbes-logo.png';
-					$case_media_1_name = 'Medium.com';
-					$case_media_1_screenshot = get_stylesheet_directory_uri() . '/assets/images/case-media-screen.png';
-					$case_media_1_url = '#';
+					if ( $query->have_posts() ) {
+
+						$prev_column_class = '';
+
+						while ( $query->have_posts() ) {
+							$query->the_post();
+
+							// Get vars used in layout
+							$card_version = marketaccross_page_case_studies_get_case_card_version( $query->current_post );
+							$column_class = marketacross_page_case_studies_get_column_class(
+								$card_version, $query->current_post, $query->post_count, $prev_column_class
+							);
+
+							// Update $prev_column_class for use in next iteration
+							$prev_column_class = $column_class;
+							
+							// Layout Cards
+							?>
+							<div class="column <?php echo $column_class ?>">
+								<?php get_template_part( 'template-parts/partials/case-studies-page-item-v' . $card_version ) ?>
+							</div>
+							<?php
+						}
+						wp_reset_postdata();
+					}
 					?>
-					<!-- Card 1 -->
-					<!-- FirstTypeItem -->
-					 <div class="column is-full">
-						 <?php get_template_part( 'template-parts/partials/case-studies-page-item-v1' ) ?>
-					 </div>
 
-					<!-- Card 2 -->
-					<!-- SecondTypeItem -->
-					 <div class="column is-full">
-						 <?php get_template_part( 'template-parts/partials/case-studies-page-item-v2' ) ?>
-					 </div>
-
-					<!-- Card 3 -->
-					<!-- ThirdTypeItem -->
-					 <div class="column is-half-desktop">
-						 <?php get_template_part( 'template-parts/partials/case-studies-page-item-v3' ) ?>
-					 </div>
-					
-					<!-- Card 4 -->
-					<!-- ThirdTypeItem -->
-					 <div class="column is-half-desktop">
-						 <?php get_template_part( 'template-parts/partials/case-studies-page-item-v3' ) ?>
-					 </div>
-					
-					<!-- Card 5 -->
-					<!-- ForthTypeItem -->
-					 <div class="column is-full">
-						 <?php get_template_part( 'template-parts/partials/case-studies-page-item-v4' ) ?>
-					 </div>
 				</div>
 			</div>
 		</section>

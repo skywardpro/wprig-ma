@@ -61,3 +61,8 @@
 .is-list--none {
 	list-style-type: none;
 }
+
+.is-image-cover {
+	object-fit: cover;
+	object-position: center;
+}

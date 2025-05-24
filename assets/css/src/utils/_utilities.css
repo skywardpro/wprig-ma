@@ -5,6 +5,16 @@
 * @link https://docs.wprig.org/assets-optimization/css-utilities
 ----------------------------*/
 
+/* Link class to overflow parent (relative) element */
+.link--full-parent {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
 /* Class for hiding elements from users but not from robots */
 .visuallyhidden {
 	position: absolute;
