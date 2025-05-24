@@ -88,6 +88,17 @@ async function initElementsConfiguration() {
     if (document.querySelector('.logos-slider')) {
         const logosSlider = await import('./elements-configuration/logosSlider');
     }
+    
+    /*
+     * Init Working With verticalLogosSlider 
+     *
+     * Where: verticalLogosSlider
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.vertical-logos-slider')) {
+        const verticalLogosSlider = await import('./elements-configuration/verticalLogosSlider');
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.
