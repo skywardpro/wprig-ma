@@ -20,6 +20,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 		<!-- Hero - Section -->
 		<?php get_template_part('template-parts/sections/services-page-hero') ?>
+		
+		<!-- The Services - Section -->
+		<?php get_template_part('template-parts/sections/the-services') ?>
 	</div>
 </main>
 <?php

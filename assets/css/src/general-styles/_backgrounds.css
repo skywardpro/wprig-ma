@@ -10,6 +10,15 @@
 	background-color: var(--color-theme-secondary);
 }
 
+.bg-color--purple { 
+	background: #5E2BFF;
+}
+
+.bg-color--purple-30 { 
+	background: rgba(94, 43, 255, 0.3);
+}
+
+
 .bg-color--white {
 	background: #ffffff;
 }
