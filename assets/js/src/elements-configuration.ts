@@ -99,6 +99,29 @@ async function initElementsConfiguration() {
     if (document.querySelector('.vertical-logos-slider')) {
         const verticalLogosSlider = await import('./elements-configuration/verticalLogosSlider');
     }
+
+
+    /*
+     * Init Working With TheServicesSwiper 
+     *
+     * Where: TheServicesSwiper
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.the-services-swiper')) {
+        const theServicesSwiper = await import('./elements-configuration/theServicesSwiper');
+    }
+
+    /*
+     * Init Working With ClientsCaseStudiesSwiper 
+     *
+     * Where: ClientsCaseStudiesSwiper
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.clients-case-studies-swiper')) {
+        const clientsCaseStudiesSwiper = await import('./elements-configuration/clientsCaseStudiesSwiper');
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.

@@ -39,7 +39,8 @@
  */
 
 .has-box-shadow {
-	box-shadow: 0 8px 20px #1d191e26;
+	backdrop-filter: blur(48.5px);
+	box-shadow: 0px 8px 20px 0px rgba(29, 25, 30, 0.15);
 }
 
 .has-border--none {
@@ -48,6 +49,10 @@
 
 .is-rounded--full {
 	border-radius: calc(infinity * 1px);
+}
+
+.is-rounded--s {
+	border-radius: var(--spacing-s);
 }
 
 .is-rounded--4xs {

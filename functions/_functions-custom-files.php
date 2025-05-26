@@ -123,3 +123,23 @@ function enqueue_dropdown_block_js() {
 	wp_script_add_data( 'dropdown-block', 'precache', true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_dropdown_block_js', 999 );
+
+
+/**
+ * Enqueue The Services Swiper Slides Configuration script
+ *
+ * Add the script file with all configurations for you .js plugins and other scripts.
+ * https://docs.wprig.org/assets-optimization/elements-configuration
+ */
+function enqueue_the_services_swiper_slide_js() {
+	wp_enqueue_script(
+		'the-services-swiper-slide',
+		get_theme_file_uri( '/assets/js/the-services-swiper-slide.min.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+	wp_script_add_data( 'the-services-swiper-slide', 'defer', true );
+	wp_script_add_data( 'the-services-swiper-slide', 'precache', true );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_the_services_swiper_slide_js', 999 );

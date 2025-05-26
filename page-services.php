@@ -19,10 +19,17 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	<div id="services-page" class="">
 
 		<!-- Hero - Section -->
-		<?php get_template_part('template-parts/sections/services-page-hero') ?>
-		
+		<?php get_template_part( 'template-parts/sections/services-page-hero' ) ?>
+
 		<!-- The Services - Section -->
-		<?php get_template_part('template-parts/sections/the-services') ?>
+		<?php get_template_part( 'template-parts/sections/the-services' ) ?>
+
+		<!-- Clients Case Studies - Section -->
+		<?php get_template_part( 'template-parts/sections/clients-case-studies' ) ?>
+
+		<!-- Contact Us - Section -->
+		<?php echo get_template_part( 'template-parts/sections/contact-us' ) ?>
+
 	</div>
 </main>
 <?php
