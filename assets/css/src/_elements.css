@@ -874,6 +874,8 @@ table {
 
 .vertical-logos-slider {
 
+	overflow: visible !important;
+
 	@media (--tablet-query) {
 		height: 28.4rem;
 	}
@@ -927,13 +929,20 @@ table {
 
 @media (--tablet-query) {
 	.vertical-logos-slider-slide:not(.swiper-slide-next) {
-		opacity: 0.6 !important;
+		opacity: 0 !important;
 		transform: scale(0.86) !important;
 	}
 
 	.vertical-logos-slider-slide.swiper-slide-next {
 		opacity: 1 !important;
 		transform: scale(1) !important;
+	}
+
+	.vertical-logos-slider-slide.swiper-slide-next + .swiper-slide,
+	.vertical-logos-slider-slide.swiper-slide-next + .swiper-slide + .swiper-slide,
+	.vertical-logos-slider-slide:has(+ .swiper-slide + .swiper-slide-next),
+	.vertical-logos-slider-slide:has(+ .swiper-slide-next) {
+		opacity: 0.6 !important;
 	}
 }
 
