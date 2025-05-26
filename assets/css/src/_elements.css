@@ -842,7 +842,16 @@ table {
 	width: auto;
 }
 
+/* Services Page */
+.services-page__page-hero-wrapper {
+	background: linear-gradient(180deg, 
+		rgba(30, 2, 117, 1) 0%, 
+		rgba(94, 43, 255, 0)), linear-gradient(rgba(135, 132, 255, 1) 90%, transparent);
+}
+
 /* Servises Page Hero */
+
+.services-page-hero {}
 
 .services-page-hero__heading {
 	max-width: 73rem;
@@ -938,8 +947,8 @@ table {
 		transform: scale(1) !important;
 	}
 
-	.vertical-logos-slider-slide.swiper-slide-next + .swiper-slide,
-	.vertical-logos-slider-slide.swiper-slide-next + .swiper-slide + .swiper-slide,
+	.vertical-logos-slider-slide.swiper-slide-next+.swiper-slide,
+	.vertical-logos-slider-slide.swiper-slide-next+.swiper-slide+.swiper-slide,
 	.vertical-logos-slider-slide:has(+ .swiper-slide + .swiper-slide-next),
 	.vertical-logos-slider-slide:has(+ .swiper-slide-next) {
 		opacity: 0.6 !important;

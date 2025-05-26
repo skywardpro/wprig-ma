@@ -9,7 +9,7 @@
 namespace WP_Rig\WP_Rig;
 
 ?>
-<div class="page-hero-wrapper bg-color--secondary">
+<div class="page-hero-wrapper services-page__page-hero-wrapper">
 	<section class="services-page-hero py-4xl color--white py-xl__tablet pb-4xl__desktop py-6xl__widescreen">
 		<div class="container">
 
