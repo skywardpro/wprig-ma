@@ -23,10 +23,10 @@ namespace WP_Rig\WP_Rig;
 		</p>
 
 		<!-- Text -->
-		<p class="typo--subtitle typo--h2__desktop mt-0 mb-m mb-l__desktop">
+		<p class="typo--subtitle typo--height-15 typo--h2__desktop typo--height-15__desktop mt-0 mb-m mb-l__desktop">
 			<mark class="bg-color--purple-30">Services generate results, and that's what you pay for.</mark> Everything we do behind the scenes to get you these results, we don't bill for that.
 		</p>
-		<p class="typo--subtitle typo--h2__desktop mt-0 mb-l mb-xl__desktop mb-4xl__widescreen">
+		<p class="typo--subtitle typo--height-15 typo--h2__desktop typo--height-15__desktop mt-0 mb-l mb-xl__desktop mb-4xl__widescreen">
 			<mark class="bg-color--purple-30">Messaging strategy, pitching journalists, being immersed in the industry - we don't count these as services.</mark> These are the things we do internally in order to be able to deliver on the services you hired us for.
 		</p>
 
@@ -60,7 +60,7 @@ namespace WP_Rig\WP_Rig;
 							<!-- BgImage -->
 							<img width="320" height="526" src="<?php echo $dummy_card['image_url'] ?>" alt="<?php echo $dummy_card['title'] ?>" class="the-services-swiper__slide-bg">
 
-							<!-- Ttile -->
+							<!-- Title -->
 							<h3 class="typo--h1 typo--light mt-0 mb-2xs">
 								<?php echo $dummy_card['title'] ?>
 							</h3>
