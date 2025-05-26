@@ -44,10 +44,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 	<!-- Our Partners - Section -->
 	<?php echo get_template_part( 'template-parts/sections/our-partners' ) ?>
-
-	<!-- Contact Us - Section -->
-	<?php echo get_template_part( 'template-parts/sections/contact-us' ) ?>
-
+	
 	<!-- Blog - Section -->
 	<?php echo get_template_part( 'template-parts/sections/blog' ) ?>
 
