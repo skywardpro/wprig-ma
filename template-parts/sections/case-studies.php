@@ -40,22 +40,25 @@ $post_ids = get_posts( array(
 				foreach ( $post_ids as $index => $post_id ) {
 					?>
 					<!-- Post Swiper Card -->
-					<a href="<?php echo get_permalink( $post_id ) ?>" class="swiper-slide is-flex flex-direction--column case-studies-swiper__slide is-rounded--4xs bg-color--white-60 p-m p-xl__desktop has-corner-decor">
+					<div class="swiper-slide is-flex flex-direction--column case-studies-swiper__slide is-rounded--4xs bg-color--white-60 p-m p-xl__desktop has-corner-decor">
 
-                        <!-- Number -->
-                        <span class="color--gray typo--body-smal mb-xs">
-							<?php echo sprintf("%02d", $index + 1) ?>
-                        </span>
+						<!-- Link -->
+						<a href="<?php echo get_permalink($post_id) ?>" class="link--full-parent"><span class="visuallyhidden"><?php echo get_field('company_name', $post_id) ?></span></a>
+
+						<!-- Number -->
+						<span class="color--gray typo--body-smal mb-xs">
+							<?php echo sprintf( "%02d", $index + 1 ) ?>
+						</span>
 
 						<!-- Text -->
 						<p class="color--deep-purple typo--subtitle-big typo--semibold  mt-0 mb-xl mb-m__desktop mb-2xl__fullhd">
-							<?php echo get_field('featured_text', $post_id) ?>
+							<?php echo get_field( 'featured_text', $post_id ) ?>
 						</p>
 
 						<!-- Logo -->
-						<img width="135" height="30" src="<?php echo get_field( 'company_logo', $post_id )['sizes']['thumbnail'] ?>" alt="<?php echo get_field('company_name', $post_id) ?> logo" class="is-block mt-auto case-studies-swiper__slide-logo" />
+						<img width="135" height="30" src="<?php echo get_field( 'company_logo', $post_id )['sizes']['thumbnail'] ?>" alt="<?php echo get_field( 'company_name', $post_id ) ?> logo" class="is-block mt-auto case-studies-swiper__slide-logo" />
 
-					</a>
+					</div>
 					<?php
 				}
 				?>
