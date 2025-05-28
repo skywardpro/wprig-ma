@@ -879,7 +879,7 @@ table {
 	object-position: center top;
 
 	width: 100%;
-	height: 13.2rem;
+	height: 8.63rem;
 
 	@media (--tablet-query) {
 		height: 14.8rem;
