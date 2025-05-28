@@ -28,7 +28,7 @@ namespace WP_Rig\WP_Rig;
 		</div>
 		<div class="column py-0 order--4__tablet is-full-tablet order--3__widescreen is-half-widescreen align-self--flex-end__widescreen">
 			<!-- StatsNumbers -->
-			<div class="case-studies-page-item-v2__stats is-flex justify-content--center mb-m justify-content--flex-start__tablet order--2__tablet mb-0__tablet mr-auto__desktop">
+			<div class="case-studies-page-item-v2__stats is-flex justify-content--center align-items--flex-end mb-m justify-content--flex-start__tablet order--2__tablet mb-0__tablet mr-auto__desktop">
 				<div class="pr-xs">
 					<!-- StatName -->
 					<span class="is-block has-text-centered color--gray typo--body typo--medium mb-2xs">

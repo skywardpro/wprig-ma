@@ -22,7 +22,7 @@ namespace WP_Rig\WP_Rig;
 			<?php echo get_field('featured_text', get_the_ID()) ?>
 		</p>
 		<!-- StatsNumbers -->
-		<div class="mb-m case-studies-page-item-v1__stats is-flex justify-content--center justify-content--flex-start__tablet order--2__tablet pl-l__tablet mr-auto__desktop">
+		<div class="mb-m case-studies-page-item-v1__stats is-flex justify-content--center align-items--flex-end justify-content--flex-start__tablet order--2__tablet pl-l__tablet mr-auto__desktop">
 			<div class="pr-xs">
 				<!-- StatName -->
 				<span class="mb-2xs is-block has-text-centered color--gray typo--body typo--medium">

@@ -26,7 +26,7 @@ namespace WP_Rig\WP_Rig;
 		</div>
 		<div class="column py-0 is-full-tablet">
 			<!-- StatsNumbers -->
-			<div class="case-studies-page-item-v3__stats is-flex justify-content--center justify-content--flex-start__tablet mr-auto__desktop">
+			<div class="case-studies-page-item-v3__stats is-flex justify-content--center align-items--flex-end justify-content--flex-start__tablet mr-auto__desktop">
 				<div class="pr-xs">
 					<!-- StatName -->
 					<span class="is-block has-text-centered color--gray typo--body typo--medium mb-2xs">
