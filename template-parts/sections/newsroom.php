@@ -43,10 +43,13 @@ $post_ids = get_posts( array(
 					?>
 					<!-- newsroom Swiper Card -->
 
-					<a href="<?php echo $url ?>" target="_blank" class="swiper-slide is-flex flex-direction--column newsroom-swiper__slide is-rounded--4xs is-clipped bg-color--white p-m">
+					<div class="swiper-slide is-flex flex-direction--column newsroom-swiper__slide is-rounded--4xs is-clipped bg-color--white p-m is-relative">
+
+						<!-- Link -->
+						<a href="<?php echo $url ?>" target="_blank" class="link--full-parent"><span class="visuallyhidden"><?php echo $news_source_name . ' on Market Across' ?></span></a>
 
 						<!-- Logo -->
-						<img width="80" height="20" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/newsroom-<?php echo $news_source_name ?>-logo.webp" alt="<?php echo strtoupper($news_source_name) ?> Logo" class="newsroom-swiper__logo mb-2xl" />
+						<img width="80" height="20" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/newsroom-<?php echo $news_source_name ?>-logo.webp" alt="<?php echo strtoupper( $news_source_name ) ?> Logo" class="newsroom-swiper__logo mb-2xl" />
 
 						<!-- Ttile -->
 						<h3 class="typo--subtitle-big typo--semibold color--deep-purple mt-0 mb-l ">
@@ -60,7 +63,7 @@ $post_ids = get_posts( array(
 
 						<!-- Thumbnail -->
 						<img width="304" height="193" src="<?php echo get_the_post_thumbnail_url( $post_id, 'medium' ) ?>" alt="<?php echo get_the_title( $post_id ) ?>" class="is-block newsroom-swiper__thumbnail" />
-					</a>
+					</div>
 					<?php
 				}
 				?>
