@@ -9,47 +9,47 @@
 namespace WP_Rig\WP_Rig;
 
 ?>
-<div class="case-studies-page-item-v1 p-m bg-color--white is-rounded--4xs py-xl__tablet px-4xl__tablet py-4xl__desktop p-l__widescreen p-4xl__fullhd is-relative">
+<div class="case-studies-page-item-v1 p-m bg-color--white is-rounded--4xs is-relative py-2xl__tablet px-4xl__tablet p-4xl__desktop p-l__widescreen p-4xl__fullhd">
 	<!-- Link -->
 	<a href="<?php echo get_permalink(get_the_ID()) ?>" class="link--full-parent"><span class="visuallyhidden"><?php echo get_the_title() ?></span></a>
-	
+
 	<!-- ItemTop -->
 	<div class="is-flex-tablet flex-wrap--wrap__tablet justify-content--center__tablet">
 		<!-- CaseLogo -->
-		<img width="224" height="48" src="<?php echo get_field('company_logo', get_the_ID())['url'] ?>" alt="<?php echo get_field('company_name', get_the_ID()) ?>" class="case-studies-page-item-v1__case-logo mb-xs mb-0__tablet order--1__tablet w-50__tablet pr-l__tablet align-self--center__tablet ml-auto__desktop">
+		<img width="224" height="48" src="<?php echo get_field('company_logo', get_the_ID())['url'] ?>" alt="<?php echo get_field('company_name', get_the_ID()) ?>" class="mb-xs mb-0__tablet case-studies-page-item-v1__case-logo order--1__tablet w-50__tablet pr-l__tablet align-self--center__tablet ml-auto__desktop">
 		<!-- CaseDescription -->
-		<p class="case-studies-page-item-v1__description has-text-centered typo--body-big mt-0 mb-xl mt-m__tablet mb-l__tablet order--3__tablet w-100__tablet typo--unbounded__widescreen typo--h3__widescreen typo--light__widescreen mx-auto__widescreen">
+		<p class="mt-0 mb-xl mb-l__tablet case-studies-page-item-v1__description has-text-centered typo--body-big order--3__tablet w-100__tablet typo--unbounded__widescreen typo--h3__widescreen typo--light__widescreen">
 			<?php echo get_field('featured_text', get_the_ID()) ?>
 		</p>
 		<!-- StatsNumbers -->
-		<div class="case-studies-page-item-v1__stats is-flex justify-content--center justify-content--flex-start__tablet mb-m order--2__tablet pl-l__tablet mb-0__tablet mt-0__tablet mr-auto__desktop">
+		<div class="mb-m case-studies-page-item-v1__stats is-flex justify-content--center justify-content--flex-start__tablet order--2__tablet pl-l__tablet mr-auto__desktop">
 			<div class="pr-xs">
 				<!-- StatName -->
-				<span class="is-block has-text-centered color--gray typo--body typo--medium mb-3xs">
+				<span class="mb-2xs is-block has-text-centered color--gray typo--body typo--medium">
 					Published Articles
 				</span>
 				<!-- StatValue -->
-				<span class="is-block has-text-centered typo--h1 typo--light typo--unbounded is-uppercase">
+				<span class="is-block has-text-centered typo--h1 typo--light typo--unbounded is-uppercase line-height--1">
 					<?php echo get_field('published_articles', get_the_ID()) ?>
 				</span>
 			</div>
 			<div class="pl-xs">
 				<!-- StatName -->
-				<span class="is-block has-text-centered color--gray typo--body typo--medium mb-3xs">
+				<span class="mb-2xs is-block has-text-centered color--gray typo--body typo--medium">
 					Online readership
 				</span>
 				<!-- StatValue -->
-				<span class="is-block has-text-centered typo--h1 typo--light typo--unbounded is-uppercase">
+				<span class="is-block has-text-centered typo--h1 typo--light typo--unbounded is-uppercase line-height--1">
 					<?php echo get_field('online_readership', get_the_ID()) ?>
 				</span>
 			</div>
 		</div>
 	</div>
 	<!-- Spacer -->
-	<div class="case-studies-page-item-v1__spacer is-hidden-mobile"></div>
+	<div class="case-studies-page-item-v1__spacer is-hidden-mobile mb-l__tablet"></div>
 	<!-- MediaCards -->
-	<div class="case-studies-page-item-v1__media-cards mt-l__tablet">
-		<div class="columns is-mobile is-multiline is-variable is-2 py-4 is-5-tablet py-3xs__tablet">
+	<div class="case-studies-page-item-v1__media-cards">
+		<div class="columns is-mobile is-multiline">
 			<?php
 			if ( have_rows( 'repeater_media', get_the_ID() ) ) {
 				$count = 0;
@@ -57,7 +57,7 @@ namespace WP_Rig\WP_Rig;
 					the_row();
 					$count++;
 					?>
-					<div class="column py-2 is-half-mobile is-half-tablet is-one-quarter-widescreen py-2xs__tablet">
+					<div class="column is-half-mobile is-half-tablet is-one-quarter-widescreen">
 						<!-- MediaCard -->
 						<div class="is-block bg-color--gray-light is-rounded--4xs p-4xs pt-3xs p-3xs__tablet pt-xs__tablet">
 							<!-- MediaLogo -->

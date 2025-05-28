@@ -76,7 +76,7 @@ function marketacross_page_case_studies_get_column_class($card_version, $current
 		<section class="pb-6xl">
 			<div class="container">
 				<!-- Cards -->
-				<div class="columns is-multiline">
+				<div class="columns is-multiline is-variable">
 					<?php
 					if ( $query->have_posts() ) {
 
