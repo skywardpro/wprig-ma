@@ -22,6 +22,9 @@ namespace WP_Rig\WP_Rig;
 			<!-- CaseDescription -->
 			<p class="case-studies-page-item-v3__description has-text-centered has-text-left-tablet typo--body-big mt-0 mb-2xl w-100__tablet">
 				<?php echo get_field( 'featured_text', get_the_ID() ) ?>
+				<!-- Garantees elemnt height equals two lines -->
+				<br>
+				<br>
 			</p>
 		</div>
 		<div class="column py-0 is-full-tablet">

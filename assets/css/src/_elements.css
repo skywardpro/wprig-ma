@@ -737,7 +737,7 @@ table {
 	@media (--tablet-query) {
 		-webkit-line-clamp: 3;
 	}
-
+	
 	@media (--widescreen-query) {
 		max-width: 90rem;
 		-webkit-line-clamp: 4;
@@ -888,6 +888,8 @@ table {
 		}
 	}
 }
+
+/* Case Studies Page Item Media Height */
 
 .case-studies-page-item-v1__media-screenshot,
 .case-studies-page-item-v2__media-screenshot,
