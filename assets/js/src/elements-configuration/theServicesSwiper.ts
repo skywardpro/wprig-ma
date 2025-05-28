@@ -15,6 +15,7 @@ const theServicesSwiper = new Swiper('.the-services-swiper', {
     breakpoints: {
         769: {
             spaceBetween: 24,
+            slidesPerView: 'auto',
         },
         1216: {
             spaceBetween: 24,
