@@ -653,7 +653,6 @@ table {
 
 	@media (--tablet-query) {
 		object-position: center center;
-		border-right: 1px solid var(--color-theme-deep-purple-10);
 		max-width: 273px;
 		flex-shrink: 0;
 	}
@@ -681,6 +680,12 @@ table {
 		max-width: 90rem;
 	}
 
+}
+
+.case-studies-page-item-v1__stats {
+	@media (--tablet-query) {
+		border-left: 1px solid var(--color-theme-deep-purple-10);
+	}
 }
 
 .case-studies-page-item-v1__spacer {

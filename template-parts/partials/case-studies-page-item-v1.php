@@ -18,11 +18,11 @@ namespace WP_Rig\WP_Rig;
 		<!-- CaseLogo -->
 		<img width="224" height="48" src="<?php echo get_field('company_logo', get_the_ID())['url'] ?>" alt="<?php echo get_field('company_name', get_the_ID()) ?>" class="mb-xs mb-0__tablet case-studies-page-item-v1__case-logo order--1__tablet w-50__tablet pr-l__tablet align-self--center__tablet ml-auto__desktop">
 		<!-- CaseDescription -->
-		<p class="mt-0 mb-xl mb-l__tablet case-studies-page-item-v1__description has-text-centered typo--body-big order--3__tablet w-100__tablet typo--unbounded__widescreen typo--h3__widescreen typo--light__widescreen">
+		<p class="mt-0 mb-xl mb-l__tablet case-studies-page-item-v1__description has-text-centered typo--body-big order--3__tablet w-100__tablet mt-m__tablet typo--unbounded__widescreen typo--h3__widescreen typo--light__widescreen">
 			<?php echo get_field('featured_text', get_the_ID()) ?>
 		</p>
 		<!-- StatsNumbers -->
-		<div class="mb-m case-studies-page-item-v1__stats is-flex justify-content--center align-items--flex-end justify-content--flex-start__tablet order--2__tablet pl-l__tablet mr-auto__desktop">
+		<div class="mb-m case-studies-page-item-v1__stats is-flex justify-content--center align-items--flex-end justify-content--flex-start__tablet order--2__tablet pl-l__tablet mb-0__tablet mr-auto__desktop">
 			<div class="pr-xs">
 				<!-- StatName -->
 				<span class="mb-2xs is-block has-text-centered color--gray typo--body typo--medium">
