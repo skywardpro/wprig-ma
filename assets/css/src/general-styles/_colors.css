@@ -82,6 +82,10 @@
 	color: var(--color-theme-gray) !important;
 }
 
+.color--gray-50 {
+	color: var(--color-theme-gray-50) !important;
+}
+
 .color--gray-dark {
 	color: var(--color-theme-gray-dark) !important;
 }

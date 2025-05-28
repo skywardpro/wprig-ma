@@ -35,6 +35,10 @@
 	background: var(--color-theme-gray);
 }
 
+.bg-color--gray-50 {
+	background: var(--color-theme-gray-50);
+}
+
 .bg-color--gray-light {
 	background: var(--color-theme-gray-light);
 }

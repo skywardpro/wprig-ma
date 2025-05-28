@@ -108,6 +108,7 @@
 
 	/* Custom editor colors */
 	--color-theme-gray: #7A7F82;
+	--color-theme-gray-50: rgba(122, 127, 130, 0.5);
 	--color-theme-gray-light: #EEEEEE;
 	--color-theme-gray-dark: #3F4E5F;
 
