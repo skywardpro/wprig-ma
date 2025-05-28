@@ -24,9 +24,9 @@ $post_ids = get_posts( array(
 		</h2>
 
 		<!-- Subheading -->
-		<div class="typo--h3 typo--light color--white typo--unbounded typo--h1__desktop mb-l mb-xl__desktop mb-4xl__widescreen">
+		<p class="typo--h3 typo--light color--white typo--unbounded typo--h1__desktop mb-l mb-xl__desktop mb-4xl__widescreen">
 			LATEST MEDIA HITS <br class="is-hidden-tablet">WE <br class="is-hidden-mobile">LANDED FOR OUR CLIENTS
-		</div>
+		</p>
 
 		<!-- Newsroom Swiper -->
 		<div class="swiper newsroom-swiper overflow--visible">
