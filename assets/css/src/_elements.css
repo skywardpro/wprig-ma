@@ -1012,7 +1012,6 @@ table {
 
 	.vertical-logos-slider-slide.swiper-slide-next+.swiper-slide,
 	.vertical-logos-slider-slide.swiper-slide-next+.swiper-slide+.swiper-slide,
-	.vertical-logos-slider-slide:has(+ .swiper-slide + .swiper-slide-next),
 	.vertical-logos-slider-slide:has(+ .swiper-slide-next) {
 		opacity: 0.6 !important;
 	}

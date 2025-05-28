@@ -1,7 +1,7 @@
 const verticalLogosSlider = new Swiper('.vertical-logos-slider', {
   slidesPerView: 'auto',
   spaceBetween: 24,
-  speed: 3000,
+  speed: 2000,
   loop: true,
   allowTouchMove: false,
   autoplay: {
