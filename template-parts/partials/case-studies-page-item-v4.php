@@ -68,7 +68,9 @@ namespace WP_Rig\WP_Rig;
 									<!-- MediaLogo -->
 									<img width="160" height="40" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/case-studies-media-logo-<?php echo get_sub_field( 'media_source' )['value'] ?>.png" alt="<?php echo get_sub_field( 'media_source' )['label'] ?>" class="case-studies-page-item-v4__media-logo mb-3xs mb-xs__tablet is-block mx-auto">
 									<!-- Screenshot -->
-									<img width="230" height="148" src="<?php echo get_sub_field( 'media_image' )['sizes']['thumbnail'] ?>" alt="<?php echo get_sub_field( 'media_name' ) ?>" class="case-studies-page-item-v4__media-screenshot is-rounded--5xs">
+									<div class="case-studies-page-item-v4__media-screenshot-overlay-wrapper">
+										<img width="230" height="148" src="<?php echo get_sub_field( 'media_image' )['sizes']['thumbnail'] ?>" alt="<?php echo get_sub_field( 'media_name' ) ?>" class="case-studies-page-item-v4__media-screenshot is-rounded--5xs">
+									</div>
 								</div>
 							</div>
 							<?php

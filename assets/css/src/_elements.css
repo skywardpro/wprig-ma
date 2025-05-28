@@ -870,7 +870,26 @@ table {
 	}
 }
 
-/* Case Studies Page Item Media Height */
+/* Case Studies Page Item Media Wrapper Overlay */
+
+.case-studies-page-item-v1__media-screenshot-overlay-wrapper,
+.case-studies-page-item-v2__media-screenshot-overlay-wrapper,
+.case-studies-page-item-v4__media-screenshot-overlay-wrapper {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 60%;
+		backdrop-filter: blur(2.33px);
+		mask: linear-gradient(to top, white, white 60%, transparent);
+	}
+}
+
+/* Case Studies Page Item Media */
 
 .case-studies-page-item-v1__media-screenshot,
 .case-studies-page-item-v2__media-screenshot,
