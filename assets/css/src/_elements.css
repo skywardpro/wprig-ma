@@ -621,6 +621,28 @@ table {
 	}
 }
 
+/* Case Studies Page Items */
+.case-studies-page-items {
+	& .columns {
+		--gap: 1.6rem;
+		--half-gap: calc(var(--gap) / 2);
+
+		margin: calc(-1 * var(--half-gap));
+
+		& .column {
+			padding: var(--half-gap);
+		}
+
+		@media (--tablet-query) {
+			--gap: 2.4rem;
+		}
+		
+		@media (--widescreen-query) {
+			--gap: 3.2rem;
+		}
+	}
+}
+
 /* Case Studies Page Item (v1) */
 
 .case-studies-page-item-v1__case-logo {

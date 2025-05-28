@@ -73,10 +73,10 @@ function marketacross_page_case_studies_get_column_class($card_version, $current
 		);
 		$query = new \WP_Query( $args );
 		?>
-		<section class="pb-6xl">
+		<section class="case-studies-page-items pb-6xl">
 			<div class="container">
 				<!-- Cards -->
-				<div class="columns is-multiline is-variable">
+				<div class="columns is-multiline">
 					<?php
 					if ( $query->have_posts() ) {
 
