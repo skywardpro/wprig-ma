@@ -116,7 +116,7 @@ namespace WP_Rig\WP_Rig;
 					<div class="the-services-swiper__slide-face is-flex h-100 flex-direction--column">
 
 						<!-- BgImage -->
-						<img width="320" height="526" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/the-services-slider-card-bg.webp' ?>" alt="Market Across SEO" class="the-services-swiper__slide-bg">
+						<img width="320" height="526" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/the-services-slider-card-bg-2.webp' ?>" alt="Market Across SEO" class="the-services-swiper__slide-bg">
 
 						<!-- Title -->
 						<h3 class="typo--h1 typo--light mt-0 mb-2xs">
@@ -164,7 +164,7 @@ namespace WP_Rig\WP_Rig;
 					<div class="the-services-swiper__slide-face is-flex h-100 flex-direction--column">
 
 						<!-- BgImage -->
-						<img width="320" height="526" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/the-services-slider-card-bg.webp' ?>" alt="Market Across ADVISORY" class="the-services-swiper__slide-bg">
+						<img width="320" height="526" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/the-services-slider-card-bg-3.webp' ?>" alt="Market Across ADVISORY" class="the-services-swiper__slide-bg">
 
 						<!-- Title -->
 						<h3 class="typo--h1 typo--light mt-0 mb-2xs">
