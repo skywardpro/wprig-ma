@@ -32,21 +32,21 @@ namespace WP_Rig\WP_Rig;
 			<div class="case-studies-page-item-v3__stats is-flex justify-content--center align-items--flex-end justify-content--flex-start__tablet mr-auto__desktop">
 				<div class="pr-xs">
 					<!-- StatName -->
-					<span class="is-block has-text-centered color--gray typo--body typo--medium mb-2xs">
+					<span class="is-block has-text-centered color--gray typo--body typo--medium mb-2xs has-text-left-tablet">
 						Published Articles
 					</span>
 					<!-- StatValue -->
-					<span class="is-block has-text-centered typo--h1 typo--light typo--unbounded is-uppercase line-height--1">
+					<span class="is-block has-text-centered typo--h1 typo--light typo--unbounded is-uppercase line-height--1 has-text-left-tablet">
 						<?php echo get_field( 'published_articles', get_the_ID() ) ?>
 					</span>
 				</div>
 				<div class="pl-xs">
 					<!-- StatName -->
-					<span class="is-block has-text-centered color--gray typo--body typo--medium mb-2xs">
+					<span class="is-block has-text-centered color--gray typo--body typo--medium mb-2xs has-text-left-tablet">
 						Online readership
 					</span>
 					<!-- StatValue -->
-					<span class="is-block has-text-centered typo--h1 typo--light typo--unbounded is-uppercase line-height--1">
+					<span class="is-block has-text-centered typo--h1 typo--light typo--unbounded is-uppercase line-height--1 has-text-left-tablet">
 						<?php echo get_field( 'online_readership', get_the_ID() ) ?>
 					</span>
 				</div>
