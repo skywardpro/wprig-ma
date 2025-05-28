@@ -53,7 +53,7 @@ namespace WP_Rig\WP_Rig;
 		</div>
 		<div class="column py-0 order--2__tablet is-full-tablet order--4__widescreen is-half-widescreen align-self--flex-start__widescreen">
 			<!-- MediaCards -->
-			<div class="case-studies-page-item-v2__media-cards mb-2xl__tablet mb-0__widescreen">
+			<div class="case-studies-page-item-v2__media-cards mx-auto mx-0__tablet mb-2xl__tablet mb-0__widescreen">
 				<div class="columns is-mobile is-multiline">
 					<?php
 					if ( have_rows( 'repeater_media', get_the_ID() ) ) {

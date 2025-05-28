@@ -698,7 +698,6 @@ table {
 .case-studies-page-item-v1__media-cards {
 
 	max-width: 51.6rem;
-	margin: 0 auto;
 
 	@media (--widescreen-query) {
 		max-width: 100%;

@@ -48,7 +48,7 @@ namespace WP_Rig\WP_Rig;
 	<!-- Spacer -->
 	<div class="case-studies-page-item-v1__spacer is-hidden-mobile mb-l__tablet"></div>
 	<!-- MediaCards -->
-	<div class="case-studies-page-item-v1__media-cards">
+	<div class="case-studies-page-item-v1__media-cards mx-auto">
 		<div class="columns is-mobile is-multiline">
 			<?php
 			if ( have_rows( 'repeater_media', get_the_ID() ) ) {
