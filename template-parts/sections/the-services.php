@@ -70,7 +70,7 @@ namespace WP_Rig\WP_Rig;
 								<?php echo $dummy_card['subtitle'] ?>
 							</p>
 
-							<!-- Toggle -->
+							<!-- OpenBtn -->
 							<button class="the-services-swiper__slide-open reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0"></button>
 						</div>
 						<!-- Overlay -->

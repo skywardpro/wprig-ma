@@ -1077,7 +1077,6 @@ table {
 		width: 2rem;
 		height: 2rem;
 		transform: translate(-50%, -50%);
-		background: var(--color-theme-white-60);
 		border-radius: 50%;
 		transition: opacity var(--animation-speed) linear;
 	}
