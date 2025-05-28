@@ -889,6 +889,20 @@ table {
 	}
 }
 
+.case-studies-page-item-v1__media-screenshot,
+.case-studies-page-item-v2__media-screenshot,
+.case-studies-page-item-v4__media-screenshot {
+	object-fit: cover;
+	object-position: center top;
+
+	width: 100%;
+	height: 13.2rem;
+
+	@media (--tablet-query) {
+		height: 14.8rem;
+	}
+}
+
 /* Services Page */
 .services-page__page-hero-wrapper {
 	background: linear-gradient(180deg,

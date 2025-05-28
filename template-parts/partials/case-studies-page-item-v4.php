@@ -53,7 +53,7 @@ namespace WP_Rig\WP_Rig;
 		</div>
 		<div class="column py-0 order--2__tablet is-full-tablet order--3__widescreen is-half-widescreen align-self--flex-start__widescreen">
 			<!-- MediaCards -->
-			<div class="case-studies-page-item-v2__media-cards mx-auto mx-0__tablet  mb-2xl__tablet mb-0__widescreen">
+			<div class="case-studies-page-item-v4__media-cards mx-auto mx-0__tablet  mb-2xl__tablet mb-0__widescreen">
 				<div class="columns is-mobile is-multiline is-variable">
 					<?php
 					if ( have_rows( 'repeater_media', get_the_ID() ) ) {
@@ -68,7 +68,7 @@ namespace WP_Rig\WP_Rig;
 									<!-- MediaLogo -->
 									<img width="160" height="40" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/case-studies-media-logo-<?php echo get_sub_field( 'media_source' )['value'] ?>.png" alt="<?php echo get_sub_field( 'media_source' )['label'] ?>" class="case-studies-page-item-v4__media-logo mb-3xs mb-xs__tablet is-block mx-auto">
 									<!-- Screenshot -->
-									<img width="230" height="148" src="<?php echo get_sub_field( 'media_image' )['sizes']['thumbnail'] ?>" alt="<?php echo get_sub_field( 'media_name' ) ?>" class="w-100 h-100 is-image-cover is-rounded--5xs">
+									<img width="230" height="148" src="<?php echo get_sub_field( 'media_image' )['sizes']['thumbnail'] ?>" alt="<?php echo get_sub_field( 'media_name' ) ?>" class="case-studies-page-item-v4__media-screenshot is-rounded--5xs">
 								</div>
 							</div>
 							<?php
