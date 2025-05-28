@@ -636,7 +636,7 @@ table {
 		@media (--tablet-query) {
 			--gap: 2.4rem;
 		}
-		
+
 		@media (--widescreen-query) {
 			--gap: 3.2rem;
 		}
@@ -742,7 +742,7 @@ table {
 	@media (--tablet-query) {
 		-webkit-line-clamp: 3;
 	}
-	
+
 	@media (--widescreen-query) {
 		max-width: 90rem;
 		-webkit-line-clamp: 4;
@@ -1040,7 +1040,7 @@ table {
 		width: 38.2rem !important;
 	}
 
-	@media (--fullhd-query) {
+	@media (--tablet-query) {
 		height: 56rem !important;
 	}
 
@@ -1059,7 +1059,9 @@ table {
 
 .the-services-swiper__slide-open,
 .the-services-swiper__slide-close {
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 	width: 4rem;
 	height: 4rem;
 	display: flex;
