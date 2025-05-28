@@ -53,7 +53,7 @@ $post_ids = get_posts( array(
 						</p>
 
 						<!-- Logo -->
-						<img width="135" height="30" src="<?php echo get_field( 'company_logo', $post_id )['sizes']['thumbnail'] ?>" alt="<?php echo get_field('company_name', $post_id) ?> logo" class="is-block mt-auto case-studies-swiper__thumbnail" />
+						<img width="135" height="30" src="<?php echo get_field( 'company_logo', $post_id )['sizes']['thumbnail'] ?>" alt="<?php echo get_field('company_name', $post_id) ?> logo" class="is-block mt-auto case-studies-swiper__slide-logo" />
 
 					</a>
 					<?php

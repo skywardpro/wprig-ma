@@ -349,11 +349,10 @@ table {
 	right: 0.8rem;
 }
 
-.case-studies-swiper .case-studies-swiper__thumbnail {
-	object-fit: cover;
-	object-position: center;
-	width: 13.5rem;
+.case-studies-swiper .case-studies-swiper__slide-logo {
+	object-fit: contain;
 	height: 3rem;
+	width: fit-content;
 }
 
 /* Our Partners - Section */
