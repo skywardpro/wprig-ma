@@ -54,7 +54,7 @@ namespace WP_Rig\WP_Rig;
 				for ( $i = 0; $i < 5; $i++ ) {
 					?>
 					<!-- The Services Swiper Card -->
-					<div class="swiper-slide is-flex flex-direction--column the-services-swiper__slide is-rounded--4xs is-clipped bg-color--white p-m color--white <?php echo $i === 0 ? 'active' : '' ?>">
+					<div class="swiper-slide is-flex flex-direction--column the-services-swiper__slide is-rounded--4xs is-clipped bg-color--white p-xs color--white p-m__desktop p-xs__widescreen p-m__fullhd <?php echo $i === 0 ? 'active' : '' ?>">
 						<div class="the-services-swiper__slide-face is-flex h-100 flex-direction--column">
 
 							<!-- BgImage -->
