@@ -746,18 +746,6 @@ table {
 
 }
 
-.case-studies-page-item-v2__spacer {
-	height: 0.1rem;
-	background-color: var(--color-theme-deep-purple-10);
-	width: calc(100% + 1rem);
-	margin-left: -0.5rem;
-
-	@media (--desktop-query) {
-		max-width: 61.4rem;
-		margin: 0 auto;
-	}
-}
-
 .case-studies-page-item-v2__pullupper {
 	margin-bottom: -100%;
 }
@@ -833,18 +821,6 @@ table {
 		margin-bottom: -1em !important;
 	}
 
-}
-
-.case-studies-page-item-v4__spacer {
-	height: 0.1rem;
-	background-color: var(--color-theme-deep-purple-10);
-	width: calc(100% + 1rem);
-	margin-left: -0.5rem;
-
-	@media (--desktop-query) {
-		max-width: 61.4rem;
-		margin: 0 auto;
-	}
 }
 
 .case-studies-page-item-v4__pullupper {
