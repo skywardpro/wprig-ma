@@ -14,7 +14,7 @@ get_header();
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-<main id="case-page" class="site-main">
+<main id="case-page" class="site-main bg-color--light-purple">
 
 	<!-- Hero -->
 	<?php get_template_part('template-parts/sections/case-page-hero') ?>

@@ -37,7 +37,7 @@
 	letter-spacing: 1%;
 	font-weight: 500;
 	transition: var(--animation-speed);
-	padding: var(--spacing-2xs) var(--spacing-m);
+	padding: var(--spacing-2xs) var(--spacing-l);
 	border-radius: 0.4rem;
 	border: 0;
 }
@@ -72,7 +72,7 @@
 	letter-spacing: 1%;
 	font-weight: 500;
 	transition: var(--animation-speed);
-	padding: var(--spacing-2xs) 2.8rem;
+	padding: var(--spacing-2xs) var(--spacing-l);
 	border-radius: 0.4rem;
 	border: 0;
 }
@@ -91,14 +91,14 @@
 	letter-spacing: 0;
 	font-weight: 500;
 	transition: var(--animation-speed);
-	padding: var(--spacing-3xs) var(--spacing-xs);
+	padding: var(--spacing-3xs) var(--spacing-l);
 	border-radius: 0.4rem;
 	border: 0;
 }
 
 /* States - Secondary */
 .btn--secondary:hover,
-.btn--secondary-small:hover {	
+.btn--secondary-small:hover {
 	background: var(--color-theme-white-60);
 }
 
@@ -148,7 +148,7 @@
 	letter-spacing: 1%;
 	font-weight: 500;
 	transition: var(--animation-speed);
-	padding: var(--spacing-2xs) var(--spacing-m);
+	padding: var(--spacing-2xs) var(--spacing-l);
 	border-radius: 0.4rem;
 	border: 0;
 }
@@ -169,14 +169,97 @@
 	pointer-events: none;
 }
 
+/* Arrow Buttons */
+.btn--primary.is-arrowed,
+.btn--primary-small.is-arrowed,
+.btn--secondary.is-arrowed,
+.btn--secondary-small.is-arrowed,
+.btn--white.is-arrowed,
+.btn--white-small.is-arrowed {
+	position: relative;
+	padding-right: calc(6.4rem);
+	justify-content: start;
+
+	&::before,
+	&::after {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 50%;
+		right: 1.6rem;
+		transform: translate(-50%, -50%);
+		transition: opacity var(--animation-speed);
+	}
+}
+
+.btn--primary.is-arrowed,
+.btn--primary-small.is-arrowed {
+
+	/* White Icon */
+	&::before {
+		content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMTdMMTcgN00xNyA3SDdNMTcgN1YxNyIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+		opacity: 1;
+	}
+
+	/* Dark Icon */
+	&::after {
+		content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMTdMMTcgN00xNyA3SDdNMTcgN1YxNyIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+		opacity: 0;
+	}
+
+	&:hover::before {
+		opacity: 0;
+	}
+	
+	&:hover::after {
+		opacity: 1;
+	}
+
+}
+
+.btn--secondary.is-arrowed,
+.btn--secondary-small.is-arrowed {
+
+	/* White Icon */
+	&::before {
+		content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMTdMMTcgN00xNyA3SDdNMTcgN1YxNyIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+		opacity: 1;
+	}
+}
+
+.btn--white.is-arrowed,
+.btn--white-small.is-arrowed {
+
+	/* White Icon */
+	&::before {
+		content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMTdMMTcgN00xNyA3SDdNMTcgN1YxNyIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+		opacity: 0;
+	}
+
+	/* Dark Icon */
+	&::after {
+		content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMTdMMTcgN00xNyA3SDdNMTcgN1YxNyIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+		opacity: 1;
+	}
+
+	&:hover::before {
+		opacity: 1;
+	}
+	
+	&:hover::after {
+		opacity: 0;
+	}
+
+}
+
 
 /* Full screen view for buttons on mobile */
 @media (--mobile-query) {
 
 	.btn--primary.is-full-mobile,
-	.btn--primary-small.is-full-mobile ,
+	.btn--primary-small.is-full-mobile,
 	.btn--secondary.is-full-mobile,
-	.btn--secondary-small.is-full-mobile ,
+	.btn--secondary-small.is-full-mobile,
 	.btn--white.is-full-mobile,
 	.btn--white-small.is-full-mobile {
 		width: 100%;
