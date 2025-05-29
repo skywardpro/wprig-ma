@@ -122,6 +122,17 @@ async function initElementsConfiguration() {
     if (document.querySelector('.clients-case-studies-swiper')) {
         const clientsCaseStudiesSwiper = await import('./elements-configuration/clientsCaseStudiesSwiper');
     }
+    
+    /*
+     * Init Working With TopArticlesSwiper 
+     *
+     * Where: TopArticlesSwiper
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.top-articles-swiper')) {
+        const topArticlesSwiper = await import('./elements-configuration/topArticlesSwiper');
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.
