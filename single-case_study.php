@@ -30,6 +30,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	
 	<!-- Influencer Marketing -->
 	<?php get_template_part('template-parts/sections/influencer-marketing') ?>
+	
+	<!-- Selected Testimonial -->
+	<?php get_template_part('template-parts/sections/selected-testimonial') ?>
 
 </main>
 <?php

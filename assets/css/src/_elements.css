@@ -1465,3 +1465,37 @@ table {
 		height: 4rem;
 	}
 }
+
+/* Selected Testimonial Section */
+
+.selected-testimonial__icon {
+	width: 2.4rem;
+	height: 2.4rem;
+	object-fit: contain;
+	object-position: center;
+
+	@media (--desktop-query) {
+		width: 3.6rem;
+		height: 3.6rem;
+	}
+}
+
+.selected-testimonial__quote {
+	border-bottom: 1px solid var(--color-theme-deep-purple-10);
+
+	@media (--desktop-query) {
+		border-bottom: none;
+	}
+}
+
+.selected-testimonial__avatar {
+	width: 12.8rem;
+	height: 12.8rem;
+	object-fit: cover;
+	object-position: center;
+
+	@media (--desktop-query) {
+		width: 21.6rem;
+		height: 21.6rem;
+	}
+}
