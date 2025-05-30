@@ -24,6 +24,12 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	
 	<!-- Case Details -->
 	<?php get_template_part('template-parts/sections/case-details') ?>
+	
+	<!-- Reddit Tration -->
+	<?php get_template_part('template-parts/sections/reddit-traction') ?>
+	
+	<!-- Influencer Marketing -->
+	<?php get_template_part('template-parts/sections/influencer-marketing') ?>
 
 </main>
 <?php

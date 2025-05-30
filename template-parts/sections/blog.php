@@ -37,7 +37,7 @@ $post_ids = get_posts( array(
 
 
 
-						<!-- Ttile -->
+						<!-- Title -->
 						<h3 class="typo--subtitle-big color--deep-purple typo--semibold px-xs mt-xs mb-2xl">
 							<?php echo get_the_title( $post_id ) ?>
 						</h3>

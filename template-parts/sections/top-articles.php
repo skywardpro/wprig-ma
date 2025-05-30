@@ -46,7 +46,7 @@ $post_ids = get_posts( array(
 						<!-- Logo -->
 						<img width="80" height="20" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/newsroom-<?php echo $news_source_name ?>-logo.webp" alt="<?php echo strtoupper( $news_source_name ) ?> Logo" class="top-articles-swiper__logo mb-2xl" />
 
-						<!-- Ttile -->
+						<!-- Title -->
 						<h3 class="typo--subtitle-big typo--semibold color--deep-purple mt-0 mb-l ">
 							<?php echo get_the_title( $post_id ) ?>
 						</h3>

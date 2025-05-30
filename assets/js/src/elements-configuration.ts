@@ -133,6 +133,17 @@ async function initElementsConfiguration() {
     if (document.querySelector('.top-articles-swiper')) {
         const topArticlesSwiper = await import('./elements-configuration/topArticlesSwiper');
     }
+    
+    /*
+     * Init Working With RedditTractionSwiper 
+     *
+     * Where: RedditTractionSwiper
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.reddit-traction-swiper')) {
+        const redditTractionSwiper = await import('./elements-configuration/redditTractionSwiper');
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.
