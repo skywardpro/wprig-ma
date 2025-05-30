@@ -144,6 +144,17 @@ async function initElementsConfiguration() {
     if (document.querySelector('.reddit-traction-swiper')) {
         const redditTractionSwiper = await import('./elements-configuration/redditTractionSwiper');
     }
+    
+    /*
+     * Init Working With InfluencerMarketingSwiper 
+     *
+     * Where: InfluencerMarketingSwiper
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.influencer-marketing-swiper')) {
+        const influencerMarketingSwiper = await import('./elements-configuration/influencerMarketingSwiper');
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.

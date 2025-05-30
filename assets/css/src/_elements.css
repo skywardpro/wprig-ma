@@ -1415,3 +1415,53 @@ table {
 		-webkit-line-clamp: 4;
 	}
 }
+
+
+/* Influencer Marketing Swiper */
+
+.influencer-marketing-swiper .swiper-pagination-bullet {
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: var(--color-theme-deep-purple);
+	opacity: 1;
+}
+
+.influencer-marketing-swiper .swiper-pagination-bullet-active {
+	width: 1rem;
+	height: 1rem;
+	background-color: var(--color-theme-white);
+}
+
+.influencer-marketing-swiper .influencer-marketing-swiper__slide {
+	box-sizing: border-box;
+	width: 32rem !important;
+	height: auto;
+	flex-shrink: 0;
+
+	@media (--desktop-query) {
+		width: 46.4rem !important;
+	}
+}
+
+.influencer-marketing-swiper__title {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+
+	@media (--desktop-query) {
+		-webkit-line-clamp: 4;
+	}
+}
+
+.influencer-marketing-swiper__avatar {
+	width: 3.2rem;
+	height: 3.2rem;
+	object-fit: cover;
+	object-position: center;
+
+	@media (--desktop-query) {
+		width: 4rem;
+		height: 4rem;
+	}
+}
