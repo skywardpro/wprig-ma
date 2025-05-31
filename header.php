@@ -39,8 +39,8 @@ namespace WP_Rig\WP_Rig;
 
 				<!-- Desktop CTA button -->
 				<div class="header-cta-wrapper">
-					<a class="header-cta-button btn--secondary">
-						CONTACT US
+					<a class="header-cta-button btn--secondary is-uppercase">
+						Contact Us
 					</a>
 				</div>
 			</div>

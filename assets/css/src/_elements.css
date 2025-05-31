@@ -1499,3 +1499,49 @@ table {
 		height: 21.6rem;
 	}
 }
+
+
+/* More Case Studies Swiper */
+
+.more-case-studies-swiper .swiper-pagination-bullet {
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: var(--color-theme-white-60);
+	opacity: 1;
+}
+
+.more-case-studies-swiper .swiper-pagination-bullet-active {
+	width: 1rem;
+	height: 1rem;
+	background-color: var(--color-theme-deep-purple);
+}
+
+.more-case-studies-swiper .more-case-studies-swiper__slide {
+	box-sizing: border-box;
+	width: 30.4rem !important;
+	height: auto;
+	flex-shrink: 0;
+
+	@media (--tablet-query) {
+		width: 58.8rem !important;
+	}
+}
+
+.more-case-studies__logo {
+	height: 4.8rem;
+	width: fit-content;
+	max-width: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.more-case-studies-swiper__text {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+
+	@media (--tablet-query) {
+		-webkit-line-clamp: 2;
+	}
+}

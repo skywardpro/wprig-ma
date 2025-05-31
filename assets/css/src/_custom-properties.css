@@ -83,9 +83,8 @@
 
 	/* Color - Purple */
 	--color-theme-purple: #5E2BFF;
+	--color-theme-middle-purple: #8784FF;
 	--color-theme-purple-30: rgba(94, 43, 255, 0.3);
-	
-	/* Color - Deep Purple */
 	--color-theme-deep-purple: #120833;
 	--color-theme-light-purple: #E2EAFC;
 	--color-theme-deep-purple-10: rgba(1, 24, 41, 0.3);

@@ -155,6 +155,18 @@ async function initElementsConfiguration() {
     if (document.querySelector('.influencer-marketing-swiper')) {
         const influencerMarketingSwiper = await import('./elements-configuration/influencerMarketingSwiper');
     }
+    
+
+    /*
+     * Init Working With MoreCaseStudiesSwiper 
+     *
+     * Where: MoreCaseStudiesSwiper
+     * Handled by:
+     * WP_Rig_Toolkit/Swiper
+     */
+    if (document.querySelector('.influencer-marketing-swiper')) {
+        const moreCaseStudiesSwiper = await import('./elements-configuration/moreCaseStudiesSwiper');
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.

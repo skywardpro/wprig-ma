@@ -36,6 +36,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	
 	<!-- Share This Case -->
 	<?php get_template_part('template-parts/sections/share-this-case') ?>
+	
+	<!-- More Case Studies -->
+	<?php get_template_part('template-parts/sections/more-case-studies') ?>
 
 </main>
 <?php

@@ -50,6 +50,10 @@
 	color: var(--color-theme-purple-30) !important;
 }
 
+.color--middle-purple {
+	color: var(--color-theme-middle-purple) !important;
+}
+
 .color--deep-purple {
 	color: var(--color-theme-deep-purple) !important;
 }

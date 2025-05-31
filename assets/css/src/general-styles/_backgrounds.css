@@ -18,6 +18,10 @@
 	background: var(--color-theme-light-purple) !important;
 }
 
+.bg-color--middle-purple { 
+	background: var(--color-theme-middle-purple) !important;
+}
+
 .bg-color--purple-30 { 
 	background: rgba(94, 43, 255, 0.3) !important;
 }
