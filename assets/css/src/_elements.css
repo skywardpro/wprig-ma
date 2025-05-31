@@ -1272,6 +1272,14 @@ table {
 }
 
 .case-page-hero__second-main-column {
+
+	max-width: 42rem;
+	margin: 0 auto;
+
+	@media (--tablet-query) {
+		max-width: 100%;
+	}
+
 	@media (--desktop-query) {
 		width: 45% !important;
 	}
