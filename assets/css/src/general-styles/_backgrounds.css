@@ -1,54 +1,54 @@
 /*----------------------------
-# Backgrounds
+# Background
 ----------------------------*/
 
 .bg-color--primary {
-	background-color: var(--color-theme-primary);
+	background-color: var(--color-theme-primary) !important;
 }
 
 .bg-color--secondary {
-	background-color: var(--color-theme-secondary);
+	background-color: var(--color-theme-secondary) !important;
 }
 
 .bg-color--purple { 
-	background: #5E2BFF;
+	background: #5E2BFF !important;
 }
 
 .bg-color--light-purple { 
-	background: var(--color-theme-light-purple);
+	background: var(--color-theme-light-purple) !important;
 }
 
 .bg-color--purple-30 { 
-	background: rgba(94, 43, 255, 0.3);
+	background: rgba(94, 43, 255, 0.3) !important;
 }
 
 
 .bg-color--white {
-	background: #ffffff;
+	background: #ffffff !important;
 }
 
 .bg-color--white-10 {
-	background: var(--color-theme-white-10);
+	background: var(--color-theme-white-10) !important;
 }
 
 .bg-color--white-60 {
-	background: var(--color-theme-white-60);
+	background: var(--color-theme-white-60) !important;
 }
 
 .bg-color--gray {
-	background: var(--color-theme-gray);
+	background: var(--color-theme-gray) !important;
 }
 
 .bg-color--gray-50 {
-	background: var(--color-theme-gray-50);
+	background: var(--color-theme-gray-50) !important;
 }
 
 .bg-color--gray-light {
-	background: var(--color-theme-gray-light);
+	background: var(--color-theme-gray-light) !important;
 }
 
 .bg-color--gray-dark {
-	background: var(--color-theme-gray-dark);
+	background: var(--color-theme-gray-dark) !important;
 }
 
 .bg-color--gradient {
@@ -56,5 +56,5 @@
 }
 
 .bg-backdrop--blur {
-	backdrop-filter: blur(2rem);
+	backdrop-filter: blur(2rem) !important;
 }

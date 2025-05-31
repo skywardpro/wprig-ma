@@ -32,7 +32,7 @@ namespace WP_Rig\WP_Rig;
 					<ul class="is-flex align-items--center pl-0 mb-0 mt-m is-list--none">
 						<li class="mr-2xs mr-xs__tablet">
 							<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-10" href="https://twitter.com/MarketAcross" target="_blank">
-								<svg aria-hidden="true" width="20" height="20">
+								<svg aria-hidden="true" width="20" height="20" class="color--white">
 									<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-twitter-x"></use>
 								</svg>
 								<span class="visuallyhidden">Twitter-X</span>
@@ -40,7 +40,7 @@ namespace WP_Rig\WP_Rig;
 						</li>
 						<li class="mr-2xs mr-xs__tablet">
 							<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-10" href="https://www.instagram.com/marketacrosspr/?hl=en" target="_blank">
-								<svg aria-hidden="true" width="20" height="20">
+								<svg aria-hidden="true" width="20" height="20" class="color--white">
 									<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-instagram"></use>
 								</svg>
 								<span class="visuallyhidden">Instagram</span>
@@ -48,7 +48,7 @@ namespace WP_Rig\WP_Rig;
 						</li>
 						<li class="mr-2xs mr-xs__tablet">
 							<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-10" href="https://www.facebook.com/MarketAcross.IL/" target="_blank">
-								<svg aria-hidden="true" width="20" height="20">
+								<svg aria-hidden="true" width="20" height="20" class="color--white">
 									<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-facebook"></use>
 								</svg>
 								<span class="visuallyhidden">Facebook</span>
@@ -56,7 +56,7 @@ namespace WP_Rig\WP_Rig;
 						</li>
 						<li class="">
 							<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-10" href="https://www.linkedin.com/company/marketacross/?viewAsMember=true" target="_blank">
-								<svg aria-hidden="true" width="20" height="20">
+								<svg aria-hidden="true" width="20" height="20" class="color--white">
 									<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-linkedin"></use>
 								</svg>
 								<span class="visuallyhidden">Linkedin</span>

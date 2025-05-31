@@ -33,6 +33,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	
 	<!-- Selected Testimonial -->
 	<?php get_template_part('template-parts/sections/selected-testimonial') ?>
+	
+	<!-- Share This Case -->
+	<?php get_template_part('template-parts/sections/share-this-case') ?>
 
 </main>
 <?php
