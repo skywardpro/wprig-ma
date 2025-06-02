@@ -99,25 +99,10 @@ namespace WP_Rig\WP_Rig;
 		?>
 
 		<!-- BackToMain -->
-		<div class="columns">
-			<div class="column is-flex flex-direction--column align-items--flex-start">
-				<a href="" class="mb-xs btn--primary is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--primary is-arrowed is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--primary-small is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--primary-small is-arrowed is-full-mobile"> Back to main </a>
-			</div>
-			<div class="column is-flex flex-direction--column align-items--flex-start">
-				<a href="" class="mb-xs btn--white is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--white is-arrowed is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--white-small is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--white-small is-arrowed is-full-mobile"> Back to main </a>
-			</div>
-			<div class="column is-flex flex-direction--column align-items--flex-start">
-				<a href="" class="mb-xs btn--secondary is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--secondary is-arrowed is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--secondary-small is-full-mobile"> Back to main </a>
-				<a href="" class="mb-xs btn--secondary-small is-arrowed is-full-mobile"> Back to main </a>
-			</div>
+		<div class="is-flex justify-content--center">
+			<a href="" class="btn--secondary is-full-mobile">
+				Back to main
+			</a>
 		</div>
 	</div>
 </section>
