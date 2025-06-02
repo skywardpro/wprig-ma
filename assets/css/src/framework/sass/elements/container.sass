@@ -8,14 +8,12 @@ $container-max-width: $fullhd !default
   margin: 0 auto
   position: relative
   width: auto
-  max-width: calc(100vw - 3.2rem)
+  max-width: calc(100vw - 4.8rem)
   &.is-fluid
     max-width: none !important
     padding-left: $gap
     padding-right: $gap
     width: 100%
-  +tablet    
-    max-width: calc(100vw - 4.8rem)
   +desktop
     max-width: $desktop - $container-offset
   +until-widescreen
@@ -26,7 +24,7 @@ $container-max-width: $fullhd !default
       max-width: min($fullhd, $container-max-width) - $container-offset
   +widescreen
     &:not(.is-max-desktop)
-      max-width: calc(100vw - 8rem)
+      max-width: min($widescreen, $container-max-width) - $container-offset
   +fullhd
     &:not(.is-max-desktop):not(.is-max-widescreen)
       max-width: min($fullhd, $container-max-width) - $container-offset
