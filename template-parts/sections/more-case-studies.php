@@ -100,7 +100,7 @@ namespace WP_Rig\WP_Rig;
 
 		<!-- BackToMain -->
 		<div class="is-flex justify-content--center">
-			<a href="" class="btn--secondary is-full-mobile">
+			<a href="/case-studies/" class="btn--secondary is-full-mobile">
 				Back to main
 			</a>
 		</div>
