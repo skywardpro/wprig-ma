@@ -25,9 +25,9 @@ namespace WP_Rig\WP_Rig;
 		</div>
 
 		<!-- Logos Slider Heading-->
-		<h3 class="typo--medium color--white mb-m">
+		<h2 class="typo--body typo--medium color--white mb-m">
 			Trusted by our Clients
-		</h3>
+		</h2>
 
 		<!-- Logos Slider -->
 		<div class="full-width">
