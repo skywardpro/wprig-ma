@@ -1359,8 +1359,8 @@ table {
 	height: 16rem;
 }
 
-/* Case Details */
-.case-details__columns {
+/* Case Points */
+.case-points__columns {
 	--gap: 0;
 	--half-gap: calc(var(--gap) / 2);
 

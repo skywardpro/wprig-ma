@@ -22,8 +22,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	<!-- Top Articles -->
 	<?php get_template_part('template-parts/sections/top-articles') ?>
 	
-	<!-- Case Details -->
-	<?php get_template_part('template-parts/sections/case-details') ?>
+	<!-- Case Points -->
+	<?php get_template_part('template-parts/sections/case-points') ?>
 	
 	<!-- Reddit Tration -->
 	<?php get_template_part('template-parts/sections/reddit-traction') ?>
