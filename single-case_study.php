@@ -17,28 +17,28 @@ wp_rig()->print_styles( 'wp-rig-content' );
 <main id="case-page" class="site-main bg-color--light-purple">
 
 	<!-- Hero -->
-	<?php get_template_part('template-parts/sections/case-page-hero') ?>
+	<?php get_template_part('template-parts/sections/case-page/case-page-hero') ?>
 	
 	<!-- Top Articles -->
-	<?php get_template_part('template-parts/sections/top-articles') ?>
+	<?php get_template_part('template-parts/sections/case-page/top-articles') ?>
 	
 	<!-- Case Points -->
-	<?php get_template_part('template-parts/sections/case-points') ?>
+	<?php get_template_part('template-parts/sections/case-page/case-points') ?>
 	
 	<!-- Reddit Tration -->
-	<?php get_template_part('template-parts/sections/reddit-traction') ?>
+	<?php get_template_part('template-parts/sections/case-page/reddit-traction') ?>
 	
 	<!-- Influencer Marketing -->
-	<?php get_template_part('template-parts/sections/influencer-marketing') ?>
+	<?php get_template_part('template-parts/sections/case-page/influencer-marketing') ?>
 	
 	<!-- Selected Testimonial -->
-	<?php get_template_part('template-parts/sections/selected-testimonial') ?>
+	<?php get_template_part('template-parts/sections/case-page/selected-testimonial') ?>
 	
 	<!-- Share This Case -->
-	<?php get_template_part('template-parts/sections/share-this-case') ?>
+	<?php get_template_part('template-parts/sections/case-page/share-this-case') ?>
 	
 	<!-- More Case Studies -->
-	<?php get_template_part('template-parts/sections/more-case-studies') ?>
+	<?php get_template_part('template-parts/sections/case-page/more-case-studies') ?>
 
 </main>
 <?php
