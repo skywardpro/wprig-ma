@@ -24,7 +24,7 @@ namespace WP_Rig\WP_Rig;
 				<div class="column">
 					<!-- Text -->
 					<p class="mtypo--body mt-0 mb-0 typo--body-big__widescreen">
-						We were able to secure Polygon more than 25 mentions in the month around the mainnet and staking program launch. This resulted in more than 50% of all tokens being staked by holders in the first month, as well as a general influx of interest from token holders as well as potential partners and clients.
+						<?php echo get_field( 'points_what_we_did' ) ?>
 					</p>
 				</div>
 			</div>
@@ -39,7 +39,7 @@ namespace WP_Rig\WP_Rig;
 				<div class="column">
 					<!-- Text -->
 					<p class="mtypo--body mt-0 mb-0 typo--body-big__widescreen">
-						Polygon, formerly known as Matic Network, is a layer-2 scaling solution with side-chains for off-chain computation, while ensuring asset security using the Plasma framework and a decentralized network of Proof-of-Stake (PoS) validators. It aims to offer scalable and instant blockchain transactions.
+						<?php echo get_field( 'points_challenge' ) ?>
 					</p>
 				</div>
 			</div>
@@ -52,21 +52,25 @@ namespace WP_Rig\WP_Rig;
 					</h3>
 				</div>
 				<div class="column">
-					<!-- Text -->
-					<ul class="typo--body pl-xs mt-0 mb-0 typo--body-big__widescreen">
-						<li class="pl-3xs mb-xs">
-							Position Polygon as the leading force behind Blockchain developer adoption in India
-						</li>
-						<li class="pl-3xs mb-xs">
-							Showcase the new mainnet launch and its tech components
-						</li>
-						<li class="pl-3xs mb-xs">
-							Help launch the project's staking program
-						</li>
-						<li class="pl-3xs">
-							Solidify the projects massive customer growth success vs main competitors in market
-						</li>
-					</ul>
+					<?php
+					if ( have_rows( 'points_objectives_repeater' ) ) {
+						?>
+						<!-- Text -->
+						<ul class="typo--body pl-xs mt-0 mb-0 typo--body-big__widescreen">
+							<?php
+							while ( have_rows( 'points_objectives_repeater' ) ) {
+								the_row();
+								?>
+								<li class="pl-3xs <?php echo get_row_index() == 1 ? '' : 'mt-xs' ?>">
+									<?php echo get_sub_field( 'points_objective' ) ?>
+								</li>
+								<?php
+							}
+							?>
+						</ul>
+						<?php
+					}
+					?>
 				</div>
 			</div>
 		</div>
