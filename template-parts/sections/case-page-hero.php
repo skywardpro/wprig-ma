@@ -23,7 +23,7 @@ namespace WP_Rig\WP_Rig;
 
 					<!-- Heading -->
 					<h2 class="typo--unbounded typo--h3 typo--light is-uppercase mt-0 mb-m typo--h1__desktop">
-						Polygon <br>(Formerly Matic)
+						<?php echo get_the_title() ?>
 					</h2>
 
 					<!-- MetaColumns -->
@@ -40,7 +40,9 @@ namespace WP_Rig\WP_Rig;
 									</svg>
 
 									<!-- Text -->
-									<span class="typo--body typo--body-big__desktop mr-2xs">Banglore, India</span>
+									<span class="typo--body typo--body-big__desktop mr-2xs">
+										<?php echo get_field( 'location' ) ?>
+									</span>
 
 									<!-- Icon -->
 									<svg aria-hidden="true" width="1" height="12" class="mr-m color--deep-purple-10">
@@ -48,28 +50,45 @@ namespace WP_Rig\WP_Rig;
 									</svg>
 
 									<!-- Text -->
-									<span class="typo--body typo--body-big__desktop">Date 01.2025</span>
+									<span class="typo--body typo--body-big__desktop">
+										<?php echo get_field( 'date' ) ?>
+									</span>
 								</div>
 							</div>
 
 							<!-- Tags -->
-							<div class="column is-narrow mr-xs__tablet mb-xs">
-								<div class="case-page-hero__tags is-flex flex-wrap--wrap">
-									<span class="is-block typo--body py-5xs px-2xs is-rounded--s bg-color--white-60 typo--body-big__desktop py-4xs__desktop">Tech</span>
-									<span class="is-block typo--body py-5xs px-2xs is-rounded--s bg-color--white-60 typo--body-big__desktop py-4xs__desktop">Blockchain</span>
+							<?php
+							$terms = wp_get_post_terms( get_the_ID(), 'case_study_tag' );
+
+							if (isset($terms) && is_array( $terms ) && sizeof( $terms ) ) {
+								?>
+								<div class="column is-narrow mr-xs__tablet mb-xs">
+									<div class="case-page-hero__tags is-flex flex-wrap--wrap">
+										<?php
+										foreach ( $terms as $term ) {
+											?>
+											<span class="is-block typo--body py-5xs px-2xs is-rounded--s bg-color--white-60 typo--body-big__desktop py-4xs__desktop">
+												<?php echo $term->name ?>
+											</span>
+											<?php
+										}
+										?>
+									</div>
 								</div>
-							</div>
+								<?php
+							}
+							?>
 						</div>
 					</div>
 
 					<!-- Subheading -->
 					<h3 class="typo--unbounded typo--h3 typo--light mt-0 mb-xs mb-m__desktop">
-						About Polygon
+						About <?php echo get_field( 'company_name' ) ?>
 					</h3>
 
 					<!-- AoutText -->
 					<p class="typo--body typo--body-big__desktop mt-0 mb-m mb-0__desktop">
-						Polygon, formerly known as Matic Network, is a layer-2 scaling solution with side-chains for off-chain computation, while ensuring asset security using the Plasma framework and a decentralized network of Proof-of-Stake (PoS) validators. It aims to offer scalable and instant blockchain transactions.
+						<?php echo get_field( 'about' ) ?>
 					</p>
 				</div>
 
@@ -84,7 +103,9 @@ namespace WP_Rig\WP_Rig;
 							<div class="column is-half-mobile is-one-quarter-tablet is-half-desktop ">
 								<div class="case-page-hero__stats-card bg-color--white-60 is-rounded--4xs is-flex flex-direction--column p-xs ">
 									<span class="is-block typo--body typo--body-big__desktop">Published Articles</span>
-									<span class="is-block typo--unbounded typo--h3 typo--light is-uppercase mt-auto typo--h1__desktop">64</span>
+									<span class="is-block typo--unbounded typo--h3 typo--light is-uppercase mt-auto typo--h1__desktop">
+										<?php echo get_field( 'published_articles' ) ?>
+									</span>
 								</div>
 							</div>
 
@@ -92,7 +113,9 @@ namespace WP_Rig\WP_Rig;
 							<div class="column is-half-mobile is-one-quarter-tablet is-half-desktop ">
 								<div class="case-page-hero__stats-card bg-color--white-60 is-rounded--4xs is-flex flex-direction--column p-xs ">
 									<span class="is-block typo--body typo--body-big__desktop">Social Shares</span>
-									<span class="is-block typo--unbounded typo--h3 typo--light is-uppercase mt-auto typo--h1__desktop">7k</span>
+									<span class="is-block typo--unbounded typo--h3 typo--light is-uppercase mt-auto typo--h1__desktop">
+										<?php echo get_field( 'social_shares' ) ?>
+									</span>
 								</div>
 							</div>
 
@@ -100,7 +123,9 @@ namespace WP_Rig\WP_Rig;
 							<div class="column is-half-mobile is-one-quarter-tablet is-half-desktop ">
 								<div class="case-page-hero__stats-card bg-color--white-60 is-rounded--4xs is-flex flex-direction--column p-xs ">
 									<span class="is-block typo--body typo--body-big__desktop">Estimated views</span>
-									<span class="is-block typo--unbounded typo--h3 typo--light is-uppercase mt-auto typo--h1__desktop">921k</span>
+									<span class="is-block typo--unbounded typo--h3 typo--light is-uppercase mt-auto typo--h1__desktop">
+										<?php echo get_field( 'estimated_views' ) ?>
+									</span>
 								</div>
 							</div>
 
@@ -108,7 +133,9 @@ namespace WP_Rig\WP_Rig;
 							<div class="column is-half-mobile is-one-quarter-tablet is-half-desktop ">
 								<div class="case-page-hero__stats-card bg-color--white-60 is-rounded--4xs is-flex flex-direction--column p-xs ">
 									<span class="is-block typo--body typo--body-big__desktop">Online readership</span>
-									<span class="is-block typo--unbounded typo--h3 typo--light is-uppercase mt-auto typo--h1__desktop">454m</span>
+									<span class="is-block typo--unbounded typo--h3 typo--light is-uppercase mt-auto typo--h1__desktop">
+										<?php echo get_field( 'online_readership' ) ?>
+									</span>
 								</div>
 							</div>
 						</div>
@@ -116,7 +143,7 @@ namespace WP_Rig\WP_Rig;
 
 					<!-- CTABtn -->
 					<div class="is-flex justify-content--center">
-						<a href="#" class="btn--white is-arrowed is-full-mobile w-100__desktop">See full campaign</a>
+						<a href="<?php echo get_field( 'external_link' ) ?>" target="_blank" class="btn--white is-arrowed is-full-mobile w-100__desktop">See full campaign</a>
 					</div>
 				</div>
 			</div>
