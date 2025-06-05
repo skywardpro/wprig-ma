@@ -30,7 +30,10 @@ $post_ids = get_posts( array(
 				foreach ( $post_ids as $post_id ) {
 					?>
 					<!-- Post Swiper Card -->
-					<a href="<?php echo get_permalink($post_id) ?>" class="swiper-slide is-flex flex-direction--column post-swiper__slide is-rounded--4xs is-clipped bg-color--white">
+					<div class="swiper-slide is-flex flex-direction--column post-swiper__slide is-rounded--4xs is-clipped bg-color--white is-relative">
+
+						<!-- Link -->
+						<a href="<?php echo get_permalink( $post_id ) ?>" class="link--full-parent"><span class="visuallyhidden"><?php echo get_the_title( $post_id ) ?></span></a>
 
 						<!-- Thumbnail -->
 						<img width="304" height="193" src="<?php echo get_the_post_thumbnail_url( $post_id, 'medium' ) ?>" alt="<?php echo get_the_title( $post_id ) ?>" class="is-block post-swiper__thumbnail" />
@@ -52,7 +55,7 @@ $post_ids = get_posts( array(
 						<span class="is-block mt-auto typo--body-small px-xs mb-xs mt-auto typo--regular color--deep-purple">
 							<?php echo $output ?>
 						</span>
-					</a>
+					</div>
 					<?php
 				}
 				?>
