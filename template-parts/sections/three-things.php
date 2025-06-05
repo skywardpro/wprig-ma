@@ -9,7 +9,7 @@
 namespace WP_Rig\WP_Rig;
 
 ?>
-<section id="three-things" class="three-things mb-6xl pb-s__desktop mb-8xl__desktop pb-xl__widescreen">
+<section id="three-things" class="three-things pt-6xl mb-6xl pt-7xl__desktop pt-8xl__widescreen pb-s__desktop mb-8xl__desktop pb-xl__widescreen">
 	<div class="container">
 
 		<!-- Heading -->

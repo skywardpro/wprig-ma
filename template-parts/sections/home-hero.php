@@ -9,7 +9,7 @@
 namespace WP_Rig\WP_Rig;
 
 ?>
-<section id="home-hero" class="home-hero mb-6xl mb-5xl__tablet mb-8xl__desktop">
+<section id="home-hero" class="home-hero pb-6xl pb-5xl__tablet pb-8xl__desktop">
 	<div class="container">
 
 		<!-- CTA -->
