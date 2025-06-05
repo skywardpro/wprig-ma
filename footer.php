@@ -31,7 +31,7 @@ namespace WP_Rig\WP_Rig;
 					</h3>
 					<ul class="is-flex align-items--center pl-0 mb-0 mt-m is-list--none">
 						<li class="mr-2xs mr-xs__tablet">
-							<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-10" href="https://twitter.com/MarketAcross" target="_blank">
+							<a class="is-flex align-items--center p-2xs is-rounded--full bg-color--white-10" href="https://twitter.com/MarketAcross" target="_blank">
 								<svg aria-hidden="true" width="20" height="20" class="color--white">
 									<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-twitter-x"></use>
 								</svg>
@@ -39,7 +39,7 @@ namespace WP_Rig\WP_Rig;
 							</a>
 						</li>
 						<li class="mr-2xs mr-xs__tablet">
-							<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-10" href="https://www.instagram.com/marketacrosspr/?hl=en" target="_blank">
+							<a class="is-flex align-items--center p-2xs is-rounded--full bg-color--white-10" href="https://www.instagram.com/marketacrosspr/?hl=en" target="_blank">
 								<svg aria-hidden="true" width="20" height="20" class="color--white">
 									<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-instagram"></use>
 								</svg>
@@ -47,7 +47,7 @@ namespace WP_Rig\WP_Rig;
 							</a>
 						</li>
 						<li class="mr-2xs mr-xs__tablet">
-							<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-10" href="https://www.facebook.com/MarketAcross.IL/" target="_blank">
+							<a class="is-flex align-items--center p-2xs is-rounded--full bg-color--white-10" href="https://www.facebook.com/MarketAcross.IL/" target="_blank">
 								<svg aria-hidden="true" width="20" height="20" class="color--white">
 									<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-facebook"></use>
 								</svg>
@@ -55,7 +55,7 @@ namespace WP_Rig\WP_Rig;
 							</a>
 						</li>
 						<li class="">
-							<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-10" href="https://www.linkedin.com/company/marketacross/?viewAsMember=true" target="_blank">
+							<a class="is-flex align-items--center p-2xs is-rounded--full bg-color--white-10" href="https://www.linkedin.com/company/marketacross/?viewAsMember=true" target="_blank">
 								<svg aria-hidden="true" width="20" height="20" class="color--white">
 									<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-linkedin"></use>
 								</svg>

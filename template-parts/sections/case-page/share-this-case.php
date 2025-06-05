@@ -20,7 +20,7 @@ namespace WP_Rig\WP_Rig;
 		<!-- Socials -->
 		<ul class="is-flex align-items--center pl-0 mb-0 is-list--none">
 			<li class="mr-2xs mr-xs__tablet">
-				<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-60" href="https://www.instagram.com/marketacrosspr/?hl=en" target="_blank">
+				<a class="is-flex align-items--center p-2xs is-rounded--full bg-color--white-60" href="https://www.instagram.com/marketacrosspr/?hl=en" target="_blank">
 					<svg aria-hidden="true" width="20" height="20" class="color--gray">
 						<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-instagram"></use>
 					</svg>
@@ -28,7 +28,7 @@ namespace WP_Rig\WP_Rig;
 				</a>
 			</li>
 			<li class="mr-2xs mr-xs__tablet">
-				<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-60" href="https://www.facebook.com/MarketAcross.IL/" target="_blank">
+				<a class="is-flex align-items--center p-2xs is-rounded--full bg-color--white-60" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_page_link() ?>" target="_blank">
 					<svg aria-hidden="true" width="20" height="20" class="color--gray">
 						<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-facebook"></use>
 					</svg>
@@ -36,7 +36,7 @@ namespace WP_Rig\WP_Rig;
 				</a>
 			</li>
 			<li class="mr-2xs mr-xs__tablet">
-				<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-60" href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode( sprintf( "%s: %s", get_the_title(), get_page_link() ) ) ?>" target="_blank">
+				<a class="is-flex align-items--center p-2xs is-rounded--full bg-color--white-60" href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode( sprintf( "%s: %s", get_the_title(), get_page_link() ) ) ?>" target="_blank">
 					<svg aria-hidden="true" width="20" height="20" class="color--gray">
 						<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-twitter-x"></use>
 					</svg>
@@ -44,7 +44,7 @@ namespace WP_Rig\WP_Rig;
 				</a>
 			</li>
 			<li class="mr-2xs mr-xs__tablet">
-				<a class="is-flex align-items--center p-4 is-rounded--full bg-color--white-60" href="https://linkedin.com/sharing/share-offsite/?url=<?php echo get_page_link() ?>" target="_blank">
+				<a class="is-flex align-items--center p-2xs is-rounded--full bg-color--white-60" href="https://linkedin.com/sharing/share-offsite/?url=<?php echo get_page_link() ?>" target="_blank">
 					<svg aria-hidden="true" width="20" height="20" class="color--gray">
 						<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-linkedin"></use>
 					</svg>
@@ -52,7 +52,7 @@ namespace WP_Rig\WP_Rig;
 				</a>
 			</li>
 			<li class="">
-				<button class="reset-button-styles is-flex align-items--center p-4 is-rounded--full bg-color--white-60">
+				<button class="reset-button-styles is-flex align-items--center p-2xs is-rounded--full bg-color--white-60">
 					<svg aria-hidden="true" width="20" height="20" class="color--gray">
 						<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-link"></use>
 					</svg>
