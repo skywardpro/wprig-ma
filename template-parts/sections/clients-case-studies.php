@@ -36,14 +36,14 @@ use WP_Query;
 						?>
 						<div class="swiper-slide clients-case-studies-swiper__slide has-box-shadow is-relative bg-color--white is-rounded--4xs p-m p-4xl__tablet is-flex flex-direction--column">
 							<!-- Link -->
-							<!-- <a href="<?php echo get_permalink( get_the_ID() ) ?>" class="link--full-parent"><span class="visuallyhidden"><?php echo get_the_title() ?></span></a> -->
+							<a href="<?php echo get_permalink() ?>" class="link--full-parent"><span class="visuallyhidden"><?php echo get_the_title() ?></span></a>
 
 							<!-- Logo -->
-							<img width="224" height="48" src="<?php echo get_field( 'company_logo', get_the_ID() )['url'] ?>" alt="<?php echo get_field( 'company_name', get_the_ID() ) ?>" class="clients-case-studies-swiper__slide-logo mb-xs mb-m__tablet is-block mx-auto ml-0__tablet">
+							<img width="224" height="48" src="<?php echo get_field( 'company_logo' )['url'] ?>" alt="<?php echo get_field( 'company_name' ) ?>" class="clients-case-studies-swiper__slide-logo mb-xs mb-m__tablet is-block mx-auto ml-0__tablet">
 
 							<!-- Description -->
 							<p class="clients-case-studies-swiper__slide-description has-text-centered has-text-left-tablet typo--body-big mt-0 mb-m">
-								<?php echo get_field( 'featured_text', get_the_ID() ) ?>
+								<?php echo get_field( 'featured_text' ) ?>
 							</p>
 
 							<!-- Stats -->
@@ -55,7 +55,7 @@ use WP_Query;
 									</span>
 									<!-- StatValue -->
 									<span class="is-block has-text-centered-mobile typo--h1 typo--light typo--unbounded is-uppercase">
-										<?php echo get_field( 'published_articles', get_the_ID() ) ?>
+										<?php echo get_field( 'published_articles' ) ?>
 									</span>
 								</div>
 								<div class="pl-xs">
@@ -65,7 +65,7 @@ use WP_Query;
 									</span>
 									<!-- StatValue -->
 									<span class="is-block has-text-centered-mobile typo--h1 typo--light typo--unbounded is-uppercase">
-										<?php echo get_field( 'online_readership', get_the_ID() ) ?>
+										<?php echo get_field( 'online_readership' ) ?>
 									</span>
 								</div>
 							</div>
