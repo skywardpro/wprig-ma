@@ -62,15 +62,17 @@ namespace WP_Rig\WP_Rig;
 							<p class="is-hidden-mobile the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
 								We’ll say it again, we do things a bit differently. On three levels:
 							</p>
-							<p class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
-								<span class="is-hidden-mobile">&nbsp;1. </span>We don’t just wait to get news from you to pitch. We go out there and create media opportunities for you. Be it expert quotes, commentary, podcasts or opinion pieces - we keep the ball rolling, always in the press court.
-							</p>
-							<p class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
-								<span class="is-hidden-mobile">&nbsp;2. </span>For us Content Marketing is an integral part of the PR mix. Since we know that you (probably) don’t have a constant stream of news, we use content marketing to build up your brand and keep it in the conversation.
-							</p>
-							<p class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
-								<span class="is-hidden-mobile">&nbsp;3. </span>After we land media coverage for you we keep at it, amplifying its exposure and impact so it will reach as wide an audience as possible.
-							</p>
+							<ol class="is-list--none pl-0">
+								<li class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
+									<span class="is-hidden-mobile">&nbsp;1. </span>We don’t just wait to get news from you to pitch. We go out there and create media opportunities for you. Be it expert quotes, commentary, podcasts or opinion pieces - we keep the ball rolling, always in the press court.
+								</li>
+								<li class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
+									<span class="is-hidden-mobile">&nbsp;2. </span>For us Content Marketing is an integral part of the PR mix. Since we know that you (probably) don’t have a constant stream of news, we use content marketing to build up your brand and keep it in the conversation.
+								</li>
+								<li class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
+									<span class="is-hidden-mobile">&nbsp;3. </span>After we land media coverage for you we keep at it, amplifying its exposure and impact so it will reach as wide an audience as possible.
+								</li>
+							</ol>
 
 							<!-- Tags -->
 							<div class="mt-auto">
