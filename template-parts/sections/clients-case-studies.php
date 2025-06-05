@@ -79,10 +79,5 @@ use WP_Query;
 			<!-- Pagination -->
 			<div class="clients-case-studies-swiper__pagination mt-m is-flex justify-content--center justify-content--left__tablet"></div>
 		</div>
-
-		<!-- CTA Button -->
-		<div class="is-flex justify-content--center">
-			<a href="<?php home_url() ?>/case-studies" class="btn--primary-small is-full-mobile">More case studies</a>
-		</div>
 	</div>
 </section>
