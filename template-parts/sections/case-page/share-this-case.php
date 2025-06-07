@@ -53,6 +53,6 @@ namespace WP_Rig\WP_Rig;
 			</li>
 		</ul>
 		<!-- Copied To Clipboard Message -->
-		<div id="copy-address-to-clipboard-msg" class="typo--body typo--medium color--purple mt-m" style="opacity: 0; height: 0;">Link copied to clipboard</div>
+		<div id="copy-address-to-clipboard-msg" class="typo--body typo--medium color--gray mt-m" style="opacity: 0; height: 0;">Link copied to clipboard</div>
 	</div>
 </section>
