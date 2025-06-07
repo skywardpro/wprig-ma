@@ -143,3 +143,22 @@ function enqueue_the_services_swiper_slide_js() {
 	wp_script_add_data( 'the-services-swiper-slide', 'precache', true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_the_services_swiper_slide_js', 999 );
+
+/**
+ * Enqueue The Header Toggle On Scroll Configuration script
+ *
+ * Add the script file with all configurations for you .js plugins and other scripts.
+ * https://docs.wprig.org/assets-optimization/elements-configuration
+ */
+function enqueue_header_toggle_on_scroll_js() {
+	wp_enqueue_script(
+		'header',
+		get_theme_file_uri( '/assets/js/header.min.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+	wp_script_add_data( 'header', 'defer', true );
+	wp_script_add_data( 'header', 'precache', true );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_header_toggle_on_scroll_js', 999 );

@@ -30,8 +30,14 @@
 	transition: var(--animation-speed);
 }
 
+.site-header.active .main-navigation a {
+	color: var(--color-theme-deep-purple);
+}
+
 .main-navigation a:hover,
-.main-navigation a:focus {
+.main-navigation a:focus,
+.site-header.active .main-navigation a:hover,
+.site-header.active .main-navigation a:focus {
 	color: var(--color-theme-purple);
 }
 

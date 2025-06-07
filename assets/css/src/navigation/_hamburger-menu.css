@@ -22,6 +22,10 @@
 	border-radius: 2px;
 }
 
+.site-header.active .hamburger .meat {
+	background-color: var(--color-theme-deep-purple);
+}
+
 .icon-nav.nav--toggled-on .hamburger {
 	transform: translateX(12px);
 }
