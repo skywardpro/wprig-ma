@@ -52,25 +52,25 @@ namespace WP_Rig\WP_Rig;
 						</p>
 
 						<!-- OpenBtn -->
-						<button class="the-services-swiper__slide-open reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
+						<button class="the-services-swiper__slide-open reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
 					</div>
 					<!-- Overlay -->
 					<div class="the-services-swiper__slide-overlay p-xs p-m__desktop p-xs__widescreen p-m__fullhd">
 						<div class="is-flex h-100 flex-direction--column">
 
 							<!-- Text -->
-							<p class="is-hidden-mobile the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
+							<p class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
 								We’ll say it again, we do things a bit differently. On three levels:
 							</p>
 							<ol class="is-list--none pl-0">
 								<li class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
-									<span class="is-hidden-mobile">&nbsp;1. </span>We don’t just wait to get news from you to pitch. We go out there and create media opportunities for you. Be it expert quotes, commentary, podcasts or opinion pieces - we keep the ball rolling, always in the press court.
+									&nbsp;1. We don’t just wait to get news from you to pitch. We go out there and create media opportunities for you. Be it expert quotes, commentary, podcasts or opinion pieces - we keep the ball rolling, always in the press court.
 								</li>
 								<li class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
-									<span class="is-hidden-mobile">&nbsp;2. </span>For us Content Marketing is an integral part of the PR mix. Since we know that you (probably) don’t have a constant stream of news, we use content marketing to build up your brand and keep it in the conversation.
+									&nbsp;2. For us Content Marketing is an integral part of the PR mix. Since we know that you (probably) don’t have a constant stream of news, we use content marketing to build up your brand and keep it in the conversation.
 								</li>
 								<li class="the-services-swiper__slide-overlay-text typo--body typo--medium mt-0 mb-2xs">
-									<span class="is-hidden-mobile">&nbsp;3. </span>After we land media coverage for you we keep at it, amplifying its exposure and impact so it will reach as wide an audience as possible.
+									&nbsp;3. After we land media coverage for you we keep at it, amplifying its exposure and impact so it will reach as wide an audience as possible.
 								</li>
 							</ol>
 
@@ -106,7 +106,7 @@ namespace WP_Rig\WP_Rig;
 									</div>
 
 									<!-- CloseBtn -->
-									<button class="the-services-swiper__slide-close reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
+									<button class="the-services-swiper__slide-close reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
 								</div>
 							</div>
 						</div>
@@ -131,7 +131,7 @@ namespace WP_Rig\WP_Rig;
 						</p>
 
 						<!-- OpenBtn -->
-						<button class="the-services-swiper__slide-open reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
+						<button class="the-services-swiper__slide-open reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
 					</div>
 					<!-- Overlay -->
 					<div class="the-services-swiper__slide-overlay p-xs p-m__desktop p-xs__widescreen p-m__fullhd">
@@ -154,7 +154,7 @@ namespace WP_Rig\WP_Rig;
 
 							<!-- CloseBtn -->
 							<div class="mt-auto">
-								<button class="the-services-swiper__slide-close reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
+								<button class="the-services-swiper__slide-close reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
 							</div>
 						</div>
 
@@ -179,7 +179,7 @@ namespace WP_Rig\WP_Rig;
 						</p>
 
 						<!-- OpenBtn -->
-						<button class="the-services-swiper__slide-open reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
+						<button class="the-services-swiper__slide-open reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
 					</div>
 					<!-- Overlay -->
 					<div class="the-services-swiper__slide-overlay p-xs p-m__desktop p-xs__widescreen p-m__fullhd">
@@ -221,7 +221,7 @@ namespace WP_Rig\WP_Rig;
 
 							<!-- CloseBtn -->
 							<div class="mt-auto">
-								<button class="the-services-swiper__slide-close reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
+								<button class="the-services-swiper__slide-close reset-button-styles is-rounded--full mt-auto ml-auto flex-shrink--0 mr-xs mb-xs mr-m__desktop mb-m__desktop mr-xs__widescreen mr-xs_widescreen mr-m__fullhd mb-m__fullhd"></button>
 							</div>
 						</div>
 
