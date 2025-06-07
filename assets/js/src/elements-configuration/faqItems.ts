@@ -3,7 +3,7 @@
  * - Expands/collapses FAQ items on click.
  * - Ensures only one FAQ item is open at a time.
  */
-document.addEventListener("DOMContentLoaded", function () {
+export function init(): void {
 
     const items = document.querySelectorAll('.faq-item');
     items?.forEach(item => {
@@ -18,4 +18,4 @@ document.addEventListener("DOMContentLoaded", function () {
             item.classList.add('active');
         }
     }
-});
+}

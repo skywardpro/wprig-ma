@@ -92,11 +92,11 @@ namespace WP_Rig\WP_Rig;
 		</div>
 
 		<!-- DropdownBlock -->
-		<div id="dropdown-block" class="dropdown-block dropdown-block--expanded">
+		<div id="dropdown-form" class="dropdown-form dropdown-form--expanded">
 			<!-- ToggleBtnWrapper -->
-			<div class="dropdown-block__toggle-wrapper is-flex justify-content--center">
+			<div class="dropdown-form__toggle-wrapper is-flex justify-content--center">
 				<!-- ToggleBtn -->
-				<button class="dropdown-block__toggle-btn btn--primary">
+				<button class="dropdown-form__toggle-btn btn--primary">
 					<span>Let’s&nbsp;connect</span>
 					<svg aria-hidden="true" width="24" height="24">
 						<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#chevron-up"></use>
@@ -104,9 +104,9 @@ namespace WP_Rig\WP_Rig;
 				</button>
 			</div>
 			<!-- FormContainer -->
-			<div class="dropdown-block__form-container">
+			<div class="dropdown-form__form-container">
 				<!-- Form -->
-				<form id="dropdown-block-form" class="dropdown-block__form dropdown-block-form">
+				<form id="dropdown-form-form" class="dropdown-form__form dropdown-form-form">
 
 					<!-- Name -->
 					<div class="mb-xs">
@@ -132,7 +132,7 @@ namespace WP_Rig\WP_Rig;
 					</div>
 
 					<!-- Submit -->
-					<button type="submit" class="dropdown-block-form__submit-btn reset-button-styles btn--primary w-100">
+					<button type="submit" class="dropdown-form-form__submit-btn reset-button-styles btn--primary w-100">
 						<span>Contact Sales</span>
 						<svg aria-hidden="true" width="32" height="32">
 							<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-arrow-narrow-right"></use>

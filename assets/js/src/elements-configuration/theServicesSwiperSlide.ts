@@ -2,7 +2,7 @@
  * Handles The Services Swiper Slide toggle behavior:
  * - Show/hide Slide overlay.
  */
-document.addEventListener("DOMContentLoaded", function () {
+export function init(): void {
 
     const swiper = document.querySelector('.the-services-swiper');
     const slides = swiper?.querySelectorAll('.the-services-swiper__slide');
@@ -22,4 +22,4 @@ document.addEventListener("DOMContentLoaded", function () {
             slide.classList.remove('active');
         }
     }
-});
+}

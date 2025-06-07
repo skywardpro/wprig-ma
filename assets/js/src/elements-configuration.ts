@@ -13,7 +13,7 @@ async function initElementsConfiguration() {
     if (document.querySelector('.link--full-parent')) {
         const linksOnParents = document.querySelectorAll('.link--full-parent'); // Take all switchers
         linksOnParents.forEach((link) => {
-            
+
             link.addEventListener(
                 'mouseenter',
                 function (event) {
@@ -22,7 +22,7 @@ async function initElementsConfiguration() {
                 },
                 false
             );
-            
+
             link.addEventListener(
                 'mouseleave',
                 function (event) {
@@ -88,7 +88,7 @@ async function initElementsConfiguration() {
     if (document.querySelector('.logos-slider')) {
         const logosSlider = await import('./elements-configuration/logosSlider');
     }
-    
+
     /*
      * Init Working With verticalLogosSlider 
      *
@@ -110,6 +110,12 @@ async function initElementsConfiguration() {
      */
     if (document.querySelector('.the-services-swiper')) {
         const theServicesSwiper = await import('./elements-configuration/theServicesSwiper');
+        import('./elements-configuration/theServicesSwiperSlide')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load theServicesSwiperSlide module:", error));
+
     }
 
     /*
@@ -122,7 +128,7 @@ async function initElementsConfiguration() {
     if (document.querySelector('.clients-case-studies-swiper')) {
         const clientsCaseStudiesSwiper = await import('./elements-configuration/clientsCaseStudiesSwiper');
     }
-    
+
     /*
      * Init Working With TopArticlesSwiper 
      *
@@ -133,7 +139,7 @@ async function initElementsConfiguration() {
     if (document.querySelector('.top-articles-swiper')) {
         const topArticlesSwiper = await import('./elements-configuration/topArticlesSwiper');
     }
-    
+
     /*
      * Init Working With RedditTractionSwiper 
      *
@@ -144,7 +150,7 @@ async function initElementsConfiguration() {
     if (document.querySelector('.reddit-traction-swiper')) {
         const redditTractionSwiper = await import('./elements-configuration/redditTractionSwiper');
     }
-    
+
     /*
      * Init Working With InfluencerMarketingSwiper 
      *
@@ -155,7 +161,7 @@ async function initElementsConfiguration() {
     if (document.querySelector('.influencer-marketing-swiper')) {
         const influencerMarketingSwiper = await import('./elements-configuration/influencerMarketingSwiper');
     }
-    
+
 
     /*
      * Init Working With MoreCaseStudiesSwiper 
@@ -166,6 +172,54 @@ async function initElementsConfiguration() {
      */
     if (document.querySelector('.influencer-marketing-swiper')) {
         const moreCaseStudiesSwiper = await import('./elements-configuration/moreCaseStudiesSwiper');
+    }
+
+    /*
+     * Init Header
+     *
+     */
+    if (document.querySelector('.site-header')) {
+        import('./elements-configuration/header')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load header module:", error));
+    }
+
+    /*
+     * Init Dropdown Form 
+     *
+     */
+    if (document.querySelector('#dropdown-form')) {
+        import('./elements-configuration/dropdownForm')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load dropdownBlock module:", error));
+    }
+
+    /*
+     * Init FAQ Items 
+     *
+     */
+    if (document.querySelector('.faq-item')) {
+        import('./elements-configuration/faqItems')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load faqItems module:", error));
+    }
+
+    /*
+     * Init Our Partners Cards
+     *
+     */
+    if (document.querySelector('.our-partners-cards')) {
+        import('./elements-configuration/ourPartnersCards')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load ourPartnersCards module:", error));
     }
 }
 

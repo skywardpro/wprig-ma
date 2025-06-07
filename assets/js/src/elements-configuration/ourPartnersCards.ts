@@ -4,7 +4,7 @@
  * - Reveals them when the "Show More" button is clicked.
  * - Removes the button after all cards are shown.
  */
-document.addEventListener("DOMContentLoaded", function () {
+export function init(): void {
 
     const cardsContainer = document.querySelector('.our-partners-cards');
     if(!cardsContainer) {
@@ -19,4 +19,4 @@ document.addEventListener("DOMContentLoaded", function () {
         hiddenCards?.forEach(card => card.classList.remove('is-hidden-mobile'));
         showMoreBtn?.remove();
     }
-});
+}

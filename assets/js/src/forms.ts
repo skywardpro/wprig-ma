@@ -405,7 +405,7 @@ function attachFormValidation(): void {
 
 		if (
 			form.getAttribute('id') === 'contact-us-form'
-			|| form.getAttribute('id') === 'dropdown-block-form'
+			|| form.getAttribute('id') === 'dropdown-form-form'
 
 		) {
 			constraints = {
@@ -584,7 +584,7 @@ function showNotification(form: HTMLFormElement, message: string, type: 'fail' |
 function getFormActionHref(form: HTMLFormElement): string {
 	const formActions: Record<string, string> = {
 		'contact-us-form': FORMCARRY_ENDPOINT_CONTACT_US_FORM,
-		'dropdown-block-form': FORMCARRY_ENDPOINT_DROPDOWN_BLOCK_FORM
+		'dropdown-form-form': FORMCARRY_ENDPOINT_DROPDOWN_BLOCK_FORM
 	};
 
 	const formId = form.getAttribute('id') ?? '';

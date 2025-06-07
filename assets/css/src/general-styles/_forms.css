@@ -107,7 +107,7 @@ select {
 }
 
 /* Dropdown Block Form */
-.dropdown-block-form {
+.dropdown-form-form {
 
 
 	input[type="text"],
@@ -140,7 +140,7 @@ select {
 	}
 }
 
-.dropdown-block-form__submit-btn {
+.dropdown-form-form__submit-btn {
 	display: flex;
 	justify-content: space-between;
 
