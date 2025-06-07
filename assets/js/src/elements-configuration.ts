@@ -221,6 +221,18 @@ async function initElementsConfiguration() {
             })
             .catch(error => console.error("Failed to load ourPartnersCards module:", error));
     }
+
+    /*
+     * Init Our Partners Cards
+     *
+     */
+    if (document.querySelector('#copy-address-to-clipboard-btn')) {
+        import('./elements-configuration/copyAddressToClipboardBtn')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load copyAddressToClipboardBtn module:", error));
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.
