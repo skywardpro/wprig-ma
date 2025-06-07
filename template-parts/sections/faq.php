@@ -26,8 +26,8 @@ namespace WP_Rig\WP_Rig;
 					What is Blockchain PR?
 				</h3>
 				<!-- ArrowIcon -->
-				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon lex-shrink--0">
-					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-arrow-down"></use>
+				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0 color--gray">
+					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-chevron-down"></use>
 				</svg>
 			</div>
 
@@ -49,8 +49,8 @@ namespace WP_Rig\WP_Rig;
 					Who is Blockchain PR for?
 				</h3>
 				<!-- ArrowIcon -->
-				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0">
-					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-arrow-down"></use>
+				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0 color--gray">
+					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-chevron-down"></use>
 				</svg>
 			</div>
 
@@ -73,8 +73,8 @@ namespace WP_Rig\WP_Rig;
 					<br class="is-hidden-tablet">different from conventional PR?
 				</h3>
 				<!-- ArrowIcon -->
-				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0">
-					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-arrow-down"></use>
+				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0 color--gray">
+					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-chevron-down"></use>
 				</svg>
 			</div>
 
@@ -97,8 +97,8 @@ namespace WP_Rig\WP_Rig;
 					look for in a blockchain PR agency?
 				</h3>
 				<!-- ArrowIcon -->
-				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0">
-					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-arrow-down"></use>
+				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0 color--gray">
+					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-chevron-down"></use>
 				</svg>
 			</div>
 
@@ -121,8 +121,8 @@ namespace WP_Rig\WP_Rig;
 					<br class="is-hidden-tablet">look for in a blockchain PR agency?
 				</h3>
 				<!-- ArrowIcon -->
-				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0">
-					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-arrow-down"></use>
+				<svg aria-hidden="true" width="24" height="24" class="faq-item__arrow-icon flex-shrink--0 color--gray">
+					<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-chevron-down"></use>
 				</svg>
 			</div>
 

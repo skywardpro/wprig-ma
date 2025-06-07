@@ -127,6 +127,7 @@ table {
 }
 
 .faq-item.active .faq-item__arrow-icon {
+	color: var(--color-theme-deep-purple) !important;
 	rotate: 180deg;
 }
 
