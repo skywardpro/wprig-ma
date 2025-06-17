@@ -84,3 +84,22 @@ function enqueue_events_js() {
 	wp_script_add_data( 'events', 'precache', true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_events_js', 999 );
+
+/**
+ * Enqueue Animations script
+ *
+ * Add the script file with all configurations for you events.js plugins and other scripts.
+ * https://docs.wprig.org/assets-optimization/elements-configuration
+ */
+function enqueue_animations_js() {
+	wp_enqueue_script(
+		'animations',
+		get_theme_file_uri( '/assets/js/animations.min.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+	wp_script_add_data( 'animations', 'defer', true );
+	wp_script_add_data( 'animations', 'precache', true );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_animations_js', 999 );
