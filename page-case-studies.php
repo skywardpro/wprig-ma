@@ -13,7 +13,7 @@ get_header();
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
-function marketaccross_page_case_studies_get_case_card_version( $index ) {
+function marketacross_page_case_studies_get_case_card_version( $index ) {
 
 	$card_version = 1; // First Item only is v1
 	$card_version_sequence = [ 2, 3, 3, 4, 3, 3, 2 ]; // The repeating part (7 elements)
@@ -86,7 +86,7 @@ function marketacross_page_case_studies_get_column_class($card_version, $current
 							$query->the_post();
 
 							// Get vars used in layout
-							$card_version = marketaccross_page_case_studies_get_case_card_version( $query->current_post );
+							$card_version = marketacross_page_case_studies_get_case_card_version( $query->current_post );
 							$column_class = marketacross_page_case_studies_get_column_class(
 								$card_version, $query->current_post, $query->post_count, $prev_column_class
 							);
