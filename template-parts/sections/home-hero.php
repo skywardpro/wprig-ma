@@ -21,7 +21,7 @@ namespace WP_Rig\WP_Rig;
 			</h2>
 
 			<!-- Button -->
-			<a href="#" class="btn--primary">Let’s talk</a>
+			<a href="#" class="btn--primary" btn-anim>Let’s talk</a>
 		</div>
 
 		<!-- Logos Slider Heading-->

@@ -189,6 +189,30 @@ class Theme {
 
 
 			/*----------------------------
+			# SplitType
+			----------------------------*/
+
+			/**
+			 * SplitType
+			 *
+			 * A pure JavaScript library for splitting text into individual elements.
+			 */
+			// new WP_Rig_Toolkit\SplitType\Component(),
+
+
+			/*----------------------------
+			# GSAP
+			----------------------------*/
+
+			/**
+			 * GSAP
+			 *
+			 * A JavaScript library for creating animations.
+			 */
+			new WP_Rig_Toolkit\Gsap\Component(),
+
+
+			/*----------------------------
 			# Validation & Forms
 			----------------------------*/
 

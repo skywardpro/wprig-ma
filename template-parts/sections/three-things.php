@@ -132,9 +132,9 @@ namespace WP_Rig\WP_Rig;
 					</div>
 
 					<!-- Submit -->
-					<button type="submit" class="dropdown-form-form__submit-btn reset-button-styles btn--primary w-100">
+					<button type="submit" class="dropdown-form-form__submit-btn reset-button-styles btn--primary w-100" btn-anim>
 						<span>Contact Sales</span>
-						<svg aria-hidden="true" width="32" height="32">
+						<svg aria-hidden="true" width="32" height="32" class="ml-auto">
 							<use xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/icons/sprite-svg/sprite.svg?ver=<?php echo esc_attr( wp_get_theme()->get( 'Version' ) ); ?>#icon-arrow-narrow-right"></use>
 						</svg>
 					</button>
