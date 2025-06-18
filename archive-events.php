@@ -1,8 +1,8 @@
 <?php
 /**
- * The Events page template file
+ * Render your site Events page
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package wp_rig
  */
@@ -11,6 +11,7 @@ namespace WP_Rig\WP_Rig;
 
 get_header();
 
+// Use grid layout if blog index is displayed.
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
@@ -18,6 +19,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 	<!-- EVENTS DEMO -->
 	<?php echo get_template_part( 'template-parts/sections/events-demo' ) ?>
+
 </main>
 <?php
 get_footer();
