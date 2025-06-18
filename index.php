@@ -19,41 +19,26 @@ get_header();
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-<main id="primary" class="site-main">
+	<main id="primary" class="site-main">
+		<?php
+		if ( have_posts() ) {
 
-	<!-- BG Wrapper -->
-	<div class="page-hero-wrapper home-page-top-bg  bg-color--gradient">
-		<!-- Home Hero - Section -->
-		<?php echo get_template_part( 'template-parts/sections/home-hero' ) ?>
+			get_template_part( 'template-parts/content/page_header' );
 
-		<!-- Newsroom - Section -->
-		<?php echo get_template_part( 'template-parts/sections/newsroom' ) ?>
-	</div>
+			while ( have_posts() ) {
+				the_post();
 
-	<!-- Three Things - Section -->
-	<?php echo get_template_part( 'template-parts/sections/three-things' ) ?>
+				get_template_part( 'template-parts/content/entry', get_post_type() );
+			}
 
-	<!-- Case Studies - Section -->
-	<?php echo get_template_part( 'template-parts/sections/case-studies' ) ?>
-
-	<!-- Testimonials - Section -->
-	<?php echo get_template_part( 'template-parts/sections/testimonials' ) ?>
-
-	<!-- Events - Section -->
-	<?php echo get_template_part( 'template-parts/sections/events' ) ?>
-
-	<!-- Our Partners - Section -->
-	<?php echo get_template_part( 'template-parts/sections/our-partners' ) ?>
-	
-	<!-- Blog - Section -->
-	<?php echo get_template_part( 'template-parts/sections/blog' ) ?>
-
-	<!-- FAQ - Section -->
-	<?php echo get_template_part( 'template-parts/sections/faq' ) ?>
-
-	<!-- EVENTS DEMO -->
-	<?php echo get_template_part( 'template-parts/sections/events-demo' ) ?>
-
-</main>
+			if ( ! is_singular() ) {
+				get_template_part( 'template-parts/content/pagination' );
+			}
+		} else {
+			get_template_part( 'template-parts/content/error' );
+		}
+		?>
+	</main> <!-- #primary -->
 <?php
+// get_sidebar();
 get_footer();

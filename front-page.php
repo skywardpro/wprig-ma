@@ -51,9 +51,6 @@ if ( is_home() ) {
 	<!-- FAQ - Section -->
 	<?php echo get_template_part( 'template-parts/sections/faq' ) ?>
 
-	<!-- EVENTS DEMO -->
-	<?php echo get_template_part( 'template-parts/sections/events-demo' ) ?>
-
 </main>
 <?php
 get_footer();
