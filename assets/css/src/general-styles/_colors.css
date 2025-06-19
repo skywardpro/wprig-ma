@@ -38,6 +38,10 @@
 	color: var(--color-theme-white-10) !important;
 }
 
+.color--white-30 {
+	color: var(--color-theme-white-30) !important;
+}
+
 .color--white-60 {
 	color: var(--color-theme-white-60) !important;
 }

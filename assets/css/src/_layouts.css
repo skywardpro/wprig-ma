@@ -5,3 +5,19 @@
 	margin: 0 auto;
 	max-width: 100%;
 }
+
+main {
+	padding-top: var(--header-height-mobile);
+
+	@media (--tablet-query) {
+		padding-top: var(--header-height-tablet);
+	}
+
+	@media (--desktop-query) {
+		padding-top: var(--header-height-desktop);
+	}
+
+	@media (--fullhd-query) {
+		padding-top: var(--header-height-fullhd);
+	}
+}
