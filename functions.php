@@ -99,6 +99,9 @@ require get_template_directory() . '/functions/_functions-custom-shortcodes.php'
 // Enqueue/dequeue custom files.
 require get_template_directory() . '/functions/_functions-custom-files.php';
 
+// Register custom functions.
+require get_template_directory() . '/functions/_function-custom-functions.php';
+
 /**
  * ============
  * * WordPress Customizations
