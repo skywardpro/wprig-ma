@@ -43,6 +43,12 @@
   font-weight: 900 !important;
 }
 
+.typo--super-large {
+  font-size: 5.6rem !important;
+  line-height: 1 !important;
+  letter-spacing: -1% !important;
+}
+
 .typo--h1 {
   font-size: 4.18rem !important;
   line-height: 1.2 !important;
@@ -154,6 +160,11 @@
   .typo--black__tablet {
     font-weight: 900 !important;
   }
+  .typo--super-large__tablet {
+    font-size: 5.6rem !important;
+    line-height: 1 !important;
+    letter-spacing: -1% !important;
+  }
   .typo--h1__tablet {
     font-size: 4.18rem !important;
     line-height: 1.2 !important;
@@ -251,6 +262,11 @@
   }
   .typo--black__desktop {
     font-weight: 900 !important;
+  }
+  .typo--super-large__desktop {
+    font-size: 5.6rem !important;
+    line-height: 1 !important;
+    letter-spacing: -1% !important;
   }
   .typo--h1__desktop {
     font-size: 4.18rem !important;
@@ -350,6 +366,11 @@
   .typo--black__widescreen {
     font-weight: 900 !important;
   }
+  .typo--super-large__widescreen {
+    font-size: 5.6rem !important;
+    line-height: 1 !important;
+    letter-spacing: -1% !important;
+  }
   .typo--h1__widescreen {
     font-size: 4.18rem !important;
     line-height: 1.2 !important;
@@ -447,6 +468,11 @@
   }
   .typo--black__fullhd {
     font-weight: 900 !important;
+  }
+  .typo--super-large__fullhd {
+    font-size: 5.6rem !important;
+    line-height: 1 !important;
+    letter-spacing: -1% !important;
   }
   .typo--h1__fullhd {
     font-size: 4.18rem !important;
