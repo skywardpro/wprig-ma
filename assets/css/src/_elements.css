@@ -1773,3 +1773,61 @@ table {
 		}
 	}
 }
+
+/* The Team - Section */
+
+.the-team__cards-container {
+	@media (--tablet-query) {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2.4rem;
+
+		.the-team__card {
+			grid-column: span 1;
+		}
+	}
+}
+
+.the-team__row {}
+
+/* (Mobile Only Swiper) */
+.the-team__row-cards.swiper {
+
+	overflow: visible !important;
+
+	/* Swiper Wrapper */
+	.the-team__row-cards-wrapper {
+		align-items: stretch;
+	}
+
+	/* Swiper Slide */
+	.the-team__card {
+		box-sizing: border-box;
+		height: auto;
+		width: 15.5rem;
+		flex-shrink: 0;
+		border-radius: 0.4rem;
+		overflow: hidden;
+	}
+}
+
+
+.the-team__card-body {
+	height: auto;
+}
+
+.the-team__card-image {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	aspect-ratio: 1 / 1;
+}
+
+.the-team__card-linkedin-icon {
+	width: 2.4rem;
+	height: 2.4rem;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQwMDFfMjk1OSkiPgo8cGF0aCBkPSJNMjIuMjIzNCAwSDEuNzcxODdDMC43OTIxODcgMCAwIDAuNzczNDM4IDAgMS43Mjk2OVYyMi4yNjU2QzAgMjMuMjIxOSAwLjc5MjE4NyAyNCAxLjc3MTg3IDI0SDIyLjIyMzRDMjMuMjAzMSAyNCAyNCAyMy4yMjE5IDI0IDIyLjI3MDNWMS43Mjk2OUMyNCAwLjc3MzQzOCAyMy4yMDMxIDAgMjIuMjIzNCAwWk03LjEyMDMxIDIwLjQ1MTZIMy41NTc4MVY4Ljk5NTMxSDcuMTIwMzFWMjAuNDUxNlpNNS4zMzkwNiA3LjQzNDM4QzQuMTk1MzEgNy40MzQzOCAzLjI3MTg4IDYuNTEwOTQgMy4yNzE4OCA1LjM3MTg3QzMuMjcxODggNC4yMzI4MSA0LjE5NTMxIDMuMzA5MzcgNS4zMzkwNiAzLjMwOTM3QzYuNDc4MTMgMy4zMDkzNyA3LjQwMTU2IDQuMjMyODEgNy40MDE1NiA1LjM3MTg3QzcuNDAxNTYgNi41MDYyNSA2LjQ3ODEzIDcuNDM0MzggNS4zMzkwNiA3LjQzNDM4Wk0yMC40NTE2IDIwLjQ1MTZIMTYuODkzN1YxNC44ODI4QzE2Ljg5MzcgMTMuNTU2MiAxNi44NzAzIDExLjg0NTMgMTUuMDQyMiAxMS44NDUzQzEzLjE5MDYgMTEuODQ1MyAxMi45MDk0IDEzLjI5MzcgMTIuOTA5NCAxNC43ODkxVjIwLjQ1MTZIOS4zNTYyNVY4Ljk5NTMxSDEyLjc2ODdWMTAuNTYwOUgxMi44MTU2QzEzLjI4OTEgOS42NjA5NCAxNC40NTE2IDguNzA5MzggMTYuMTgxMyA4LjcwOTM4QzE5Ljc4NTkgOC43MDkzOCAyMC40NTE2IDExLjA4MTMgMjAuNDUxNiAxNC4xNjU2VjIwLjQ1MTZaIiBmaWxsPSIjMEE2NkMyIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfNDAwMV8yOTU5Ij4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=");
+	background-size: contain;
+	background-position: center;
+
+}

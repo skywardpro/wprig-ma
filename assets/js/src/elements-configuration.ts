@@ -245,6 +245,18 @@ async function initElementsConfiguration() {
             })
             .catch(error => console.error("Failed to load whoWeAreGallerySwiper module:", error));
     }
+    
+    /*
+     * Init The Team Row Cards Swiper
+     *
+     */
+    if (document.querySelector('.the-team__row-cards')) {
+        import('./elements-configuration/theTeamRowCardsSwiper')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load theTeamRowCardsSwiper module:", error));
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.
