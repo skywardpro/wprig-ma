@@ -1632,7 +1632,7 @@ table {
 		align-items: start;
 		grid-column: span 12;
 		border: none;
-		
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -1656,5 +1656,120 @@ table {
 .about-page-hero__stats-item--last {
 	@media (--desktop-query) {
 		grid-column: 8 / span 5;
+	}
+}
+
+/* Who We Are - Section */
+
+.who-we-are__body {
+	@media (--tablet-query) {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 2.4rem;
+	}
+}
+
+.who-we-are__image {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 0.4rem;
+}
+
+.who-we-are__image--1 {
+	aspect-ratio: 1 / 1;
+
+	@media (--tablet-query) {
+		grid-column: span 6;
+	}
+
+	@media (--desktop-query) {
+		grid-column: span 7;
+		height: 42rem;
+		aspect-ratio: unset;
+	}
+}
+
+.who-we-are__image--2 {
+	aspect-ratio: 343 / 278;
+
+	@media (--tablet-query) {
+		grid-column: span 7;
+		order: 2;
+	}
+
+	@media (--desktop-query) {
+		height: 42rem;
+		aspect-ratio: unset;
+	}
+}
+
+.who-we-are__card--1 {
+	background:
+		url('../images/who-we-are-cube-1.webp') no-repeat bottom right / 12rem auto,
+		var(--color-theme-white-30);
+
+	@media (--tablet-query) {
+		grid-column: span 6;
+	}
+
+	@media (--desktop-query) {
+		grid-column: span 5;
+		background-size: 16rem auto;
+	}
+}
+
+.who-we-are__card--2 {
+	background:
+		url('../images/who-we-are-cube-2.webp') no-repeat bottom right / 14rem auto,
+		var(--color-theme-white-30);
+
+	@media (--tablet-query) {
+		grid-column: span 5;
+		order: 1;
+		background-size: 22rem auto;
+	}
+
+	@media (--widescreen-query) {
+		background-size: 28rem auto;
+	}
+}
+
+.who-we-are-gallery-swiper {
+	border-radius: 0.4rem;
+	overflow: visible !important;
+
+	@media (--tablet-query) {
+		overflow: hidden !important;
+	}
+
+	.who-we-are__gallery {
+		display: flex;
+		box-sizing: border-box;
+		height: 23.6rem;
+		transition-timing-function: linear !important;
+
+		@media (--desktop-query) {
+			height: 36rem;
+		}
+
+		@media (--widescreen-query) {
+			height: 38rem;
+		}
+	}
+
+	.who-we-are__gallery-item {
+		object-fit: cover;
+		object-position: center;
+		border-radius: 0.4rem;
+		width: 38rem;
+
+		@media (--desktop-query) {
+			width: 48rem;
+		}
+
+		@media (--widescreen-query) {
+			width: 58.8rem;
+		}
 	}
 }

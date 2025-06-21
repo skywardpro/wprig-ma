@@ -78,6 +78,7 @@
 	/* Color - White */
 	--color-theme-white: #FFFFFF;
 	--color-theme-white-10: rgba(255, 255, 255, 0.1);
+	--color-theme-white-30: rgba(255, 255, 255, 0.3);
 	--color-theme-white-60: rgba(255, 255, 255, 0.6);
 	--color-theme-white-70: rgba(255, 255, 255, 0.7);
 

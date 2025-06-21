@@ -233,6 +233,18 @@ async function initElementsConfiguration() {
             })
             .catch(error => console.error("Failed to load copyAddressToClipboardBtn module:", error));
     }
+    
+    /*
+     * Init Who We Are Gallery Swiper
+     *
+     */
+    if (document.querySelector('.who-we-are-gallery-swiper')) {
+        import('./elements-configuration/whoWeAreGallerySwiper')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load whoWeAreGallerySwiper module:", error));
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.
