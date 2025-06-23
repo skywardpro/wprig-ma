@@ -139,7 +139,48 @@ wp_rig()->print_styles( 'wp-rig-content' );
 		</section>
 
 		<!-- The Team - Section -->
-		<section class="the-team bg-color--light-purple py-xl py-2xl__tablet py-4xl__desktop py-5xl__widescreen">
+		<section id="the-team" class="the-team bg-color--light-purple py-xl py-2xl__tablet py-4xl__desktop py-5xl__widescreen">
+			<script id="the-team-json" type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "MarketAcross",
+				"employees": [
+					{
+						"@type": "Person",
+						"category": "Co-founder",
+						"name": "Nadav Dakner",
+						"jobTitle": "Co-Founder",
+						"image": "<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-1.jpg",
+						"sameAs": "https://test.link"
+					},
+					{
+						"@type": "Person",
+						"category": "Cheif",
+						"name": "Chad Smith",
+						"jobTitle": "Drummer",
+						"image": "<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-3.jpg",
+						"sameAs": "https://test.link"
+					},
+					{
+						"@type": "Person",
+						"category": "Co-founder",
+						"name": "Tacker Carlson",
+						"jobTitle": "Media",
+						"image": "<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-2.jpg",
+						"sameAs": "https://test.link"
+					},
+					{
+						"@type": "Person",
+						"category": "Cheif",
+						"name": "Adam Whatan",
+						"jobTitle": "Creator of Tailwind CSS",
+						"image": "<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-4.jpg",
+						"sameAs": "https://test.link"
+					}
+				]
+			}
+			</script>
 			<div class="container">
 
 				<!-- Heading -->
@@ -148,180 +189,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 				</h2>
 
 				<!-- Cards Container -->
-				<div class="the-team__cards-container">
-
-					<!-- Row -->
-					<div class="the-team__row mb-s">
-
-						<!-- Row Title -->
-						<h3 class="typo--body typo--medium mb-2xs">
-							Co-Founders
-						</h3>
-
-						<!-- Cards -->
-						<div class="swiper the-team__row-cards">
-
-							<div class="swiper-wrapper the-team__row-cards-wrapper">
-
-								<!-- Card -->
-								<div class="swiper-slide the-team__card is-flex flex-direction--column is-relative is-rounded--4xs" data-category="Co-Founders">
-
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">Person Name</span></a>
-
-									<!-- Image -->
-									<img width="162" height="170" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-person-1.jpg" alt="Person Name" class="the-team__card-image is-rounded--4xs">
-
-									<!-- Card Body -->
-									<div class="the-team__card-body p-3xs bg-color--white-30 is-flex flex-direction--column flex-grow--1">
-
-										<!-- Name -->
-										<span class="the-team__card-name typo--body-big typo--regular">1</span>
-
-										<!-- Position -->
-										<span class="the-team__card-position typo--body-small color--gray">Co-Founder</span>
-
-										<!-- Linked In Icon -->
-										<div class="the-team__card-linkedin-icon ml-auto mt-auto"></div>
-									</div>
-								</div>
-
-								<!-- Card -->
-								<div class="swiper-slide the-team__card is-flex flex-direction--column is-relative is-rounded--4xs" data-category="Co-Founders">
-
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">Person Name</span></a>
-
-									<!-- Image -->
-									<img width="162" height="170" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-person-1.jpg" alt="Person Name" class="the-team__card-image is-rounded--4xs">
-
-									<!-- Card Body -->
-									<div class="the-team__card-body p-3xs bg-color--white-30 is-flex flex-direction--column flex-grow--1">
-
-										<!-- Name -->
-										<span class="the-team__card-name typo--body-big typo--regular">2</span>
-
-										<!-- Position -->
-										<span class="the-team__card-position typo--body-small color--gray">Co-Founder</span>
-
-										<!-- Linked In Icon -->
-										<div class="the-team__card-linkedin-icon ml-auto mt-auto"></div>
-									</div>
-								</div>
-
-								<!-- Card -->
-								<div class="swiper-slide the-team__card is-flex flex-direction--column is-relative is-rounded--4xs" data-category="Co-Founders">
-
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">Person Name</span></a>
-
-									<!-- Image -->
-									<img width="162" height="170" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-person-1.jpg" alt="Person Name" class="the-team__card-image is-rounded--4xs">
-
-									<!-- Card Body -->
-									<div class="the-team__card-body p-3xs bg-color--white-30 is-flex flex-direction--column flex-grow--1">
-
-										<!-- Name -->
-										<span class="the-team__card-name typo--body-big typo--regular">3</span>
-
-										<!-- Position -->
-										<span class="the-team__card-position typo--body-small color--gray">Co-Founder</span>
-
-										<!-- Linked In Icon -->
-										<div class="the-team__card-linkedin-icon ml-auto mt-auto"></div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<!-- Row -->
-					<div class="the-team__row mb-s">
-
-						<!-- Row Title -->
-						<h3 class="typo--body typo--medium mb-2xs">
-							Chiefs
-						</h3>
-
-						<!-- Cards -->
-						<div class="swiper the-team__row-cards">
-
-							<div class="swiper-wrapper the-team__row-cards-wrapper">
-
-								<!-- Card -->
-								<div class="swiper-slide the-team__card is-flex flex-direction--column is-relative is-rounded--4xs" data-category="Chiefs">
-
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">Person Name</span></a>
-
-									<!-- Image -->
-									<img width="162" height="170" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-person-1.jpg" alt="Person Name" class="the-team__card-image is-rounded--4xs">
-
-									<!-- Card Body -->
-									<div class="the-team__card-body p-3xs bg-color--white-30 is-flex flex-direction--column flex-grow--1">
-
-										<!-- Name -->
-										<span class="the-team__card-name typo--body-big typo--regular">4</span>
-
-										<!-- Position -->
-										<span class="the-team__card-position typo--body-small color--gray">Co-Founder</span>
-
-										<!-- Linked In Icon -->
-										<div class="the-team__card-linkedin-icon ml-auto mt-auto"></div>
-									</div>
-								</div>
-
-								<!-- Card -->
-								<div class="swiper-slide the-team__card is-flex flex-direction--column is-relative is-rounded--4xs" data-category="Chiefs">
-
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">Person Name</span></a>
-
-									<!-- Image -->
-									<img width="162" height="170" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-person-1.jpg" alt="Person Name" class="the-team__card-image is-rounded--4xs">
-
-									<!-- Card Body -->
-									<div class="the-team__card-body p-3xs bg-color--white-30 is-flex flex-direction--column flex-grow--1">
-
-										<!-- Name -->
-										<span class="the-team__card-name typo--body-big typo--regular">5</span>
-
-										<!-- Position -->
-										<span class="the-team__card-position typo--body-small color--gray">Co-Founder</span>
-
-										<!-- Linked In Icon -->
-										<div class="the-team__card-linkedin-icon ml-auto mt-auto"></div>
-									</div>
-								</div>
-
-								<!-- Card -->
-								<div class="swiper-slide the-team__card is-flex flex-direction--column is-relative is-rounded--4xs" data-category="Chiefs">
-
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">Person Name</span></a>
-
-									<!-- Image -->
-									<img width="162" height="170" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/the-team-person-1.jpg" alt="Person Name" class="the-team__card-image is-rounded--4xs">
-
-									<!-- Card Body -->
-									<div class="the-team__card-body p-3xs bg-color--white-30 is-flex flex-direction--column flex-grow--1">
-
-										<!-- Name -->
-										<span class="the-team__card-name typo--body-big typo--regular">6</span>
-
-										<!-- Position -->
-										<span class="the-team__card-position typo--body-small color--gray">Co-Founder</span>
-
-										<!-- Linked In Icon -->
-										<div class="the-team__card-linkedin-icon ml-auto mt-auto"></div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
+				<div class="the-team__cards-container"></div>
 
 				<!-- Row Template -->
 				<template id="the-team-row-template">
@@ -329,15 +197,33 @@ wp_rig()->print_styles( 'wp-rig-content' );
 					<div class="the-team__row mb-s">
 
 						<!-- Row Title -->
-						<h3 class="typo--body typo--medium mb-2xs">
-							Chiefs
-						</h3>
+						<h3 class="typo--body typo--medium mb-2xs"></h3>
 
 						<!-- Cards -->
 						<div class="swiper the-team__row-cards">
 
 							<div class="swiper-wrapper the-team__row-cards-wrapper">
 							</div>
+						</div>
+					</div>
+				</template>
+
+				<!-- Person Card Template -->
+				<template id="the-team-person-card-template">
+					<!-- Card -->
+					<div class="swiper-slide the-team__card is-flex flex-direction--column is-relative is-rounded--4xs" >
+						<!-- Link -->
+						<a href="#" class="the-team__card-anchor link--full-parent"><span class="visuallyhidden the-team__card-anchor-text"></span></a>
+						<!-- Image -->
+						<img width="162" height="170" src="" alt="" class="the-team__card-image is-rounded--4xs">
+						<!-- Card Body -->
+						<div class="the-team__card-body p-3xs bg-color--white-30 is-flex flex-direction--column flex-grow--1">
+							<!-- Name -->
+							<span class="the-team__card-name typo--body-big typo--regular"></span>
+							<!-- Position -->
+							<span class="the-team__card-position typo--body-small color--gray"></span>
+							<!-- Linked In Icon -->
+							<div class="the-team__card-linkedin-icon ml-auto mt-auto"></div>
 						</div>
 					</div>
 				</template>

@@ -250,7 +250,7 @@ async function initElementsConfiguration() {
      * Init The Team Row Cards Swiper
      *
      */
-    if (document.querySelector('.the-team__row-cards')) {
+    if (document.querySelector('#the-team')) {
         import('./elements-configuration/theTeamRowCardsSwiper')
             .then(module => {
                 module.init();
