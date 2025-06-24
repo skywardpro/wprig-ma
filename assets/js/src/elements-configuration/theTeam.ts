@@ -145,8 +145,8 @@ export function init(): void {
     const employees = getEmployees();
     employees.forEach(person => {
 
-      const category = String(person.category).toLowerCase();
-      const row = cardsContainer.querySelector(`.the-team__row.the-team__row--${category}`);
+      const category = person.category;
+      const row = cardsContainer.querySelector(`.the-team__row.the-team__row--${category.replaceAll(' ', '-').toLowerCase()}`);
       const personCardEl = createCard(person);
       if (!personCardEl) {
 
@@ -188,11 +188,41 @@ export function init(): void {
       return;
     }
 
-    getEmployees().forEach(person => {
+    const allEmployees = getEmployees();
+    const humansOnly = allEmployees.filter(employee => employee.category !== 'Special employees')
+
+    humansOnly.forEach(person => {
 
       const card = createCard(person);
       if (card) {
         cardsContainer.appendChild(card);
+      }
+    });
+  }
+  
+  function handlePets() {
+
+    const petsContainer = document.querySelector('.the-team__pets-container');
+    if (!petsContainer) {
+
+      console.error('no the-team__pets-container');
+
+      return;
+    }
+
+    // Clean up
+    petsContainer.innerHTML = '';
+
+    const allEmployees = getEmployees();
+    const petsOnly = allEmployees.filter(employee => employee.category === 'Special employees');
+    
+    petsOnly.forEach(employee => {
+
+      const card = createCard(employee);
+      if (card) {
+        card.classList.remove('swiper-slide');
+        card.classList.add('flex-grow--1');
+        petsContainer.appendChild(card);
       }
     });
   }
@@ -205,6 +235,7 @@ export function init(): void {
       swipers = [];
 
       initGrid();
+      handlePets();
     } else if (window.innerWidth < 769 && !swipers.length) {
 
       clearContainer();
@@ -227,5 +258,6 @@ export function init(): void {
   } else {
 
     initGrid();
+    handlePets();
   }
 }

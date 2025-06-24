@@ -251,11 +251,11 @@ async function initElementsConfiguration() {
      *
      */
     if (document.querySelector('#the-team')) {
-        import('./elements-configuration/theTeamRowCardsSwiper')
+        import('./elements-configuration/theTeam')
             .then(module => {
                 module.init();
             })
-            .catch(error => console.error("Failed to load theTeamRowCardsSwiper module:", error));
+            .catch(error => console.error("Failed to load theTeam module:", error));
     }
 }
 

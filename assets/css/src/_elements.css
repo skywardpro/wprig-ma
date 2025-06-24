@@ -1788,7 +1788,13 @@ table {
 	}
 }
 
-.the-team__row {}
+.the-team__pets-container {
+	gap: 2.4rem;
+	
+	@media (--widescreen-query) {
+		gap: 3.2rem;
+	}
+}
 
 /* (Mobile Only Swiper) */
 .the-team__row-cards.swiper {
