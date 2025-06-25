@@ -39,9 +39,15 @@ namespace WP_Rig\WP_Rig;
 
 				<!-- Desktop CTA button -->
 				<div class="header-cta-wrapper">
-					<a class="header-cta-button btn--secondary is-uppercase">
+				    <?php if ( is_front_page() ) : ?>
+					<a class="header-cta-button btn--secondary is-uppercase" btn-anim>
 						Contact Us
 					</a>
+					<?php else : ?>
+					<a class="header-cta-button btn--primary is-uppercase" btn-anim>
+						Contact Us
+					</a>
+					<?php endif; ?>
 				</div>
 			</div>
 		</header><!-- #masthead -->

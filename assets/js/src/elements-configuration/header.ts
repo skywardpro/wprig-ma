@@ -13,16 +13,22 @@ export function init(): void {
             return;
         }
 
+        const isHome = document.body.classList.contains('home');
+
         const ctaButton = header.querySelector('.header-cta-button');
         const headerHeight = header.offsetHeight;
         if(scrollYOffset > headerHeight) {
             header.classList.add('active');
-            ctaButton?.classList.remove('btn--secondary');
-            ctaButton?.classList.add('btn--primary');
+            if(isHome) {
+                ctaButton?.classList.remove('btn--secondary');
+                ctaButton?.classList.add('btn--primary');
+            }
         } else {
             header.classList.remove('active');
-            ctaButton?.classList.remove('btn--primary');
-            ctaButton?.classList.add('btn--secondary');
+            if(isHome) {
+                ctaButton?.classList.remove('btn--primary');
+                ctaButton?.classList.add('btn--secondary');
+            }
         }
         
     }

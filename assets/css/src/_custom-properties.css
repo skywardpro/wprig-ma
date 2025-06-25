@@ -116,6 +116,12 @@
 	--color-custom-daylight: #97c0b7;
 	--color-custom-sun: #eee9d1;
 
+	/* Header */
+	--header-height-mobile: 6.4rem;
+	--header-height-tablet: 6.6rem;
+	--header-height-desktop: 8.2rem;
+	--header-height-fullhd: 10.6rem;
+
 	/* Spacing */
 	--spacing-5xl: 12rem;
 	--spacing-4xl: 8.8rem;
