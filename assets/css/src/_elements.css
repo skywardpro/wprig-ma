@@ -2119,3 +2119,50 @@ table {
 		transform: translateX(0);
 	}
 }
+
+/* 
+ * Blog Post Hero 
+ *  
+ */
+
+.blog-post-hero {
+	position: relative;
+
+	& > * {
+		position: relative;
+	}
+}
+
+.blog-post-hero__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top right;
+	transform: translateX(-28vw);
+	z-index: 0;
+
+	@media (--tablet-query) {
+		top: -2rem;
+		height: calc(100% + 2rem);
+	}
+}
+
+.blog-post-hero__back-to-blog {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: var(--color-theme-white);
+	transition: color var(--animation-speed);
+
+	&:hover {
+		color: var(--color-theme-purple);
+	}
+}
+
+.blog-post-hero__body {
+	max-width: 70rem;
+	margin: 0 auto;
+}
