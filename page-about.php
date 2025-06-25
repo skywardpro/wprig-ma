@@ -258,6 +258,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 				</div>
 			</div>
 		</section>
+
+		<!-- More Case Studies - Section -->
+		<?php get_template_part('template-parts/sections/case-page/more-case-studies') ?>
 	</div>
 </main> <!-- #primary -->
 <?php

@@ -170,7 +170,7 @@ async function initElementsConfiguration() {
      * Handled by:
      * WP_Rig_Toolkit/Swiper
      */
-    if (document.querySelector('.influencer-marketing-swiper')) {
+    if (document.querySelector('.more-case-studies-swiper')) {
         const moreCaseStudiesSwiper = await import('./elements-configuration/moreCaseStudiesSwiper');
     }
 
