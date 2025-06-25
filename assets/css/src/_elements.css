@@ -1847,6 +1847,7 @@ table {
 	width: 21.6rem;
 	max-width: 21.6rem;
 	margin-right: 3.2rem;
+
 	@media (--tablet-query) {
 		display: flex;
 		flex-direction: column;
@@ -1856,7 +1857,7 @@ table {
 }
 
 .media-group__logo {
-	
+
 	height: 3.6rem;
 	width: auto;
 	object-fit: contain;
@@ -1892,10 +1893,6 @@ table {
 		transition: background-color var(--animation-speed);
 	}
 
-	&.link--hovered::after {
-		background-color: var(--color-theme-purple);
-	}
-
 	&>* {
 		max-width: 29.5rem;
 
@@ -1911,4 +1908,8 @@ table {
 			max-width: 71.2rem;
 		}
 	}
+}
+
+.media-group__row.link--hovered .media-group__item-body::after {
+	background-color: var(--color-theme-purple);
 }

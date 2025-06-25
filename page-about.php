@@ -157,22 +157,22 @@ wp_rig()->print_styles( 'wp-rig-content' );
 				<div class="">
 
 					<!-- Row 1 -->
-					<div class="media-group__row py-m py-l__tablet">
+					<div class="media-group__row py-m py-l__tablet is-relative">
+						
+						<!-- Link -->
+						<a href="https://chainwire.org/" target="_blank" class="link--full-parent"><span class="visuallyhidden">ChainWire Website</span></a>
 
 						<div class="columns is-gapless">
 
 							<!-- Logo -->
 							<div class="column media-group__logo-column">
-									<img width="85" height="60" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/chain-wire-logo.svg" alt="Chain Wire Logo" class="media-group__logo mb-xs mb-0__tablet">
+								<img width="85" height="60" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/chain-wire-logo.svg" alt="Chain Wire Logo" class="media-group__logo mb-xs mb-0__tablet">
 							</div>
 
 							<!-- Body -->
 							<div class="column">
 
 								<div class="media-group__item-body is-relative">
-
-									<!-- Link -->
-									<a href="https://chainwire.org/" target="_blank" class="link--full-parent"><span class="visuallyhidden">ChainWire Website</span></a>
 
 									<!-- Title -->
 									<h3 class="typo--subtitle-big typo--semibold mt-0 mb-3xs mb-2xs__tablet">
@@ -190,22 +190,22 @@ wp_rig()->print_styles( 'wp-rig-content' );
 					</div>
 
 					<!-- Row 2 -->
-					<div class="media-group__row py-m py-l__tablet">
+					<div class="media-group__row py-m py-l__tablet is-relative">
+						
+						<!-- Link -->
+						<a href="https://www.blockbuilders.co/" target="_blank" class="link--full-parent"><span class="visuallyhidden">BlockBuilders Website</span></a>
 
 						<div class="columns is-gapless">
 
 							<!-- Logo -->
 							<div class="column media-group__logo-column">
-									<img width="136" height="50" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/block-builders-logo.svg" alt="BlockBuilders Logo" class="media-group__logo mb-xs mb-0__tablet">
+								<img width="136" height="50" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/block-builders-logo.svg" alt="BlockBuilders Logo" class="media-group__logo mb-xs mb-0__tablet">
 							</div>
 
 							<!-- Body -->
 							<div class="column">
 
 								<div class="media-group__item-body is-relative">
-
-									<!-- Link -->
-									<a href="https://www.blockbuilders.co/" target="_blank" class="link--full-parent"><span class="visuallyhidden">BlockBuilders Website</span></a>
 
 									<!-- Title -->
 									<h3 class="typo--subtitle-big typo--semibold mt-0 mb-3xs mb-2xs__tablet">
@@ -223,22 +223,22 @@ wp_rig()->print_styles( 'wp-rig-content' );
 					</div>
 
 					<!-- Row 3 -->
-					<div class="media-group__row py-m py-l__tablet">
+					<div class="media-group__row py-m py-l__tablet is-relative">
+						
+						<!-- Link -->
+						<a href="https://inboundjunction.com/" target="_blank" class="link--full-parent"><span class="visuallyhidden">InboundJunction Website</span></a>
 
 						<div class="columns is-gapless">
 
 							<!-- Logo -->
 							<div class="column media-group__logo-column">
-									<img width="159" height="37" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/ij-logo.svg" alt="InboundJunction Logo" class="media-group__logo media-group__logo--ij mb-xs mb-0__tablet">
+								<img width="159" height="37" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/ij-logo.svg" alt="InboundJunction Logo" class="media-group__logo media-group__logo--ij mb-xs mb-0__tablet">
 							</div>
 
 							<!-- Body -->
 							<div class="column">
 
 								<div class="media-group__item-body is-relative">
-
-									<!-- Link -->
-									<a href="https://inboundjunction.com/" target="_blank" class="link--full-parent"><span class="visuallyhidden">InboundJunction Website</span></a>
 
 									<!-- Title -->
 									<h3 class="typo--subtitle-big typo--semibold mt-0 mb-3xs mb-2xs__tablet">
@@ -260,7 +260,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 		</section>
 
 		<!-- More Case Studies - Section -->
-		<?php get_template_part('template-parts/sections/case-page/more-case-studies') ?>
+		<?php get_template_part( 'template-parts/sections/case-page/more-case-studies' ) ?>
 	</div>
 </main> <!-- #primary -->
 <?php
