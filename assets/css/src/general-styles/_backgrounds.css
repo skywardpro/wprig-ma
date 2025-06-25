@@ -35,6 +35,10 @@
 	background: var(--color-theme-white-10) !important;
 }
 
+.bg-color--white-30 {
+	background: var(--color-theme-white-30) !important;
+}
+
 .bg-color--white-60 {
 	background: var(--color-theme-white-60) !important;
 }
@@ -57,6 +61,14 @@
 
 .bg-color--gradient {
 	background: linear-gradient(204deg, #471899 0%, #120833 63.94%) !important;
+}
+
+.bg-color--gradient-2 {
+	background: linear-gradient(180deg, #1E0275 0%, #8784FF 100%) !important;
+}
+
+.bg-color--gradient-3 {
+	background: linear-gradient(180deg, #8784FF 0%, rgba(226, 234, 252, 0) 90.78%) !important;
 }
 
 .bg-backdrop--blur {

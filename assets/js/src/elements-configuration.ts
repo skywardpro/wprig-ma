@@ -170,7 +170,7 @@ async function initElementsConfiguration() {
      * Handled by:
      * WP_Rig_Toolkit/Swiper
      */
-    if (document.querySelector('.influencer-marketing-swiper')) {
+    if (document.querySelector('.more-case-studies-swiper')) {
         const moreCaseStudiesSwiper = await import('./elements-configuration/moreCaseStudiesSwiper');
     }
 
@@ -232,6 +232,30 @@ async function initElementsConfiguration() {
                 module.init();
             })
             .catch(error => console.error("Failed to load copyAddressToClipboardBtn module:", error));
+    }
+    
+    /*
+     * Init Who We Are Gallery Swiper
+     *
+     */
+    if (document.querySelector('.who-we-are-gallery-swiper')) {
+        import('./elements-configuration/whoWeAreGallerySwiper')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load whoWeAreGallerySwiper module:", error));
+    }
+    
+    /*
+     * Init The Team Row Cards Swiper
+     *
+     */
+    if (document.querySelector('#the-team')) {
+        import('./elements-configuration/theTeam')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load theTeam module:", error));
     }
 }
 
