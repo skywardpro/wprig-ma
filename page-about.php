@@ -140,6 +140,124 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 		<!-- The Team - Section -->
 		<?php get_template_part( 'template-parts/sections/the-team' ) ?>
+
+		<!-- Media Group - Section -->
+		<section id="media-group" class="media-group py-xl py-2xl__desktop py-3xl__widescreen">
+			<div class="container">
+
+				<!-- SEO -->
+				<h2 class="visuallyhidden">Market Across Media Group</h2>
+
+				<!-- Intro -->
+				<p class="typo--body typo--regular mt-0 mb-2xl typo--subtitle-small__tablet typo--semibold__tablet mb-3xl__tablet w-75__tablet typo--subtitle__desktop typo--regular__desktop typo--h2__widescreen">
+					MarketAcross operates as part of the InboundJunction Media Group, a powerful ecosystem of marketing and media companies focused on Web3 and tech innovation
+				</p>
+
+				<!-- Rows -->
+				<div class="">
+
+					<!-- Row 1 -->
+					<div class="media-group__row py-m py-l__tablet">
+
+						<div class="columns is-gapless">
+
+							<!-- Logo -->
+							<div class="column media-group__logo-column">
+									<img width="85" height="60" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/chain-wire-logo.svg" alt="Chain Wire Logo" class="media-group__logo mb-xs mb-0__tablet">
+							</div>
+
+							<!-- Body -->
+							<div class="column">
+
+								<div class="media-group__item-body is-relative">
+
+									<!-- Link -->
+									<a href="https://chainwire.org/" target="_blank" class="link--full-parent"><span class="visuallyhidden">ChainWire Website</span></a>
+
+									<!-- Title -->
+									<h3 class="typo--subtitle-big typo--semibold mt-0 mb-3xs mb-2xs__tablet">
+										ChainWire
+									</h3>
+
+									<!-- Text -->
+									<p class="typo--body typo--regular color--gray my-0 typo--medium__tablet typo--body-big__widescreen typo--regular__widescreen">
+										A leading press release distribution platform for crypto and blockchain media
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Row 2 -->
+					<div class="media-group__row py-m py-l__tablet">
+
+						<div class="columns is-gapless">
+
+							<!-- Logo -->
+							<div class="column media-group__logo-column">
+									<img width="136" height="50" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/block-builders-logo.svg" alt="BlockBuilders Logo" class="media-group__logo mb-xs mb-0__tablet">
+							</div>
+
+							<!-- Body -->
+							<div class="column">
+
+								<div class="media-group__item-body is-relative">
+
+									<!-- Link -->
+									<a href="https://www.blockbuilders.co/" target="_blank" class="link--full-parent"><span class="visuallyhidden">BlockBuilders Website</span></a>
+
+									<!-- Title -->
+									<h3 class="typo--subtitle-big typo--semibold mt-0 mb-3xs mb-2xs__tablet">
+										BlockBuilders
+									</h3>
+
+									<!-- Text -->
+									<p class="typo--body typo--regular color--gray my-0 typo--medium__tablet typo--body-big__widescreen typo--regular__widescreen">
+										A forward-thinking venture capital firm supporting the future of Web3 startups
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Row 3 -->
+					<div class="media-group__row py-m py-l__tablet">
+
+						<div class="columns is-gapless">
+
+							<!-- Logo -->
+							<div class="column media-group__logo-column">
+									<img width="159" height="37" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/ij-logo.svg" alt="InboundJunction Logo" class="media-group__logo media-group__logo--ij mb-xs mb-0__tablet">
+							</div>
+
+							<!-- Body -->
+							<div class="column">
+
+								<div class="media-group__item-body is-relative">
+
+									<!-- Link -->
+									<a href="https://inboundjunction.com/" target="_blank" class="link--full-parent"><span class="visuallyhidden">InboundJunction Website</span></a>
+
+									<!-- Title -->
+									<h3 class="typo--subtitle-big typo--semibold mt-0 mb-3xs mb-2xs__tablet">
+										InboundJunction
+									</h3>
+
+									<!-- Text -->
+									<p class="typo--body typo--regular color--gray my-0 typo--medium__tablet typo--body-big__widescreen typo--regular__widescreen">
+										A seasoned PR agency for Web2 tech companies, helping them grow and scale through smart media strategies
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
 	</div>
 </main> <!-- #primary -->
 <?php

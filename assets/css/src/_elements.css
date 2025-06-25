@@ -1790,7 +1790,7 @@ table {
 
 .the-team__pets-container {
 	gap: 2.4rem;
-	
+
 	@media (--widescreen-query) {
 		gap: 3.2rem;
 	}
@@ -1836,4 +1836,79 @@ table {
 	background-size: contain;
 	background-position: center;
 
+}
+
+/* Media Group - Section */
+.media-group__row {
+	border-bottom: 0.1rem solid var(--color-theme-deep-purple-10);
+}
+
+.media-group__logo-column {
+	width: 21.6rem;
+	max-width: 21.6rem;
+	margin-right: 3.2rem;
+	@media (--tablet-query) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+	}
+}
+
+.media-group__logo {
+	
+	height: 3.6rem;
+	width: auto;
+	object-fit: contain;
+
+	@media (--tablet-query) {
+		height: 5rem;
+	}
+}
+
+.media-group__logo--ij {
+	height: 2.3rem;
+
+	@media (--tablet-query) {
+		height: 3.7rem;
+	}
+}
+
+.media-group__item-body {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 2.4rem;
+		height: 2.4rem;
+		mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMTdMMTcgN00xNyA3SDdNMTcgN1YxNyIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+		mask-size: cover;
+		mask-repeat: no-repeat;
+		mask-position: center;
+		background-color: var(--color-theme-deep-purple);
+		transition: background-color var(--animation-speed);
+	}
+
+	&.link--hovered::after {
+		background-color: var(--color-theme-purple);
+	}
+
+	&>* {
+		max-width: 29.5rem;
+
+		@media (--tablet-query) {
+			max-width: 42.5rem;
+		}
+
+		@media (--desktop-query) {
+			max-width: 55rem;
+		}
+
+		@media (--widescreen-query) {
+			max-width: 71.2rem;
+		}
+	}
 }
