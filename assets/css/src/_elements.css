@@ -2175,13 +2175,22 @@ table {
 .blog-post-content__inner {
 	@media (--tablet-query) {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2rem;
+		grid-template-columns: auto 26rem;
 		grid-template-rows: repeat(2);
 	}
 
 	@media (--desktop-query) {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 16.7rem auto 25rem;
 		grid-template-rows: auto;
+	}
+
+	@media (--widescreen-query) {
+		grid-template-columns: 16.9rem auto 29rem;
+	}
+
+	@media (--fullhd-query) {
+		grid-template-columns: 21.6rem auto 34rem;
 	}
 }
 
@@ -2191,7 +2200,7 @@ table {
 	
 	@media (--tablet-query) {
 		grid-column-start: 2;
-		grid-row: 1 / span 2;	
+		grid-row: 1 / span 2;
 		position: sticky;
 		top: 0;
 		transition: top var(--animation-speed);
