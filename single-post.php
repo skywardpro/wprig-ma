@@ -161,8 +161,11 @@ wp_rig()->print_styles( 'wp-rig-content' );
 							All content
 						</button>
 					</div>
+
 					<!-- content -->
-					<div class="blog-post-content__content">content</div>
+					<div class="blog-post-content__content">
+						<?php the_content() ?>
+					</div>
 				</div>
 			</div>
 		</section>
