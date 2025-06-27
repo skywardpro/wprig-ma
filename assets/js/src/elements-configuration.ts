@@ -257,6 +257,18 @@ async function initElementsConfiguration() {
             })
             .catch(error => console.error("Failed to load theTeam module:", error));
     }
+    
+    /*
+     * Init The Blog Post Content
+     *
+     */
+    if (document.querySelector('.blog-post-content')) {
+        import('./elements-configuration/blogPostContent')
+            .then(module => {
+                module.init();
+            })
+            .catch(error => console.error("Failed to load blogPostContent module:", error));
+    }
 }
 
 // Run once after DOMContentLoaded event triggered.

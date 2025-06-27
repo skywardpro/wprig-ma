@@ -52,6 +52,48 @@ wp_rig()->print_styles( 'wp-rig-content' );
 				</div>
 			</div>
 		</div>
+
+		<!-- Content -->
+		<section class="blog-post-content">
+			<div class="container">
+
+				<!-- 
+				# Layout
+				
+				## Three main blocks:
+					1. 3-cards of another posts of the same category
+					2. post-navigation menu which holds links to 
+					particular topics of current post. 
+					(Use some js lib recomended by Nic).
+					3. Post content
+
+				## Layout:
+					- [x] mobile: all three in one column in order as they are in list above
+					- [x] tablet: 3-cards goes to own column to the right and become sticky 
+						sliding on the side while page is scrolled down.
+					- [x] desktop: post-navigation moves to own columns on the left side
+						and becomes sticky.
+
+				## Steps:
+					1. [x] create layout without content. Three blocks with diff colors.
+					2. [x] add responsiveness layout
+					3. [ ] add sticky to side blocks
+						- add js that will set topOffset = block.top.pos - header.bottom.pos 
+							while topOffset < header.height
+							do it on scroll
+					4. [ ] set blocks with
+				 -->
+
+				<div class="blog-post-content__inner">
+					<!-- 3-cards -->
+					<div class="blog-post-content__3-cards">3-cards</div>
+					<!-- post-navigation -->
+					<div class="blog-post-content__post-navigation">post-navigation</div>
+					<!-- content -->
+					<div class="blog-post-content__content">content</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </main> <!-- #primary -->
 <?php
