@@ -58,35 +58,71 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			<div class="container">
 
 				<!-- 
-				# Layout
-				
-				## Three main blocks:
-					1. 3-cards of another posts of the same category
-					2. post-navigation menu which holds links to 
-					particular topics of current post. 
-					(Use some js lib recomended by Nic).
-					3. Post content
 
-				## Layout:
-					- [x] mobile: all three in one column in order as they are in list above
-					- [x] tablet: 3-cards goes to own column to the right and become sticky 
-						sliding on the side while page is scrolled down.
-					- [x] desktop: post-navigation moves to own columns on the left side
-						and becomes sticky.
-
-				## Steps:
-					1. [x] create layout without content. Three blocks with diff colors.
-					2. [x] add responsiveness layout
-					3. [ ] add sticky to side blocks
-						- add js that will set topOffset = block.top.pos - header.bottom.pos 
-							while topOffset < header.height
-							do it on scroll
-					4. [ ] set blocks with
-				 -->
+				-->
 
 				<div class="blog-post-content__inner">
 					<!-- 3-cards -->
-					<div class="blog-post-content__3-cards">3-cards</div>
+					<div class="blog-post-content__3-cards mb-xl">
+
+						<!-- Items -->
+						<div class="blog-post-content__3-cards-items mb-m">
+							<!-- Card -->
+							<div class="blog-post-content__3-cards-item is-flex is-relative">
+								<!-- Link -->
+								<a href="#" class="link--full-parent"><span class="visuallyhidden">title</span></a>
+								<!-- Image -->
+								<img width="72" height="72" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/random-pic.png" alt="title" class="blog-post-content__3-cards-item-image mr-3xs flex-shrink--0 mr-2xs__widescreen">
+								<!-- Text -->
+								<div class="">
+									<h3 class="blog-post-content__3-cards-item-title typo--body typo--medium my-0 typo--body-big__widescreen">
+										MarketAcross and Chainlink Labs Establish Channel Partnership To Support Chainlink BUILD Members
+									</h3>
+									<span class="typo--body-small typo--regular color--gray-dark typo--height-10 my-0 typo--body__widescreen">
+										by Ronnie Levi
+									</span>
+								</div>
+							</div>
+							<!-- Card -->
+							<div class="blog-post-content__3-cards-item is-flex is-relative">
+								<!-- Link -->
+								<a href="#" class="link--full-parent"><span class="visuallyhidden">title</span></a>
+								<!-- Image -->
+								<img width="72" height="72" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/random-pic.png" alt="title" class="blog-post-content__3-cards-item-image mr-3xs flex-shrink--0 mr-2xs__widescreen">
+								<!-- Text -->
+								<div class="">
+									<h3 class="blog-post-content__3-cards-item-title typo--body typo--medium my-0 typo--body-big__widescreen">
+										MarketAcross and Chainlink Labs Establish Channel Partnership To Support Chainlink BUILD Members
+									</h3>
+									<span class="typo--body-small typo--regular color--gray-dark typo--height-10 my-0 typo--body__widescreen">
+										by Ronnie Levi
+									</span>
+								</div>
+							</div>
+							<!-- Card -->
+							<div class="blog-post-content__3-cards-item is-flex is-relative">
+								<!-- Link -->
+								<a href="#" class="link--full-parent"><span class="visuallyhidden">title</span></a>
+								<!-- Image -->
+								<img width="72" height="72" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/random-pic.png" alt="title" class="blog-post-content__3-cards-item-image mr-3xs flex-shrink--0 mr-2xs__widescreen">
+								<!-- Text -->
+								<div class="">
+									<h3 class="blog-post-content__3-cards-item-title typo--body typo--medium my-0 typo--body-big__widescreen">
+										MarketAcross and Chainlink Labs Establish Channel Partnership To Support Chainlink BUILD Members
+									</h3>
+									<span class="typo--body-small typo--regular color--gray-dark typo--height-10 my-0 typo--body__widescreen">
+										by Ronnie Levi
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Link -->
+						<a href="#" class="link--arrow-right">
+							See all Category 1
+							<span class="icon"></span>
+						</a>
+					</div>
 					<!-- post-navigation -->
 					<div class="blog-post-content__post-navigation">post-navigation</div>
 					<!-- content -->
