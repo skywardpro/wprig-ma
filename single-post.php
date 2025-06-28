@@ -54,12 +54,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 		</div>
 
 		<!-- Content -->
-		<section class="blog-post-content">
+		<section class="blog-post-content pb-5xl pb-6xl__tablet pb-7xl__desktop">
 			<div class="container">
-
-				<!-- 
-
-				-->
 
 				<div class="blog-post-content__inner">
 
@@ -143,7 +139,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 								It was an intimate
 							</a>
 							<a href="#" class="typo--body typo--regular color--purple py-3xs">
-								My week started at the offices 
+								My week started at the offices
 							</a>
 							<!-- Only first 4 are shown -->
 							<a href="#" class="typo--body typo--regular color--purple py-3xs is-hidden-touch">
@@ -163,9 +159,12 @@ wp_rig()->print_styles( 'wp-rig-content' );
 					</div>
 
 					<!-- content -->
-					<div class="blog-post-content__content">
+					<div class="blog-post-content__content mb-m mb-l__tablet mb-xl__desktop mb-2xl__widescreen">
 						<?php the_content() ?>
 					</div>
+
+					<!-- Share This Post -->
+					<?php get_template_part( 'template-parts/components/share-this-page', null, array('heading' => 'Share this case', 'class' => 'blog-post-content__share-this-post')) ?>
 				</div>
 			</div>
 		</section>

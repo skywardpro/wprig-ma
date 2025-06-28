@@ -2206,7 +2206,7 @@ table {
 	}
 }
 
-/* 3 Cards */
+/* Post 3 Cards */
 .blog-post-content__3-cards {
 	height: fit-content;
 
@@ -2266,10 +2266,11 @@ table {
 		position: sticky;
 		top: 0;
 		transition: top var(--animation-speed);
-		padding-bottom: 1.2rem;
+		border-bottom: none;
 	}
 }
 
+/* Post Content */
 .blog-post-content__content {
 
 	@media (--desktop-query) {
@@ -2443,4 +2444,11 @@ table {
 		margin-bottom: 1.6rem;
 	}
 
+}
+
+/* Share This Post */
+.blog-post-content__share-this-post {
+	@media (--desktop-query) {
+		grid-column-start: 2;
+	}
 }
