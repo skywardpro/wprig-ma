@@ -168,6 +168,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 				</div>
 			</div>
 		</section>
+
+		<!-- Swiper -->
+		<?php get_template_part('template-parts/sections/blog') ?>
 	</div>
 </main> <!-- #primary -->
 <?php
