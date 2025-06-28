@@ -21,31 +21,31 @@ if ( class_exists( 'ACF' ) ) {
 
 		acf_add_local_field_group(
 			array(
-				'key'      => 'group_posts_and_pages_options',
-				'title'    => 'Post & Pages Options',
-				'fields'   => array(
+				'key' => 'group_posts_and_pages_options',
+				'title' => 'Post & Pages Options',
+				'fields' => array(
 					array(
-						'key'          => 'field_custom_h1',
-						'label'        => 'Custom H1',
-						'name'         => 'custom_h1',
-						'type'         => 'text',
+						'key' => 'field_custom_h1',
+						'label' => 'Custom H1',
+						'name' => 'custom_h1',
+						'type' => 'text',
 						'instructions' => 'Fill this field if you want to override the default H1 tag (usually post or page name). Max length is 80 symbols but for SEO purposes it\'s better to use headers under 60-70.',
-						'maxlength'    => '80',
+						'maxlength' => '80',
 					),
 				),
 				'location' => array(
 					array(
 						array(
-							'param'    => 'post_type',
+							'param' => 'post_type',
 							'operator' => '==',
-							'value'    => 'page',
+							'value' => 'page',
 						),
 					),
 					array(
 						array(
-							'param'    => 'post_type',
+							'param' => 'post_type',
 							'operator' => '==',
-							'value'    => 'post',
+							'value' => 'post',
 						),
 					),
 				),
@@ -54,4 +54,43 @@ if ( class_exists( 'ACF' ) ) {
 	}
 
 	add_action( 'acf/init', 'add_custom_acf_post_and_page_options' );
+
+
+	/**
+	 * Register acf fields to blog post.
+	 *
+	 */
+	function add_blog_post_acf_fields() {
+
+		acf_add_local_field_group(
+			array(
+				'key' => 'group_blog_post_acf_fields',
+				'title' => 'Custom Fields',
+				'fields' => array(
+					array(
+						'key' => 'field_related_posts',
+						'label' => 'Realated posts',
+						'name' => 'related_posts',
+						'type' => 'relationship',
+						'post_type' => 'post',
+						'filters' => array('search', 'taxonomy'),
+						'min' => 0,
+						'max' => 3,
+						'return_format' => 'id',
+					),
+				),
+				'location' => array(
+					array(
+						array(
+							'param' => 'post_type',
+							'operator' => '==',
+							'value' => 'post',
+						),
+					),
+				),
+			)
+		);
+	}
+
+	add_action( 'acf/init', 'add_blog_post_acf_fields' );
 }

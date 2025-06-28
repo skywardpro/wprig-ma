@@ -22,6 +22,12 @@ wp_rig()->print_styles( 'wp-rig-content' );
 		if ( have_posts() ) {
 			the_post();
 
+			$category = '';
+			$terms = get_the_category();
+			if ( ! empty( $terms ) && $terms[0]->slug !== 'uncategorized' ) {
+				$category = $terms[0];
+			}
+
 			?>
 			<!-- Hero - Section -->
 			<div class="blog-post-hero bg-color--gradient py-xl py-2xl__desctop py-4xl__widescreen">
@@ -43,21 +49,18 @@ wp_rig()->print_styles( 'wp-rig-content' );
 					<div class="blog-post-hero__body has-text-centered-tablet">
 
 						<!-- Category Name -->
-						<?php
-						$post_terms = get_the_category();
-						if ( ! empty( $post_terms ) && $post_terms[0]->slug !== 'uncategorized' ) {
-							?>
-							<h3 class="typo--body typo--medium color--purple is-uppercase mt-0 mb-m typo--body-big__desktop">
-								<?php echo $post_terms[0]->name ?>
-							</h3>
-							<?php
-						}
-						?>
+						<h3 class="typo--body typo--medium color--purple is-uppercase mt-0 mb-m typo--body-big__desktop">
+							<?php echo $category->name ?>
+						</h3>
+
+						<!-- Title -->
 						<h2 class="typo--inbounded is-uppercase typo--h3 typo--light color--white mt-0 mb-m typo--h1__widescreen">
 							<?php echo get_the_title() ?>
 						</h2>
+
+						<!-- Meta -->
 						<div class="is-flex align-items--center color--white justify-content--center__tablet typo--body typo--medium typo--body-big__widescreen">
-							<span><?php echo get_the_author() ?></span> <span class="mx-2xs color--gray typo--h1">·</span> <span><?php echo get_the_date('F j, Y') ?></span>
+							<span><?php echo get_the_author() ?></span> <span class="mx-2xs color--gray typo--h1">·</span> <span><?php echo get_the_date( 'F j, Y' ) ?></span>
 						</div>
 
 					</div>
@@ -72,64 +75,47 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 						<!-- 3-cards -->
 						<div class="blog-post-content__3-cards mb-xl">
+							<?php
+							$related_posts_ids = get_field( 'related_posts' );
+							if ( $related_posts_ids && ! empty( $related_posts_ids ) ) {
+								?>
+								<!-- Items -->
+								<div class="blog-post-content__3-cards-items mb-m">
+									<?php
+									foreach ( $related_posts_ids as $post_id ) {
+										$author_id = get_post_field( 'post_author', $post_id );
+										$author_name = get_the_author_meta( 'display_name' , $author_id );
+										?>
+										<!-- Card -->
+										<div class="blog-post-content__3-cards-item is-flex is-relative">
+											<!-- Link -->
+											<a href="<?php echo get_permalink( $post_id ) ?>" class="link--full-parent"><span class="visuallyhidden"><?php echo get_the_title( $post_id ) ?></span></a>
+											<!-- Image -->
+											<img width="72" height="72" src="<?php echo get_the_post_thumbnail_url( $post_id ) ?>" alt="<?php echo get_the_title( $post_id ) ?>" class="blog-post-content__3-cards-item-image mr-3xs flex-shrink--0 mr-2xs__widescreen">
+											<!-- Text -->
+											<div class="">
+												<h3 class="blog-post-content__3-cards-item-title typo--body typo--medium my-0 typo--body-big__widescreen">
+													<?php echo get_the_title( $post_id ) ?>
+												</h3>
+												<span class="typo--body-small typo--regular color--gray-dark typo--height-10 my-0 typo--body__widescreen">
+													<?php echo "by $author_name" ?>
+												</span>
+											</div>
+										</div>
+										<?php
+									}
+									?>
+								</div>
 
-							<!-- Items -->
-							<div class="blog-post-content__3-cards-items mb-m">
-								<!-- Card -->
-								<div class="blog-post-content__3-cards-item is-flex is-relative">
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">title</span></a>
-									<!-- Image -->
-									<img width="72" height="72" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/random-pic.png" alt="title" class="blog-post-content__3-cards-item-image mr-3xs flex-shrink--0 mr-2xs__widescreen">
-									<!-- Text -->
-									<div class="">
-										<h3 class="blog-post-content__3-cards-item-title typo--body typo--medium my-0 typo--body-big__widescreen">
-											MarketAcross and Chainlink Labs Establish Channel Partnership To Support Chainlink BUILD Members
-										</h3>
-										<span class="typo--body-small typo--regular color--gray-dark typo--height-10 my-0 typo--body__widescreen">
-											by Ronnie Levi
-										</span>
-									</div>
-								</div>
-								<!-- Card -->
-								<div class="blog-post-content__3-cards-item is-flex is-relative">
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">title</span></a>
-									<!-- Image -->
-									<img width="72" height="72" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/random-pic.png" alt="title" class="blog-post-content__3-cards-item-image mr-3xs flex-shrink--0 mr-2xs__widescreen">
-									<!-- Text -->
-									<div class="">
-										<h3 class="blog-post-content__3-cards-item-title typo--body typo--medium my-0 typo--body-big__widescreen">
-											MarketAcross and Chainlink Labs Establish Channel Partnership To Support Chainlink BUILD Members
-										</h3>
-										<span class="typo--body-small typo--regular color--gray-dark typo--height-10 my-0 typo--body__widescreen">
-											by Ronnie Levi
-										</span>
-									</div>
-								</div>
-								<!-- Card -->
-								<div class="blog-post-content__3-cards-item is-flex is-relative">
-									<!-- Link -->
-									<a href="#" class="link--full-parent"><span class="visuallyhidden">title</span></a>
-									<!-- Image -->
-									<img width="72" height="72" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/random-pic.png" alt="title" class="blog-post-content__3-cards-item-image mr-3xs flex-shrink--0 mr-2xs__widescreen">
-									<!-- Text -->
-									<div class="">
-										<h3 class="blog-post-content__3-cards-item-title typo--body typo--medium my-0 typo--body-big__widescreen">
-											MarketAcross and Chainlink Labs Establish Channel Partnership To Support Chainlink BUILD Members
-										</h3>
-										<span class="typo--body-small typo--regular color--gray-dark typo--height-10 my-0 typo--body__widescreen">
-											by Ronnie Levi
-										</span>
-									</div>
-								</div>
-							</div>
+								<!-- Link -->
+								<a href="<?php echo get_category_link( $category ) ?>" class="link--arrow-right">
+									See all <?php echo $category->name ?>
+									<span class="icon"></span>
+								</a>
+								<?php
+							}
+							?>
 
-							<!-- Link -->
-							<a href="#" class="link--arrow-right">
-								See all Category 1
-								<span class="icon"></span>
-							</a>
 						</div>
 
 						<!-- post-navigation -->
