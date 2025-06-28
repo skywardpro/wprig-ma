@@ -121,38 +121,11 @@ wp_rig()->print_styles( 'wp-rig-content' );
 						<!-- post-navigation -->
 						<div class="blog-post-content__post-navigation mb-m">
 							<!-- Title -->
-							<h3 class="typo--tag-small typo--regular typo--unbounded is-uppercase mt-0 mb-3xs typo--tag-big__desktop">
+							<h3 class="blog-post-content__post-navigation-title typo--tag-small typo--regular typo--unbounded is-uppercase mt-0 mb-3xs typo--tag-big__desktop">
 								content
 							</h3>
 							<!-- Menu -->
-							<nav class="is-flex flex-direction--column">
-								<a href="#" class="typo--body typo--regular color--purple py-3xs">
-									A firsthand account of ETHTLV
-								</a>
-								<a href="#" class="typo--body typo--regular color--purple py-3xs">
-									FCT tool designed traders
-								</a>
-								<a href="#" class="typo--body typo--regular color--purple py-3xs">
-									It was an intimate
-								</a>
-								<a href="#" class="typo--body typo--regular color--purple py-3xs">
-									My week started at the offices
-								</a>
-								<!-- Only first 4 are shown -->
-								<a href="#" class="typo--body typo--regular color--purple py-3xs is-hidden-touch">
-									I was hidden 1 =]
-								</a>
-								<a href="#" class="typo--body typo--regular color--purple py-3xs is-hidden-touch">
-									I was hidden 2 =]
-								</a>
-								<a href="#" class="typo--body typo--regular color--purple py-3xs is-hidden-touch">
-									I was hidden 3 =]
-								</a>
-							</nav>
-							<!-- Show all -->
-							<button class="blog-post-content__post-navigation-show-all reset-button-styles typo--body-small typo--regular color--purple w-100 has-text-left px-0 py-2xs is-hidden-desktop">
-								All content
-							</button>
+							<nav class="blog-post-content__post-navigation-items is-flex flex-direction--column"></nav>
 						</div>
 
 						<!-- content -->
