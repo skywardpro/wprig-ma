@@ -84,7 +84,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 									<?php
 									foreach ( $related_posts_ids as $post_id ) {
 										$author_id = get_post_field( 'post_author', $post_id );
-										$author_name = get_the_author_meta( 'display_name' , $author_id );
+										$author_name = get_the_author_meta( 'display_name', $author_id );
 										?>
 										<!-- Card -->
 										<div class="blog-post-content__3-cards-item is-flex is-relative">
@@ -139,8 +139,28 @@ wp_rig()->print_styles( 'wp-rig-content' );
 				</div>
 			</section>
 
-			<!-- Swiper -->
-			<?php get_template_part( 'template-parts/sections/blog' ) ?>
+			<!-- More Posts -->
+			<section id="blog" class="blog mb-6xl mb-8xl__desktop">
+				<div class="container">
+
+					<!-- Heading -->
+					<h2 class="typo--tag-big typo--unbounded typo--regular mb-xs mb-m__desktop typo--h3__widescreen typo--light__widescreen">
+						you can also read
+					</h2>
+
+					<!-- Post Swiper -->
+					<?php
+					$post_query = new \WP_Query(array(
+						'post_type' => 'post',
+						'posts_per_page' => -1,
+						'post_status' => 'publish',
+						'orderby' => 'date',
+						'order' => 'ASC'
+					));
+					?>
+					<?php get_template_part( 'template-parts/components/post-swiper', null, array('query' => $post_query) ) ?>
+				</div>
+			</section>
 			?>
 			<?php
 		}
