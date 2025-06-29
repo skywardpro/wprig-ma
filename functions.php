@@ -18,7 +18,7 @@ require get_template_directory() . '/functions/_functions-rig-init.php';
  * @link https://docs.wprig.org/coming-soon
  */
 
-define( 'STOP_ADDING_P_TAGS', true ); // Stop WordPress from adding <p> tags.
+define( 'STOP_ADDING_P_TAGS', false ); // Stop WordPress from adding <p> tags.
 define( 'DISABLE_GUTENBERG', true ); // Disable Gutenberg editor.
 define( 'DISABLE_VISUAL_EDITOR', false ); // Disable Visual editor completely.
 define( 'DISABLE_VISUAL_EDITOR_ADMINS_ONLY', false ); // Disable Visual editor only for admins.
